@@ -203,7 +203,38 @@ namespace ds::utils
     {
         // TODO 01
         // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+
+        std::vector<size_t> sizes;
+        sizes.reserve(this->getStepCount());
+        for (size_t step = 0; step < this->getStepCount(); ++step)
+        {
+            const size_t expectedSize = (step + 1) * this->getStepSize();
+            sizes.push_back(expectedSize);
+        }
+
+        std::vector<std::vector<duration_t>> results;
+        results.reserve(this->getReplicationCount());
+        for (size_t replication = 0; replication < this->getReplicationCount(); ++replication)
+        {
+            std::vector<duration_t> durations;
+            durations.reserve(this->getStepCount());
+            Structure structure(structurePrototype);
+            for (size_t step = 0; step < this->getStepCount(); ++step)
+            {
+                const size_t expectedSize = sizes[step];
+                this->growToSize(structure, expectedSize);
+                beforeOperation_(structure);
+                auto start = std::chrono::high_resolution_clock::now();
+                this->executeOperation(structure);
+                auto end = std::chrono::high_resolution_clock::now();
+                afterOperation_(structure);
+                auto duration = std::chrono::duration_cast<duration_t>(end - start);
+                durations.push_back(duration);
+            }
+            results.push_back(std::move(durations));
+        }
+
+        this->saveToCsvFile(sizes, results);
     }
 
     template <class Structure>
