@@ -78,8 +78,8 @@ namespace ds::mm {
     CompactMemoryManager<BlockType>::~CompactMemoryManager()
     {
         // TODO 02
-        releaseMemory(base_);
-        std::free(base_); //vráPamä??
+        clear();
+        std::free(base_);
         base_ = nullptr;
         end_ = nullptr;
         limit_ = nullptr;
@@ -107,13 +107,14 @@ namespace ds::mm {
         {
             changeCapacity(2 * getAllocatedBlockCount());
         }
+        BlockType* adr = base_ + index;
         if ((end_ - base_) > index)
         {
-            memmove(base_ + index + 1, base_ + index, ((end_ - base_) - index) * sizeof(BlockType));
+            std::memmove(adr + 1, adr, (end_ - adr) * sizeof(BlockType));
         }
-        allocatedBlockCount_++;
-        end_++;
-        return placement_new(base_ + index);
+        ++allocatedBlockCount_;
+        ++end_;
+        return placement_new(adr);
 
         //throw std::runtime_error("Not implemented yet");
     }
@@ -125,11 +126,11 @@ namespace ds::mm {
         // TODO 02
         // po implementacii vymazte vyhodenie vynimky!
 
-        BlockType* p = pointer;
-        while (p != end_)
+        BlockType* cur = pointer;
+        while (cur != end_)
         {
-            destroy(p);
-            p++; //neviem ci ++p alebo p++
+            destroy(cur);
+            ++cur;
         }
         end_ = pointer;
         allocatedBlockCount_ = end_ - base_;
@@ -141,11 +142,12 @@ namespace ds::mm {
     {
         // TODO 02
         // po implementacii vymazte vyhodenie vynimky!
-
-        destroy(&getBlockAt(index));
-        memmove(base_ + index, base_ + index + 1, ((end_ - base_) - index - 1) * sizeof(BlockType));
-        end_--;
-        allocatedBlockCount_--;
+        
+        BlockType* adr = base_ + index;
+        destroy(adr);
+        std::memmove(adr, adr + 1, (end_ - adr - 1) * sizeof(BlockType));
+        --end_;
+        --allocatedBlockCount_;
 
         //throw std::runtime_error("Not implemented yet");
     }
@@ -180,6 +182,7 @@ namespace ds::mm {
         // TODO 02
         // po implementacii vymazte vyhodenie vynimky!
 
+        //treba tu vraj pouzit memcpy
         if (this != &other)
         {
             releaseMemory(base_);
@@ -195,7 +198,6 @@ namespace ds::mm {
 
             for (size_t i = 0; i < getAllocatedBlockCount(); i++)
             {
-                //base_ + i = new BlockType(other.base_ + i);//neviem èo sa deje
                 placement_copy((base_ + i), *(other.base_ + i));
             }
             return *this;
@@ -231,12 +233,12 @@ namespace ds::mm {
         {
             releaseMemory(base_ + newCapacity);
         }
-        BlockType* newBase = (BlockType*)realloc(base_, newCapacity * sizeof(BlockType));
+        void* newBase = std::realloc(base_, newCapacity * sizeof(BlockType));
         if (newBase == NULL)
         {
             throw std::runtime_error("Nová báza je NULL!");
         }
-        base_ = newBase;
+        base_ = static_cast<BlockType*>(newBase);
         end_ = base_ + getAllocatedBlockCount();
         limit_ = base_ + newCapacity;
 
@@ -260,14 +262,13 @@ namespace ds::mm {
     {
         // TODO 02
         // po implementacii vymazte vyhodenie vynimky!
-      
-        /*return (this == &other) || (allocatedBlockCount_ == other.getAllocatedBlockCount() && memcmp(base_, other.base_, getAllocatedBlocksSize());*/
+
         if (this == &other)
         {
             return true;
         }
         else if (getAllocatedBlockCount() == other.getAllocatedBlockCount()
-            && memcmp(base_, other.base_, getAllocatedBlocksSize()) == 0)
+            && std::memcmp(base_, other.base_, getAllocatedBlocksSize()) == 0)
         {
             return true;
         }
@@ -285,9 +286,9 @@ namespace ds::mm {
         BlockType* p = base_;
         while (p != end_ && p != &data)
         {
-            p++;
+            ++p;
         }
-        return ((p == end_) ? NULL : p);
+        return ((p == end_) ? nullptr : p);
 
         //throw std::runtime_error("Not implemented yet");
     }
@@ -302,7 +303,7 @@ namespace ds::mm {
         {
             return &data - base_;
         }
-        return -1;
+        return INVALID_INDEX;
 
         /*throw std::runtime_error("Not implemented yet");*/
     }
