@@ -1,0 +1,6 @@
+
+int main()
+{
+	//TRANSPONOVAL SOM CSV, NAPISAT DO DOKUMENTACIE
+	return 0;
+}
