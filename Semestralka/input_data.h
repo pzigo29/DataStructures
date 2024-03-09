@@ -1,12 +1,15 @@
 #pragma once
 #include <string>
+#include <vector>
+#include "bus_stop.h"
 class InputData
 {
-	//TRANSPONOVAL SOM CSV, NAPISAT DO DOKUMENTACIE
-	std::string subor_;
-
+	//ODSTRANENIE STOPSITE Z CSV, NAPISAT DO DOKUMENTACIE
+	std::string file_;
 public:
-	InputData(std::string subor);
-	
+	InputData(std::string file)
+		: file_(file) {};
+	std::vector<BusStop> readFromFile();
 };
+
 

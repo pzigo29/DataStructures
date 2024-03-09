@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{af9211dd-5780-49ad-969c-b8c035b1e5ac}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -27,16 +30,35 @@
     <ClCompile Include="bus_stop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="contains_str.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="data\cow_busstops.csv" />
-    <None Include="data\kam_busstops.csv" />
-    <None Include="data\nan_busstops.csv" />
-    <None Include="data\vic_busstops.csv" />
-    <None Include="data\vly_busstops.csv" />
-    <None Include="data\whi_busstops.csv" />
-    <None Include="data\wil_busstops.csv" />
-    <None Include="data\wkt_busstops.csv" />
+    <None Include="data\cow_busstops.csv">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\kam_busstops.csv">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\nan_busstops.csv">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\vic_busstops.csv">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\vly_busstops.csv">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\whi_busstops.csv">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\wil_busstops.csv">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\wkt_busstops.csv">
+      <Filter>data</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="input_data.h">
@@ -46,6 +68,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="bus_stop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="contains_str.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

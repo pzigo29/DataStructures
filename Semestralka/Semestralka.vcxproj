@@ -130,6 +130,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="bus_stop.cpp" />
+    <ClCompile Include="contains_str.cpp" />
     <ClCompile Include="vector_data_structure.cpp" />
     <ClCompile Include="input_data.cpp" />
     <ClCompile Include="main.cpp" />
@@ -146,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bus_stop.h" />
+    <ClInclude Include="contains_str.h" />
     <ClInclude Include="vector_data_structure.h" />
     <ClInclude Include="input_data.h" />
   </ItemGroup>

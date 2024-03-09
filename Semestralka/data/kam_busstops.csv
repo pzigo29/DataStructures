@@ -1,8 +1,604 @@
-﻿stopid;800004;800007;800014;151000;151001;151002;151003;104580;104581;104582;104583;104584;104585;104586;104587;104588;104589;104590;104591;104592;104593;104594;104595;104596;104597;104598;104599;104600;104601;104602;104603;104605;104606;104608;104609;104610;104611;104612;104613;104614;104615;104617;104618;104619;104620;104624;104625;104626;104627;104628;104629;104630;104631;104632;104633;104634;104635;104636;104637;104638;104639;104640;104641;104642;104643;104644;104645;104646;104647;104648;104649;104650;104651;104652;104653;104654;104655;104656;104657;104658;104659;104660;104661;104662;104663;104664;104665;104666;104667;104668;104669;104670;104671;104672;104673;104674;104675;104676;104677;104678;104679;104680;104681;104682;104683;104684;104685;104686;104687;104688;104689;104691;104692;104693;104694;104695;104696;104697;104698;104699;104700;104701;104200;104201;104202;104204;104702;104703;104704;104706;104707;104708;104709;104710;104711;104714;104715;104716;104717;104718;104719;104720;104721;104722;104723;104724;104725;104726;104727;104728;104729;104730;104731;104732;104733;104734;104735;104736;104737;104738;104739;104740;104741;104742;104743;104744;104745;104746;104747;104748;104749;104750;104751;104752;104753;104754;104755;104756;104757;104758;104759;104760;104466;104467;104468;104469;104470;104471;104472;104473;104474;104475;104476;104477;104478;104479;104481;104483;104484;104485;104486;104487;104488;104489;104490;104491;104492;104493;104494;104495;104496;104497;104498;104279;104280;104281;104282;104283;104284;104285;104286;104287;104289;104290;104291;104292;104293;104294;104295;104296;104297;104298;104299;104300;104301;104302;104499;104500;104501;104502;104503;104504;104506;104508;104509;104510;104511;104512;104513;104514;104515;104516;104517;104518;104519;104520;104521;104522;104523;104524;104525;104526;104527;104528;104303;104304;104305;104306;104307;104308;104309;104311;104312;104313;104315;104316;104317;104318;104319;104320;104321;104322;104323;104324;104325;104326;104327;104328;104329;104330;104331;104332;104333;104529;104530;104531;104532;104533;104534;104535;104536;104537;104538;104334;104335;104336;104337;104338;104339;104340;104341;104342;104343;104344;104345;104346;104348;104349;104350;104351;104352;104353;104354;104355;104356;104357;104358;104359;104360;104361;104362;104363;104364;104365;104366;104367;104368;104369;104370;104371;104372;104373;104374;104375;104376;104377;104378;104379;104380;104381;104382;104383;104384;104385;104386;104387;104388;104389;104390;104391;104392;104393;104394;104395;104396;104397;104398;104399;104400;104401;104402;104403;104404;104405;104406;104407;104408;104409;104410;104411;104412;104413;104414;104415;104416;104417;104418;104419;104420;104421;104422;104423;104424;104425;104426;104427;104428;104429;104430;104431;104432;104433;104434;104435;104436;104437;104438;104439;104440;104441;104442;104443;104444;104445;104446;104447;104448;104449;104450;104451;104452;104453;104454;104455;104456;104457;104458;104459;104460;104461;104462;104205;104206;104207;104208;104209;104210;104212;104213;104214;104215;104216;104217;104218;104219;104220;104221;104222;104223;104224;104225;104226;104227;104234;104235;104236;104237;104238;104239;104241;104243;104244;104245;104246;104248;104249;104250;104251;104253;104254;104255;104256;104257;104258;104259;104260;104261;104262;104263;104264;104265;104266;104267;104268;104269;104270;104271;104272;104273;104274;104275;104276;104277;104278;104539;104540;104541;104542;104543;104544;104545;104546;104547;104548;104551;104552;104553;104554;104555;104556;104557;104559;104560;104561;104562;104563;104564;104565;104566;104567;104568;104569;104570;104571;104572;104573;104574;104575;104576;104577;104578;104579;151032;151034;151022;151023;151024;151025;951000;151031;151005;151006;151007;151008;151009;151010;151011;151012;151013;151014;151015;151016;151017;151018;151019;151020;151021;151026;151027;151028;151029;151033;104884;104907;104908;104909;104910;151004;104762;104763;104764;104765;104766;104767;104768;104769;104770;104777;104778;104779;104780;104781;104782;104784;104785;104786;104789;104811;104820;104823;104832;104838;104855;104873;151038;151037;151036;151035;151043;151039;151041;151042;151040
-stopname;Lansdowne Exchange;North Shore Exchange;TRU Exchange;1800 block Versatile (EB);1700 blcok Versatile (EB);1500 block Versatile (EB);Victoria at 8th (WB);Springhill 1470 block (WB);Springhill 1560 block (SB);Springhill at Springfield (SB);Springhill at Lasage (SB);Springhill at Gleneagles (WB);Springhill at Gleneagles (SB);Gleneagles at Glen Gary (SB);Gleneagles at Wentworth (EB);Gleneagles at Skagit (NB);Gleneagles at Monarch (NB);Gleneagles 400 block (SB);Whistler at Gleneagles (SB);Whistler Dr at Whistler Pl (EB);Robson at Hollyburn (WB);Robson 300 block (WB);Robson at Breakenridge (WB);Robson at Gladstone (WB);Robson at Gladstone (SB);Summit at Monteith (EB);Summit at Hollyburn (EB);Summit at Tremerton (EB);Summit at Robson (EB);Summit at Gleneagles (WB);Summit at Waddington (NB);Summit at Freshfield (NB);Summit at Gordonhorn (WB);Summit at Springhill (WB);McGill at Camosun (WB);TRU Exchange Bay C;McGill Rd at McGill Pl (NB);McGill at McMaster (NB);McGill at Concordia (NB);North Shore Exchange Bay F;McGill at Concordia (SB);McGill Rd at McGill Pl (SB);North Shore Exchange Bay A ;Halston 710 block (EB);Halston Connector at Salish (SB);Old Highway 5 6790 block (NB);Old Highway 5 at Creek (NB);Puett Ranch at Old Highway 5 (WB);Cammeray at Puett Ranch (NB);Cammeray at Strawberry (NB);Cammeray at Chilco (NB);Reighmount at Pinantan (WB);Reighmount at Kathleen (WB);Aspen Park at Spurraway (SB);Aspen Park at Helmcken (SB);Spurraway at Helmcken (SB);Spurraway at Puett Ranch (SB);Furiak at Puett Ranch (SB);Mattoch-McKeague at Furiak (EB);Old Highway 5 at Mattoch-McKeague (SB);block Old Highway 5 at Devick (SB);Halston Connector at Josep (NB);Southview at Hillcrest (WB);Linthorpe at Southview (EB);Linthorpe at Hillcrest (EB);Batchelor at Norview (NB);Grasslands at Quail (NB);Quail at Quails Roost (EB);Quail Dr at Quail Crt (NB);Raven at Grasslands (WB);Batchelor at Grasslands (SB);Norview Rd at Norview Pl (EB);North River at Norview (SB);North River at Leighton (SB);Batchelor at North River (SB);Lansdowne Exchange Bay E;Seymour at 6th Ave (EB);Seymour at 8th Ave (EB);Victoria at 10th Ave (EB);Battle at 12th Ave (EB);Battle at Columbia (EB);Valleyview at Rose Hill (EB);Valleyview at Comazzetto (NB);Valleyview at Knollwood (EB);Valleyview at Orchard (EB);Valleyview at Cardinal (EB);Oriole at Glenwood (NB);Falcon at Oriole (EB);E Trans-Canada Hwy Frtg at Industrial (EB);Flamingo at Highland (EB);Highland at Crescent (SB);Highland at Valleyview (SB);QuAppelle at Stikine (WB);Coldwater at Skeena (EB);Skeena 2100 block (EB);Skeena 2210 block (EB);Finlay at Omineca (NB);QuAppelle at Finlay (EB);QuAppelle at Abitibi (EB);QuAppelle at Nechako (SB);QuAppelle at Adams (EB);QuAppelle at Capilano (EB);Churchill at Squamish (NB);Capilano at QuAppelle (WB);QuAppelle at Capilano (WB);QuAppelle at Adams (WB);QuAppelle at Nechako (NB);QuAppelle at Bella Coola (WB);QuAppelle at Finlay (WB);QuAppelle 2200 block (SB);QuAppelle at Highland (WB);Highland at Valleyview (NB);Highland at Crescent (NB);Flamingo at Highland (WB);E Trans-Canada Hwy Frtg at Industrial (WB);Falcon at Oriole (WB);Oriole at Glenwood (SB);Valleyview 1970 block (WB);Valleyview at Knollwood (WB);Valleyview at Knollwood (WB);Valleyview at Strom (SB);Valleyview at E Trans-Canada Hwy Frtg (WB);Lansdowne Exchange Bay I;Lansdowne at 4th Ave (WB);Lansdowne at 2nd Ave (WB);Tranquille at Don (WB);Columbia at Nicola (WB);Columbia at 10th Ave (WB);Columbia at 8th Ave (WB);6th Ave at St Paul (NB);Valleyview at Highland (EB);Valleyview at Miller (EB);Valleyview at River (EB);Valleyview at MacAdam (EB);Valleyview at McKay (EB);Todd at Crawford (SB);Todd at Klahanie (SB);Todd at Lamar (SB);Todd at Sunrise (SB);Lamar at Todd (EB);Lamar at Norland (NB);Clearview at Wildwood (NB);Clearview at Belair (EB);Clearview at Foxwood (EB);Clearview at Todd (EB);Todd at Belair (WB);Todd at Pringle (SB);Todd at Pratt (WB);Todd 1450 block (WB);Todd at Lamar (NB);Todd at Sunrise (WB);Todd at Lamar (NB);Todd at Klahanie (NB);Todd at Dallas (NB);Dallas at Bogetti (EB);Dallas at Ridge (EB);Dallas at Todd Hill (EB);Dallas at Todd Hill (EB);Dallas at Mountview (EB);Dallas at Yarrow (EB);Dallas 6750 block (EB);Dallas 7120 block (EB);Dallas 7320 block (EB);Dallas at OConnor (EB);Dallas 7590 block (EB);Dallas at Peerless (EB);Dallas at Andover (EB);Dallas at Cougar (EB);Dallas 9150 block (EB);Kokanee at E Trans-Canada (SB);Dallas 7540 block (WB);Dallas at OConnor (WB);Dallas 7300 block (WB);Dallas 7110 block (WB);Dallas 6750 block (WB);Dallas at Yarrow (WB);Dallas at Mountview (WB);Dallas at Todd Hill (WB);Dallas at Harper (WB);Dallas at Ridge (WB);Dallas at Bogetti (WB);E Trans-Canada at Nina (WB);Lodgepole at Englemann (SB);Lodgepole at Arnica (EB);Lodgepole at Snowberry (NB);Copperhead at Lodgepole (NB);Copperhead at Hugh Allan (NB);Copperhead at Kryczka (NB);Copperhead at Versatile (NB);Hillside at Copperhead (EB);Hillside 1860 block (EB);Hillside at Davies (EB);Hillside at Mount Dufferin Cres (EB);Hillside at Mount Dufferin Ave (EB);Hillside at Cannel (EB);Lansdowne Exchange Bay D;Columbia at 5th Ave (EB);7th Ave at Columbia (SB);7th Ave at Pine (SB);7th Ave at Munro (SB);6th Ave at Cowan (SB);Fraser at Tunstall (EB);Fraser St at Fraser Cres (EB);Fraser at 9th Ave (EB);Fraser at McMurdo (NB);11th Ave at Douglas (NB);Pine at 11th Ave (EB);13th Ave at Pine (NB);Columbia at 13th Ave (WB);Columbia at 12th Ave (WB);11th Ave at Columbia (NB);Battle at 11th Ave (WB);Battle at 9th Ave (WB);Parkcrest at Singh (WB);Parkcrest at Holt (WB);Fleetwood at Holt (WB);Fleetwood at Desmond (WB);Fleetwood at Southill (WB);Parkcrest at Bentley (WB);Parkcrest at Ponlen (WB);Parkcrest at Windbreak (WB);Parkcrest at McLean (WB);Parkcrest at Schreiner (WB);Schreiner at Fleetwood (SB);Crestline at Fleetwood (NB);Crestline at Parkcrest (NB);Crestline at Rosewood (NB);Briarwood at Crestline (EB);Schreiner at Paulsen (SB);Parkcrest at Schreiner (EB);Parkcrest at McLean (EB);Parkcrest at Windbreak (EB);Parkcrest at Ponlen (EB);Southill at Parkcrest (SB);Fleetwood at Southill (EB);Fleetwood at Desmond (EB);7th Ave at Battle (SB);Columbia at 7th Ave (WB);Ponderosa Lodge Entrance;Hospital Access at Glenfair (WB);Royal Inland Hospital Entrance;Lansdowne Exchange Bay C;6th Ave at St Paul (SB);Columbia at 5th Ave (WB);Columbia St W at Bluff (WB);Columbia St W at Grandview (WB);Columbia St W at Frontage (SB);TRU Exchange Bay F;Summit at 1050 Blk (SB);Summit at Arrowstone (EB);Summit at Notre Dame (SB);Notre Dame at Columbia St W (WB);Notre Dame at Laval (WB);Notre Dame at Cemetery (WB);Notre Dame at Dalhousie (WB);Notre Dame at Dalhousie (WB);Notre Dame at Hillside (WB);Hillside Way at Hillside Crt (SB);Rogers at Braeview (WB);Rogers 1250 block (WB);Rogers at Hugh Allan (WB);Hugh Allan at Rogers (SB);Hugh Allan at Harrison (EB);Hugh Allan at Howe (EB);Fleetwood at Holt (EB);Parkcrest at Holt (EB);Parkcrest at Singh (EB);Parkcrest at Ollek (EB);Halston at 13th St (EB);12th St at Pembroke (SB);12th St at Selkirk (SB);Kenora at 12th St (EB);Cottonwood at Kenora (EB);Cottonwood at Willow (EB);Willow at MacKenzie (SB);MacKenzie at Thrupp (EB);MacKenzie at Williams (EB);Lansdowne Exchange Bay G;Fortune at Baker (NB);Fortune at Fort (NB);Fortune at Spruce (NB);Fortune at Wood (NB);Fortune at Aspen (NB);Fortune at Chestnut (NB);Fortune at Holly (NB);North Shore Exchange Bay D;8th St at Fortune (NB);8th St at Richmond (NB);8th St at Sherbrooke (NB);8th St at 7th St (NB);Westsyde at Collingwood (NB);Westsyde at Westmount (NB);Westsyde at Collingwood (NB);Hugh Allan at Gloaming (EB);Hugh Allan 880 block (EB);Sifton Ave at Sifton Lane (SB);Sifton Ave at Sifton Lane (SB);Sifton at 2240 Blk (EB);Laurier at Sifton (EB);Laurier at Aberdeen (SB);Aberdeen at Drummond (WB);Aberdeen 650 Block (WB);Van Horne at Greystone (WB);Westsyde at Walkem (NB);Westsyde at Yates (NB);Westsyde at Anderson (NB);Westsyde at McQueen (NB);Westsyde at Woodhaven (NB);Westsyde at Rue Chez Nous (NB);Westsyde at Parkview (NB);Westsyde at Oak Hills (NB);Westsyde at Franklin (NB);Westsyde at Morven (NB);Westsyde at Soldier (NB);Westsyde at Garnet (NB);Westsyde at Bissette (NB);Westsyde at Porterfield (NB);Westsyde at Puhallo (NB);Westsyde at Overlander (NB);Westsyde at Sun Valley (NB);Harrington at Mountainview (EB);Harrington at Overlander (EB);Overlander at Reemon (SB);Sicamore at Overlander (WB);Bank at Overlander (SB);Westsyde at Dever (SB);Westsyde at Jensen (SB);Westsyde at Lyne (SB);Westsyde at Serle (SB);Westsyde at Bissette (SB);Westsyde at Garnet (SB);Westsyde at Georgeann (SB);Westsyde at Morven (SB);Westsyde at Agassiz (SB);Westsyde at Oak Hills (SB);Westsyde at Parkview (SB);Westsyde at Rue Chez Nous (SB);Westsyde at Woodhaven (SB);Westsyde at McQueen (SB);Westsyde at Anderson (SB);Westsyde at Yates (SB);Westsyde at Walkem (SB);Westsyde at Westmount (SB);Westsyde at Collingwood (SB);8th St at Sudbury (SB);8th St at Lethbridge (SB);8th St at Selkirk (SB);8th St at Moncton (SB);8th St at Fortune (SB);North Shore Exchange Bay B;Fortune at Nelson (SB);Fortune at Oak (SB);Fortune at Evans (SB);Fortune at Wood (SB);Fortune at Spruce (SB);Fortune at Leigh (SB);Fortune at Larch (SB);Lansdowne Exchange Bay F;4th Ave at Seymour (SB);4th Ave at Battle (SB);4th Ave at Nicola (SB);Columbia at 3rd Ave (WB);Sahali 750 block (EB);Sahali at Pemberton (EB);Bestwick at Anvil (EB);McGill at Monashee (WB);McGill 250 block (NB);McGill at Chapperon (WB);McGill at Frontage (WB);McGill at Summit (WB);McGill at University (WB);Dalhousie at McGill (NB);Dalhousie (WB);TRU Exchange Bay G;Hillside at McGill (SB);Hillside 1040 block (SB);Hillside at Notre Dame (SB);Aberdeen Mall (SB);Pacific at Hillside (SB);Pacific at Hugh Allan (SB);Pacific at Pearson (SB);Pacific at Howe (EB);Pacific at Ravenwood (EB);Pacific at Greystone (SB);Pacific at Links (SB);Pacific at Aberdeen (SB);Pacific 2510 block (EB);Abbeyglen at Bramble (EB);Abbeyglen at Regent (WB);Aberdeen at Abbeyglen (EB);Van Horne at Aberdeen (NB);Van Horne at Laurier (NB);Laurier at Galloway (WB);Garymede at Laurier (NB);Garymede at Greystone (NB);Pacific at Greystone (NB);Pacific at Ravenwood (WB);Pacific at Howe (NB);Pacific at Pearson (WB);Hillside at Pacific (EB);Aberdeen Mall (NB);Hillside at Cariboo (NB);Hillside at Notre Dame (NB);Hillside at McGill (NB);Hillside at McGill (NB);TRU Exchange Bay D;Dalhousie (EB);McGill at Dalhousie (EB);McGill at Summit (EB);McGill at Frontage (EB);McGill at Chapperon (EB);McGill 240 block (SB);McGill at Monashee (EB);McGill at Bestwick (EB);Bestwick at Greenstone (NB);Bestwick at Sahali (WB);Sahali at Pemberton (NB);Sahali at Columbia St W (NB);3rd Ave at Columbia (NB);3rd Ave at Battle (NB);3rd Ave at Seymour (NB);TRU Exchange Bay H;Hillside at Pacific (WB);Hillside at Mount Dufferin Ave (WB);Hillside at Monterey (WB);Hillside at Mount Dufferin Dr (WB);Hillside 1860 block (WB);Hillside at Copperhead (WB);Copperhead at Iron Mask (SB);Copperhead at Kryczka (SB);Hugh Allan at Lodgepole (WB);Tranquille at Palm (NB);Tranquille at Clapperton (NB);Tranquille at Wood (NB);Tranquille at Oak (NB);Tranquille at Vernon (NB);North Shore Exchange Bay C;Tranquille at 11th St (WB);Tranquille at 12th St (WB);Tranquille at Kelly (WB);Tranquille at Nicolani (WB);Tranquille at Singh (WB);Tranquille at Holt (WB);Tranquille at Desmond (WB);Tranquille at Southill (WB);Tranquille at Caroline (WB);Tranquille at Windbreak (WB);Tranquille at Invermere (WB);Tranquille at Shelan (WB);Tranquille at Schreiner (WB);Crestline at Glenview (NB);Crestline at Young (NB);Crestline at Fleetwood (NB);Fleetwood at Schreiner (EB);Greenfield at Schreiner (EB);Greenfield at Westgate (EB);Greenfield at Windbreak (EB);Windbreak at Sunnycrest (SB);Tranquille at Windbreak (EB);Tranquille at Southill (EB);Tranquille at Holt (EB);Tranquille at Singh (EB);Tranquille at Nicolani (EB);Tranquille at Lepine (EB);Tranquille at 12th St (EB);Tranquille at 10th St (EB);Fortune at Tranquille (EB);North Shore Exchange Bay E;Tranquille at Yew (SB);Tranquille at Aspen (SB);Tranquille at MacKenzie (SB);Tranquille at Knox (SB);Tranquille at Palm (SB);Tranquille at Wilson (EB);Tranquille at Venus (EB);Victoria St W 240 block (EB);Seymour at 1st Ave (EB);Seymour at 3rd Ave (EB);Seymour at 4th Ave (EB);6th Ave at Victoria (NB);Lansdowne Exchange Bay H;Yew at Tranquille (WB);MacKenzie at Park (WB);MacKenzie at Marcel (WB);Willow at Stewart (NB);Cottonwood at Willow (WB);Cottonwood at Kenora (WB);Kenora at 12th St (WB);12th St at Surrey (NB);12th St at Selkirk (NB);12th St at Pembroke (NB);12th St at Halston (NB);Halston at 13th St (WB);Parkcrest at Nicolani (WB);Van Horne at Hector (NB);Van Horne at Huntleigh (WB);Van Horne at Howe (NB);Howe 1130 block (EB);Hugh Allan at Howe (WB);Hugh Allan at Harrison (WB);Rogers at Hugh Allan (EB);Rogers 1250 block (EB);Rogers Way at Rogers Pl (EB);Hillside Way at Hillside Crt (NB);Notre Dame at Dalhousie (EB);Notre Dame at Cemetery (EB);Notre Dame at Laval (EB);Notre Dame at Columbia St W (EB);Summit at Notre Dame (NB);Summit 1300 block (NB);Summit at Arrowstone (WB);Columbia St W 640 block (NB);Battle at 3rd Ave (WB);Battle St W at 1st Ave (WB);Battle St W at Lee (WB);Strathcona at Battle St W (NB);Strathcona at Hemlock (WB);Lombard at Centre (WB);Centre at Battle St W (SB);Grandview at Dalgleish (EB);Grandview at Dufferin (EB);Grandview at Garden (WB);Grandview at Dalgleish (WB);Centre at Battle St W (NB);Lombard at Centre (EB);Strathcona at Hemlock (EB);Strathcona at Battle St W (SB);Battle St W at Lee (EB);Battle at 1st Ave (EB);Lansdowne Exchange Bay B;TRU Exchange Bay E;Summit at Springhill (EB);Victoria St W 200 Blk (WB);Tranquille at Desmond (EB);Grand Blvd at Valleyview Dr (SB);Grand Blvd at Valleyview Dr (NB);Valleyview Dr farside Tanager Dr (EB);Valleyview Dr at 2900 Blk (EB);Kamloops Transit Centre;Shuswap Rd at Chief Alex Thomas Way (WB);Saddleback Dr at 2038 Block (NB);Saddleback Dr at Stagecoach Dr (NB);Saddleback Dr at Latigo Dr (NB);Doubletree Cr at Latigo Dr (SB);Stagecoach Dr at Saddleback Dr (SB);Grasslands Blvd at Stagecoach Dr (SB);Grasslands Blvd at 2027 Block (SB);Mt. Paul Way at Chilcotin Rd (SB);Mt. Paul Way at Carrier St (SB);Athabasca St W at 680 Block (WB);Athabasca St W at Chilcotin (NB);Chilcotin Rd at 200 Block (WB);Kamloopa Way at 775 Block (NB);Kamloopa Way at Mohawk Cres (NB);George Campbell Way at Kamloopa Way (EB);Shuswap Rd W at Ricardo Rd (EB);Ricardo Rd at 1020 Block (SB);Okanagan Way at Dene Dr (SB);Chilcotin Rd at Tagish (EB);Shuswap Rd E at Chief Alex Thomas Way (EB);Sun Rivers Dr at Talasa Way (EB);Willow at Cottonwood (SB);Dallas at Harper (EB);TRU Exchange Bay A;Grasslands at Quayle (SB);Batchelor at North River (NB);McGill at Bestwick (WB);Columbia  at 3rd (EB);Valleyview at Tanager (WB);Valleyview at McKay (WB);Valleyview at MacAdam (WB);Valleyview at River (WB);Valleyview at Park (WB);Battle at 14th Ave (WB);Battle at 12th Ave (WB);Victoria at 10th Ave (WB);Mattoch-McKeague at Cameron (EB);Lorne at 10th Ave (WB);Lorne at 8th Ave (WB);Lorne at 8th Ave (WB);Lorne at 7th Ave (WB);Lorne 480 block (WB);Lorne at 3rd Ave (WB);Summit at Robson (WB);Summit at Hollyburn (WB);Summit at Tremerton (WB);Summit at Gleneagles (EB);Lorne at 2nd Ave (WB);TRU Exchange Bay B;Sifton at Sifton (WB);Valleyview at Sunset (WB);Sifton at 2240 Blk (WB);Tranquille (WB);Lansdowne Exchange Bay A;Munro at 8 Ave (EB);South Sa-Hali Elem (WB);Tranquille at Barrie (EB);Interior Health at 5th (EB);12th at Barrie Dr (SB);Tranquille at Poplar (SB);6 Ave at Nicola (NB);6 Ave at Columbia (SB);Tranquille at 8th (WB)
-stopsite;Lansdowne Exchange;North Shore Exchange;TRU Exchange;EB_1800 Block ;EB_1700_block_Versatile;Eastbound 1500 block Versatile;WB_Victoria_NS_8th;WB_1470_block_Springhill;SB_1560_block_Springhill;SB_Springhill_NS_Springfield;SB_Springhill_FS_Lasage;WB_Springhill_NS_Gleneagles;SB_Springhill_NS_Gleneagles;SB_Gleneagles_FS_Glen Gary;EB_Gleneagles_FS_Wentworth;NB_Gleneagles_FS_Skagit;NB_Gleneagles_FS_Monarch;SB_400_block_Gleneagles;SB_Whistler_FS_Gleneagles;EB_Whistler Dr_NS_Whistler Pl;WB_Robson_NS_Hollyburn;WB_300_block_Robson;WB_Robson_FS_Breakenridge;WB_Robson_FS_Gladstone;SB_Robson_NS_Gladstone;EB_Summit_NS_Monteith;EB_Summit_NS_Hollyburn;EB_Summit_FS_Tremerton;EB_Summit_FS_Robson;WB_Summit_FS_Gleneagles;NB_Summit_FS_Waddington;NB_Summit_FS_Freshfield;WB_Summit_NS_Gordonhorn;WB_Summit_FS_Springhill;WB_McGill_NS_Camosun;TRU_Exchange_Bay_C;NB_McGill Rd_FS_McGill Pl;NB_McGill_FS_McMaster;NB_McGill_FS_Concordia;North_Shore_Exchange_Bay_F;SB_McGill_FS_Concordia;SB_McGill Rd_FS_McGill Pl;North_Shore_Exchange_Bay_A_;EB_710_block_Halston;SB_Halston Connector_FS_Salish;NB_6790_block_Old Highway 5;NB_Old Highway 5_FS_Creek;WB_Puett Ranch_FS_Old Highway 5;NB_Cammeray_FS_Puett Ranch;NB_Cammeray_FS_Strawberry;NB_Cammeray_FS_Chilco;WB_Reighmount_NS_Pinantan;WB_Reighmount_NS_Kathleen;SB_Aspen Park_FS_Spurraway;SB_Aspen Park_NS_Helmcken;SB_Spurraway_FS_Helmcken;SB_Spurraway_NS_Puett Ranch;SB_Furiak_FS_Puett Ranch;EB_Mattoch-McKeague_FS_Furiak;SB_Old Highway 5_FS_Mattoch-McKeague;SB_block_Old Highway 5_NS_Devick;NB_Halston Connector_FS_Josep;WB_Southview_FS_Hillcrest;EB_Linthorpe_FS_Southview;EB_Linthorpe_NS_Hillcrest;NB_Batchelor_NS_Norview;NB_Grasslands_NS_Quail;EB_Quail_FS_Quails Roost;NB_Quail Dr_NS_Quail Crt;WB_Raven_NS_Grasslands;SB_Batchelor_FS_Grasslands;EB_Norview Rd_FS_Norview Pl;SB_North River_FS_Norview;SB_North River_FS_Leighton;SB_Batchelor_FS_North River;Lansdowne_Exchange_Bay_E;EB_Seymour_FS_6th Ave;EB_Seymour_NS_8th Ave;EB_Victoria_FS_10th Ave;EB_Battle_FS_12th Ave;EB_Battle_NS_Columbia;EB_Valleyview_NS_Rose Hill;NB_Valleyview_NS_Comazzetto;EB_Valleyview_FS_Knollwood;EB_Valleyview_FS_Orchard;EB_Valleyview_FS_Cardinal;NB_Oriole_FS_Glenwood;EB_Falcon_FS_Oriole;EB_E Trans-Canada Hwy Frtg_FS_Industrial;EB_Flamingo_NS_Highland;SB_Highland_FS_Crescent;Southbound Highland_FS_Valleyview;WB_QuAppelle_NS_Stikine;EB_Coldwater_NS_Skeena;EB_2100_block_Skeena;EB_2210_block_Skeena;NB_Finlay_FS_Omineca;EB_QuAppelle_NS_Finlay;EB_QuAppelle_FS_Abitibi;SB_QuAppelle_FS_Nechako;EB_QuAppelle_NS_Adams;EB_QuAppelle_FS_Capilano;NB_Churchill_FS_Squamish;WB_Capilano_NS_QuAppelle;WB_QuAppelle_FS_Capilano;WB_QuAppelle_FS_Adams;NB_QuAppelle_NS_Nechako;WB_QuAppelle_FS_Bella Coola;WB_QuAppelle_NS_Finlay;SB_2200_block_QuAppelle;WB_QuAppelle_NS_Highland;NB_Highland_FS_Valleyview;NB_Highland_FS_Crescent;WB_Flamingo_FS_Highland;WB_E Trans-Canada Hwy Frtg_NS_Industrial;WB_Falcon_NS_Oriole;SB_Oriole_FS_Glenwood;WB_1970_block_Valleyview;WB_Valleyview_NS_Knollwood;WB_Valleyview_FS_Knollwood;SB_Valleyview_FS_Strom;WB_Valleyview_FS_E Trans-Canada Hwy Frtg;Lansdowne_Exchange_Bay_I;WB_Lansdowne_FS_4th Ave;WB_Lansdowne_FS_2nd Ave;WB_Tranquille_NS_Don;WB_Columbia_NS_Nicola;WB_Columbia_FS_10th Ave;WB_Columbia_FS_8th Ave;NB_6th Ave_FS_St Paul;EB_Valleyview_FS_Highland;EB_Valleyview_FS_Miller;EB_Valleyview_FS_River;EB_Valleyview_FS_MacAdam;EB_Valleyview_FS_McKay;SB_Todd_NS_Crawford;SB_Todd_NS_Klahanie;SB_Todd_NS_Lamar;SB_Todd_NS_Sunrise;EB_Lamar_FS_Todd;NB_Lamar_FS_Norland;NB_Clearview_NS_Wildwood;EB_Clearview_FS_Belair;EB_Clearview_NS_Foxwood;EB_Clearview_NS_Todd;WB_Todd_FS_Belair;SB_Todd_FS_Pringle;WB_Todd_FS_Pratt;WB_1450_block_Todd;NB_Todd_NS_Lamar;WB_Todd_NS_Sunrise;NB_Todd_FS_Lamar;NB_Todd_FS_Klahanie;NB_Todd_NS_Dallas;EB_Dallas_NS_Bogetti;EB_Dallas_NS_Ridge;EB_Dallas_FS_Todd Hill;EB_Dallas_FS_Todd Hill;EB_Dallas_NS_Mountview;EB_Dallas_NS_Yarrow;EB_6750_block_Dallas;EB_7120_block_Dallas;EB_7320_block_Dallas;EB_Dallas_FS_OConnor;EB_7590_block_Dallas;EB_Dallas_FS_Peerless;EB_Dallas_FS_Andover;EB_Dallas_FS_Cougar;EB_9150_block_Dallas;SB_Kokanee_NS_E Trans-Canada;WB_7540_block_Dallas;WB_Dallas_NS_OConnor;WB_7300_block_Dallas;WB_7110_block_Dallas;WB_6750_block_Dallas;WB_Dallas_FS_Yarrow;WB_Dallas_FS_Mountview;WB_Dallas_FS_Todd Hill;WB_Dallas_FS_Harper;WB_Dallas_NS_Ridge;WB_Dallas_FS_Bogetti;WB_E Trans-Canada_FS_Nina;SB_Lodgepole_FS_Englemann;EB_Lodgepole_FS_Arnica;NB_Lodgepole_FS_Snowberry;NB_Copperhead_FS_Lodgepole;NB_Copperhead_NS_Hugh Allan;NB_Copperhead_FS_Kryczka;NB_Copperhead_NS_Versatile;EB_Hillside_FS_Copperhead;EB_1860_block_Hillside;EB_Hillside_FS_Davies;EB_Hillside_FS_Mount Dufferin Cres;EB_Hillside_FS_Mount Dufferin Ave;EB_Hillside_FS_Cannel;Lansdowne_Exchange_Bay_D;EB_Columbia_FS_5th Ave;SB_7th Ave_FS_Columbia;SB_7th Ave_FS_Pine;SB_7th Ave_NS_Munro;SB_6th Ave_FS_Cowan;EB_Fraser_FS_Tunstall;EB_Fraser St_NS_Fraser Cres;EB_Fraser_FS_9th Ave;NB_Fraser_FS_McMurdo;NB_11th Ave_FS_Douglas;EB_Pine_FS_11th Ave;NB_13th Ave_FS_Pine;WB_Columbia_FS_13th Ave;WB_Columbia_FS_12th Ave;NB_11th Ave_FS_Columbia;WB_Battle_FS_11th Ave;WB_Battle_FS_9th Ave;WB_Parkcrest_FS_Singh;WB_Parkcrest_NS_Holt;WB_Fleetwood_FS_Holt;WB_Fleetwood_NS_Desmond;WB_Fleetwood_NS_Southill;WB_Parkcrest_NS_Bentley;WB_Parkcrest_FS_Ponlen;WB_Parkcrest_FS_Windbreak;WB_Parkcrest_NS_McLean;WB_Parkcrest_NS_Schreiner;SB_Schreiner_NS_Fleetwood;NB_Crestline_FS_Fleetwood;NB_Crestline_NS_Parkcrest;NB_Crestline_NS_Rosewood;EB_Briarwood_FS_Crestline;SB_Schreiner_FS_Paulsen;EB_Parkcrest_FS_Schreiner;EB_Parkcrest_FS_McLean;EB_Parkcrest_NS_Windbreak;EB_Parkcrest_FS_Ponlen;SB_Southill_FS_Parkcrest;EB_Fleetwood_FS_Southill;EB_Fleetwood_FS_Desmond;SB_7th Ave_FS_Battle;WB_Columbia_FS_7th Ave;Ponderosa Lodge Entrance;WB_Hospital Access_FS_Glenfair;Royal Inland Hospital Entrance;Lansdowne_Exchange_Bay_C;SB_6th Ave_FS_St Paul;WB_Columbia_FS_5th Ave;WB_Columbia St W_FS_Bluff;WB_Columbia St W_FS_Grandview;SB_Columbia St W_NS_Frontage;TRU_Exchange_Bay_F;SB_Summit_AT_1050 Blk;EB_Summit_FS_Arrowstone;SB_Summit_NS_Notre Dame;WB_Notre Dame_NS_Columbia St W;WB_Notre Dame_FS_Laval;WB_Notre Dame_FS_Cemetery;WB_Notre Dame_NS_Dalhousie;WB_Notre Dame_FS_Dalhousie;WB_Notre Dame_NS_Hillside;SB_Hillside Way_NS_Hillside Crt;WB_Rogers_NS_Braeview;WB_1250_block_Rogers;WB_Rogers_NS_Hugh Allan;SB_Hugh Allan_FS_Rogers;EB_Hugh Allan_NS_Harrison;EB_Hugh Allan_NS_Howe;EB_Fleetwood_NS_Holt;EB_Parkcrest_FS_Holt;EB_Parkcrest_FS_Singh;EB_Parkcrest_NS_Ollek;EB_Halston_FS_13th St;SB_12th St_NS_Pembroke;SB_12th St_NS_Selkirk;EB_Kenora_FS_12th St;EB_Cottonwood_FS_Kenora;EB_Cottonwood_NS_Willow;SB_Willow_NS_MacKenzie;EB_MacKenzie_FS_Thrupp;EB_MacKenzie_FS_Williams;Lansdowne_Exchange_Bay_G;NB_Fortune_FS_Baker;NB_Fortune_FS_Fort;NB_Fortune_FS_Spruce;NB_Fortune_FS_Wood;NB_Fortune_FS_Aspen;NB_Fortune_FS_Chestnut;NB_Fortune_FS_Holly;North_Shore_Exchange_Bay_D;NB_8th St_FS_Fortune;NB_8th St_NS_Richmond;NB_8th St_NS_Sherbrooke;NB_8th St_FS_7th St;NB_Westsyde_FS_Collingwood;NB_Westsyde_FS_Westmount;NB_Westsyde_FS_Collingwood;EB_Hugh Allan_FS_Gloaming;EB_880_block_Hugh Allan;SB_Sifton Ave_FS_Sifton Lane;SB_Sifton Ave_NS_Sifton Lane;EB_Sifton_AT_2240 Blk;EB_Laurier_NS_Sifton;SB_Laurier_NS_Aberdeen;WB_Aberdeen_NS_Drummond;WB_650_Block_Aberdeen;WB_Van Horne_FS_Greystone;NB_Westsyde_FS_Walkem;NB_Westsyde_FS_Yates;NB_Westsyde_FS_Anderson;NB_Westsyde_FS_McQueen;NB_Westsyde_FS_Woodhaven;NB_Westsyde_FS_Rue Chez Nous;NB_Westsyde_FS_Parkview;NB_Westsyde_FS_Oak Hills;NB_Westsyde_NS_Franklin;NB_Westsyde_FS_Morven;NB_Westsyde_FS_Soldier;NB_Westsyde_NS_Garnet;NB_Westsyde_FS_Bissette;NB_Westsyde_FS_Porterfield;NB_Westsyde_NS_Puhallo;NB_Westsyde_FS_Overlander;NB_Westsyde_FS_Sun Valley;EB_Harrington_NS_Mountainview;EB_Harrington_NS_Overlander;SB_Overlander_FS_Reemon;WB_Sicamore_FS_Overlander;SB_Bank_NS_Overlander;SB_Westsyde_NS_Dever;SB_Westsyde_NS_Jensen;SB_Westsyde_NS_Lyne;SB_Westsyde_FS_Serle;SB_Westsyde_FS_Bissette;SB_Westsyde_FS_Garnet;SB_Westsyde_FS_Georgeann;SB_Westsyde_NS_Morven;SB_Westsyde_FS_Agassiz;SB_Westsyde_FS_Oak Hills;SB_Westsyde_FS_Parkview;SB_Westsyde_FS_Rue Chez Nous;SB_Westsyde_NS_Woodhaven;SB_Westsyde_FS_McQueen;SB_Westsyde_FS_Anderson;SB_Westsyde_FS_Yates;SB_Westsyde_FS_Walkem;SB_Westsyde_FS_Westmount;SB_Westsyde_FS_Collingwood;SB_8th St_FS_Sudbury;SB_8th St_FS_Lethbridge;SB_8th St_NS_Selkirk;SB_8th St_FS_Moncton;SB_8th St_NS_Fortune;North_Shore_Exchange_Bay_B;SB_Fortune_FS_Nelson;SB_Fortune_NS_Oak;SB_Fortune_FS_Evans;SB_Fortune_FS_Wood;SB_Fortune_NS_Spruce;SB_Fortune_FS_Leigh;SB_Fortune_NS_Larch;Lansdowne_Exchange_Bay_F;SB_4th Ave_FS_Seymour;SB_4th Ave_FS_Battle;SB_4th Ave_FS_Nicola;WB_Columbia_NS_3rd Ave;EB_750_block_Sahali;EB_Sahali_FS_Pemberton;EB_Bestwick_FS_Anvil;WB_McGill_NS_Monashee;NB_250_block_McGill;WB_McGill_FS_Chapperon;WB_McGill_NS_Frontage;WB_McGill_NS_Summit;WB_McGill_FS_University;NB_Dalhousie_FS_McGill;WB_Dalhousie;TRU_Exchange_Bay_G;SB_Hillside_NS_McGill;SB_1040_block_Hillside;SB_Hillside_NS_Notre Dame;SB_Aberdeen Mall;SB_Pacific_FS_Hillside;SB_Pacific_FS_Hugh Allan;SB_Pacific_FS_Pearson;EB_Pacific_FS_Howe;EB_Pacific_FS_Ravenwood;SB_Pacific_FS_Greystone;SB_Pacific_FS_Links;SB_Pacific_FS_Aberdeen;EB_2510_block_Pacific;EB_Abbeyglen_NS_Bramble;WB_Abbeyglen_NS_Regent;EB_Aberdeen_FS_Abbeyglen;NB_Van Horne_FS_Aberdeen;NB_Van Horne_NS_Laurier;WB_Laurier_FS_Galloway;NB_Garymede_FS_Laurier;NB_Garymede_NS_Greystone;NB_Pacific_FS_Greystone;WB_Pacific_FS_Ravenwood;NB_Pacific_FS_Howe;WB_Pacific_FS_Pearson;EB_Hillside_FS_Pacific;NB_Aberdeen Mall;NB_Hillside_NS_Cariboo;NB_Hillside_FS_Notre Dame;NB_Hillside_NS_McGill;NB_Hillside_FS_McGill;TRU_Exchange_Bay_D;EB_Dalhousie;EB_McGill_FS_Dalhousie;EB_McGill_FS_Summit;EB_McGill_FS_Frontage;EB_McGill_NS_Chapperon;SB_240_block_McGill;EB_McGill_FS_Monashee;EB_McGill_NS_Bestwick;NB_Bestwick_FS_Greenstone;WB_Bestwick_NS_Sahali;NB_Sahali_FS_Pemberton;NB_Sahali_NS_Columbia St W;NB_3rd Ave_FS_Columbia;NB_3rd Ave_FS_Battle;NB_3rd Ave_NS_Seymour;TRU_Exchange_Bay_H;WB_Hillside_FS_Pacific;WB_Hillside_FS_Mount Dufferin Ave;WB_Hillside_NS_Monterey;WB_Hillside_FS_Mount Dufferin Dr;WB_1860_block_Hillside;WB_Hillside_NS_Copperhead;SB_Copperhead_NS_Iron Mask;SB_Copperhead_FS_Kryczka;WB_Hugh Allan_NS_Lodgepole;NB_Tranquille_FS_Palm;NB_Tranquille_FS_Clapperton;NB_Tranquille_FS_Wood;NB_Tranquille_FS_Oak;NB_Tranquille_FS_Vernon;North_Shore_Exchange_Bay_C;WB_Tranquille_NS_11th St;WB_Tranquille_FS_12th St;WB_Tranquille_NS_Kelly;WB_Tranquille_NS_Nicolani;WB_Tranquille_FS_Singh;WB_Tranquille_FS_Holt;WB_Tranquille_FS_Desmond;WB_Tranquille_FS_Southill;WB_Tranquille_NS_Caroline;WB_Tranquille_FS_Windbreak;WB_Tranquille_FS_Invermere;WB_Tranquille_NS_Shelan;WB_Tranquille_FS_Schreiner;NB_Crestline_NS_Glenview;NB_Crestline_FS_Young;NB_Crestline_NS_Fleetwood;EB_Fleetwood_NS_Schreiner;EB_Greenfield_FS_Schreiner;EB_Greenfield_FS_Westgate;EB_Greenfield_NS_Windbreak;SB_Windbreak_FS_Sunnycrest;EB_Tranquille_FS_Windbreak;EB_Tranquille_NS_Southill;EB_Tranquille_FS_Holt;EB_Tranquille_FS_Singh;EB_Tranquille_NS_Nicolani;EB_Tranquille_NS_Lepine;EB_Tranquille_FS_12th St;EB_Tranquille_FS_10th St;EB_Fortune_NS_Tranquille;North_Shore_Exchange_Bay_E;SB_Tranquille_FS_Yew;SB_Tranquille_NS_Aspen;SB_Tranquille_FS_MacKenzie;SB_Tranquille_FS_Knox;SB_Tranquille_FS_Palm;EB_Tranquille_AT_Wilson;EB_Tranquille_NS_Venus;EB_240_block_Victoria St W;EB_Seymour_FS_1st Ave;EB_Seymour_NS_3rd Ave;EB_Seymour_FS_4th Ave;NB_6th Ave_NS_Victoria;Lansdowne_Exchange_Bay_H;WB_Yew_FS_Tranquille;WB_MacKenzie_FS_Park;WB_MacKenzie_FS_Marcel;NB_Willow_FS_Stewart;WB_Cottonwood_FS_Willow;WB_Cottonwood_NS_Kenora;WB_Kenora_NS_12th St;NB_12th St_NS_Surrey;NB_12th St_FS_Selkirk;NB_12th St_NS_Pembroke;NB_12th St_NS_Halston;WB_Halston_FS_13th St;WB_Parkcrest_FS_Nicolani;NB_Van Horne_NS_Hector;WB_Van Horne_FS_Huntleigh;NB_Van Horne_NS_Howe;EB_1130_block_Howe;WB_Hugh Allan_FS_Howe;WB_Hugh Allan_FS_Harrison;EB_Rogers_FS_Hugh Allan;EB_1250_block_Rogers;EB_Rogers Way_NS_Rogers Pl;NB_Hillside Way_FS_Hillside Crt;EB_Notre Dame_FS_Dalhousie;EB_Notre Dame_NS_Cemetery;EB_Notre Dame_NS_Laval;EB_Notre Dame_FS_Columbia St W;NB_Summit_FS_Notre Dame;NB_1300_block_Summit;WB_Summit_FS_Arrowstone;NB_640_block_Columbia St W;WB_Battle_FS_3rd Ave;WB_Battle St W_FS_1st Ave;WB_Battle St W_FS_Lee;NB_Strathcona_FS_Battle St W;WB_Strathcona_FS_Hemlock;WB_Lombard_NS_Centre;SB_Centre_FS_Battle St W;EB_Grandview_NS_Dalgleish;EB_Grandview_FS_Dufferin;WB_Grandview_NS_Garden;WB_Grandview_FS_Dalgleish;NB_Centre_NS_Battle St W;EB_Lombard_FS_Centre;EB_Strathcona_FS_Hemlock;SB_Strathcona_NS_Battle St W;EB_Battle St W_FS_Lee;EB_Battle_FS_1st Ave;Lansdowne_Exchange_Bay_B;TRU_Exchange_Bay_E;EB_Summit_NS_Springhill;WB_Victoria St W_AT_200 Blk;EB_Tranquille_FS_Desmond;SB_Grand Blvd_AT_Valleyview Dr;NB_Grand Blvd_AT_Valleyview Dr;EB_Valleyview Dr_FS_Tanager Dr;EB_Valleyview Dr_AT_2900 Blk;;WB_Shuswap Rd_FS_Chief Alex Thomas Way;NB_Saddleback Dr_AT_2038 Block;NB_Saddleback Dr_FS_Stagecoach Dr;NB_Saddleback Dr_FS_Latigo Dr;SB_Doubletree Cr_FS_Latigo Dr;SB_Stagecoach Dr_FS_Saddleback Dr;SB_Grasslands Blvd_FS_Stagecoach Dr;SB_Grasslands Blvd_AT_2027 Block;SB_Mt Paul Way_NS_Chilcotin Rd;SB_Mt Paul Way_NS_Carrier St;WB_Athabasca St W_AT_680 Block;NB_Athabasca St W_NS_Chilcotin;WB_Chilcotin Rd_AT_200 Block;NB_Kamloopa Way_AT_775 Block;NB_Kamloopa Way_FS_Mohawk Cres;EB_George Campbell Way_FS_Kamloopa Way;EB_Shuswap Rd W_NS_Ricardo Rd;SB_Ricardo Rd_AT_1020 Block;SB_Okanagan Way_FS_Dene Dr;EB_Chilcotin Rd_NS_Tagish;EB_Shuswap Rd E_Chief Alex_Thomas Way;EB_Sun Rivers_NS_Talasa Way;SB_Willow_FS_Cottonwood;EB_Dallas_FS_Harper;TRU_Exchange_Bay_A;SB_Grasslands_NS_Quayle;NB_Batchelor_FS_North River;WB_McGill_FS_Bestwick;EB_Columbia_FS_3rd;WB_Valleyview_FS_Tanager;WB_Valleyview_FS_McKay;WB_Valleyview_FS_MacAdam;WB_Valleyview_FS_River;WB_Valleyview_FS_Park;WB_Battle_NS_14th Ave;WB_Battle_NS_12th Ave;WB_Victoria_NS_10th Ave;EB_Mattoch-McKeague_NS_Cameron;WB_Lorne_FS_10th Ave;WB_Lorne_NS_8th Ave;WB_Lorne_FS_8th Ave;WB_Lorne_FS_7th Ave;WB_480_block_Lorne;WB_Lorne_NS_3rd Ave;WB_Summit_FS_Robson;WB_Summit_FS_Hollyburn;WB_Summit_FS_Tremerton;EB_Summit_FS_Gleneagles;WB_Lorne_NS_2nd Ave;TRU_Exchange_Bay_B;WB_Sifton_NS_Sifton;WB_Valleyview_FS_Sunset;WB_Sifton_AT_2240_Blk;WB_Tranquille;Lansdowne_Exchange_Bay_A;EB_Munro_FS_8 Ave;WB_South Sa_Hali Elem;EB_Tranquille_NS_Barrie;EB_Interior Health_NS_5th;SB_12th_NS_Barrie Dr;SB_Tranquille_FS_Poplar;NB_6 Ave_FS_Nicola;SB_6 Ave_NS_Columbia;WB_Tranquille_FS_8th 
-latitude;50.676807;50.697916;50.671095;50.65876;50.656057;50.654734;50.675882;50.660981;50.661025;50.65932;50.655215;50.653699;50.653149;50.651025;50.65027;50.652533;50.653803;50.654032;50.651773;50.650816;50.649811;50.650448;50.649848;50.649443;50.647665;50.646412;50.646856;50.647745;50.648231;50.652502;50.654901;50.656243;50.659263;50.660801;50.667598;50.67114;50.66945;50.671754;50.673827;50.697869;50.673363;50.668948;50.69778;50.710685;50.711772;50.851022;50.860331;50.797363;50.797771;50.799786;50.803154;50.804129;50.804958;50.803978;50.801138;50.80058;50.797579;50.796959;50.793184;50.791106;50.78822;50.711763;50.712165;50.714053;50.714073;50.717346;50.721538;50.719962;50.721348;50.722605;50.720344;50.718492;50.718487;50.716211;50.714218;50.676764;50.67482;50.674776;50.673931;50.673071;50.673083;50.672295;50.674465;50.675169;50.67574;50.675892;50.677399;50.678823;50.680079;50.678731;50.677372;50.676246;50.66118;50.660119;50.660157;50.659919;50.661011;50.661949;50.661669;50.660581;50.659373;50.658396;50.658864;50.659516;50.658799;50.659485;50.660643;50.661798;50.662178;50.661436;50.661095;50.67661;50.677908;50.678903;50.680153;50.678931;50.676792;50.675854;50.675725;50.675187;50.674254;50.672505;50.676765;50.676712;50.67673;50.684881;50.672186;50.67143;50.671512;50.674272;50.676149;50.675205;50.674187;50.67324;50.672881;50.667571;50.657119;50.654688;50.651174;50.649586;50.64954;50.652459;50.653014;50.651825;50.650745;50.649177;50.648282;50.645616;50.647884;50.649459;50.650795;50.655113;50.657362;50.66774;50.668007;50.667976;50.665666;50.664706;50.66479;50.665662;50.66566;50.663741;50.662852;50.662204;50.658787;50.65622;50.655545;50.655476;50.654606;50.65955;50.659045;50.661851;50.663099;50.663856;50.665754;50.665752;50.664866;50.664949;50.666926;50.668033;50.668086;50.669674;50.652162;50.650703;50.651367;50.652463;50.653705;50.657145;50.659175;50.66175;50.660804;50.658366;50.657378;50.656082;50.655373;50.676878;50.671245;50.67105;50.669422;50.666941;50.665729;50.664212;50.664359;50.664236;50.66562;50.667941;50.669543;50.669899;50.671384;50.67139;50.671759;50.673166;50.673188;50.709475;50.70955;50.707857;50.706374;50.705782;50.707838;50.707875;50.707868;50.707901;50.707945;50.706434;50.70625;50.7079;50.709318;50.710074;50.709429;50.707824;50.707811;50.707767;50.707748;50.707403;50.705657;50.70623;50.672914;50.671423;50.669674;50.66812;50.669887;50.676851;50.673708;50.671494;50.673015;50.67377;50.672459;50.670956;50.667829;50.666395;50.663154;50.663535;50.663638;50.663586;50.663567;50.6635;50.663262;50.655988;50.651395;50.65148;50.651737;50.650947;50.649689;50.648713;50.707811;50.709451;50.709334;50.70927;50.708723;50.706512;50.703639;50.698002;50.696518;50.696479;50.693741;50.692158;50.690556;50.676764;50.686214;50.688301;50.690307;50.691789;50.69297;50.69505;50.696585;50.697945;50.700139;50.702579;50.704095;50.706679;50.713859;50.715333;50.717106;50.648599;50.64835;50.646271;50.643814;50.639958;50.637844;50.637071;50.637491;50.637879;50.64328;50.719056;50.721319;50.724549;50.729221;50.73163;50.736772;50.741455;50.745253;50.750903;50.753564;50.756062;50.759257;50.761655;50.765787;50.769476;50.771728;50.774073;50.775442;50.775441;50.774399;50.772722;50.771236;50.770962;50.769246;50.766759;50.763266;50.761024;50.759392;50.756426;50.753401;50.751093;50.744384;50.741157;50.736371;50.73114;50.728664;50.724047;50.720904;50.718417;50.714984;50.713531;50.706971;50.705131;50.703674;50.702166;50.699928;50.697831;50.696432;50.694333;50.692532;50.691369;50.690016;50.687537;50.685787;50.676764;50.674597;50.672902;50.671936;50.671574;50.671546;50.670607;50.669106;50.667464;50.667342;50.669081;50.669945;50.66948;50.668192;50.668075;50.670258;50.670837;50.668814;50.665231;50.663947;50.655336;50.654377;50.651424;50.649588;50.646775;50.645619;50.643073;50.639939;50.63755;50.634799;50.634159;50.636564;50.63801;50.638619;50.640198;50.639257;50.639603;50.642349;50.643985;50.646104;50.647567;50.649863;50.65449;50.655692;50.661143;50.664216;50.666967;50.668826;50.671237;50.670119;50.667708;50.669191;50.669827;50.668836;50.667202;50.667324;50.667176;50.668635;50.669418;50.67095;50.672174;50.671816;50.673563;50.674657;50.670743;50.655396;50.656214;50.657915;50.659004;50.660872;50.661747;50.659022;50.656355;50.653723;50.686332;50.68775;50.68883;50.692696;50.6958;50.697877;50.700475;50.70104;50.701502;50.702092;50.702762;50.701909;50.699944;50.699879;50.700062;50.700344;50.701095;50.701594;50.701799;50.702489;50.704398;50.705846;50.705899;50.704799;50.704732;50.704682;50.702504;50.700101;50.699766;50.702191;50.702455;50.702013;50.701554;50.700616;50.70015;50.699383;50.697883;50.693039;50.691342;50.689621;50.687172;50.6854;50.684574;50.684821;50.677647;50.675254;50.674908;50.674896;50.675602;50.676765;50.691553;50.691993;50.693123;50.694574;50.6966;50.69662;50.698078;50.701432;50.703608;50.705888;50.708335;50.708873;50.709394;50.644786;50.646788;50.647815;50.648019;50.64881;50.649963;50.651671;50.651374;50.651466;50.655681;50.663439;50.663502;50.663548;50.663397;50.663429;50.665352;50.667017;50.672431;50.67328;50.673734;50.67425;50.67598;50.677358;50.677542;50.675713;50.674975;50.674285;50.674757;50.675072;50.675716;50.677413;50.676731;50.676112;50.674029;50.673465;50.67685;50.671074;50.660553;50.677435;50.700111;50.671107;50.670367;50.672572;50.671258;50.711274;50.683013;50.725833;50.729676;50.732559;50.732137;50.729187;50.726463;50.724407;50.690789;50.686346;50.682909;50.690204;50.690639;50.69283;50.697471;50.699178;50.704117;50.698658;50.694198;50.690495;50.68287;50.687182;50.695476;50.666544;50.67091;50.721925;50.714698;50.667271;50.671307;50.672778;50.673126;50.673443;50.674514;50.675523;50.673161;50.673191;50.674251;50.791948;50.675554;50.676383;50.677124;50.678073;50.678212;50.678151;50.646419;50.647143;50.647705;50.65207;50.677735;50.671017;50.643029;50.672329;50.640039;50.699035;50.676874;50.666801;50.656685;50.701135;50.669144;50.699719;50.695201;50.672516;50.672016;50.699702
-longitude;-120.326991;-120.359841;-120.368818;-120.396078;-120.3901;-120.385148;-120.321295;-120.347472;-120.351903;-120.355717;-120.357607;-120.359607;-120.361952;-120.358435;-120.355951;-120.353534;-120.351132;-120.347474;-120.344239;-120.342449;-120.342111;-120.344721;-120.347778;-120.353955;-120.353647;-120.351439;-120.34769;-120.342416;-120.339712;-120.341651;-120.344374;-120.340899;-120.339764;-120.345443;-120.367171;-120.368204;-120.373034;-120.374008;-120.375888;-120.360408;-120.375663;-120.373112;-120.360159;-120.359653;-120.335516;-120.266824;-120.265356;-120.312439;-120.314852;-120.31467;-120.312396;-120.312676;-120.317971;-120.321101;-120.323068;-120.32043;-120.320376;-120.322936;-120.322111;-120.315875;-120.317615;-120.335045;-120.370782;-120.372098;-120.370536;-120.369432;-120.370431;-120.36546;-120.364295;-120.367831;-120.369904;-120.363824;-120.361705;-120.366599;-120.366443;-120.325783;-120.326669;-120.321773;-120.315647;-120.311349;-120.306918;-120.294609;-120.290614;-120.288112;-120.283413;-120.276755;-120.272252;-120.271531;-120.267011;-120.261829;-120.261988;-120.262425;-120.262811;-120.265164;-120.261569;-120.257921;-120.254424;-120.253898;-120.249083;-120.245932;-120.243221;-120.237312;-120.234632;-120.237893;-120.23905;-120.243146;-120.245697;-120.24845;-120.254295;-120.257636;-120.260901;-120.26195;-120.261375;-120.262105;-120.266677;-120.271394;-120.272407;-120.274752;-120.284401;-120.288888;-120.29106;-120.29613;-120.326895;-120.332905;-120.337401;-120.35135;-120.307741;-120.316978;-120.321779;-120.327071;-120.26135;-120.256512;-120.251842;-120.245433;-120.241675;-120.187776;-120.184361;-120.18178;-120.179662;-120.176567;-120.174127;-120.174688;-120.169634;-120.164775;-120.162724;-120.164027;-120.166425;-120.169845;-120.17463;-120.176808;-120.179094;-120.181937;-120.184386;-120.187394;-120.181825;-120.177257;-120.169765;-120.163965;-120.157392;-120.150927;-120.145341;-120.136514;-120.132047;-120.12915;-120.123028;-120.105434;-120.097288;-120.08394;-120.078743;-120.119051;-120.123517;-120.128272;-120.132706;-120.13652;-120.145214;-120.150943;-120.157619;-120.164781;-120.173596;-120.176422;-120.18211;-120.182971;-120.403459;-120.399758;-120.397367;-120.39695;-120.398343;-120.401186;-120.39986;-120.397747;-120.393299;-120.388264;-120.386247;-120.382645;-120.379949;-120.325634;-120.329321;-120.324382;-120.3244;-120.324378;-120.327416;-120.326567;-120.323592;-120.31869;-120.316296;-120.314156;-120.313685;-120.309295;-120.310365;-120.312225;-120.314131;-120.314661;-120.319361;-120.384547;-120.387988;-120.38917;-120.392667;-120.397326;-120.399205;-120.401903;-120.404441;-120.410143;-120.415515;-120.415998;-120.420958;-120.420664;-120.420678;-120.418951;-120.415899;-120.415024;-120.410355;-120.404792;-120.401525;-120.397634;-120.396941;-120.392614;-120.324362;-120.324663;-120.331414;-120.330834;-120.333562;-120.32592;-120.327256;-120.330044;-120.345794;-120.35052;-120.353683;-120.368263;-120.357253;-120.351369;-120.348464;-120.351752;-120.356781;-120.359555;-120.361739;-120.364901;-120.369332;-120.36923;-120.368605;-120.37242;-120.374899;-120.375255;-120.372902;-120.367351;-120.388903;-120.388;-120.383141;-120.379456;-120.373956;-120.372637;-120.372701;-120.371603;-120.368775;-120.365004;-120.365267;-120.3635;-120.359889;-120.326328;-120.347164;-120.348113;-120.350694;-120.352794;-120.354404;-120.355917;-120.356664;-120.359674;-120.362927;-120.363373;-120.363655;-120.3641;-120.363806;-120.361834;-120.359704;-120.363365;-120.361411;-120.360265;-120.355668;-120.35123;-120.349646;-120.348715;-120.353155;-120.356312;-120.363891;-120.359548;-120.359714;-120.358633;-120.359039;-120.358659;-120.358216;-120.357242;-120.357331;-120.354938;-120.35233;-120.349986;-120.348773;-120.348721;-120.346185;-120.343707;-120.342223;-120.34072;-120.339187;-120.332802;-120.331999;-120.334122;-120.339825;-120.343082;-120.34422;-120.345887;-120.348187;-120.34906;-120.3491;-120.349976;-120.352869;-120.355089;-120.357377;-120.357729;-120.358506;-120.359088;-120.359172;-120.359073;-120.360077;-120.359626;-120.362695;-120.364552;-120.364487;-120.364165;-120.363901;-120.363653;-120.363219;-120.359797;-120.356979;-120.35592;-120.354258;-120.352431;-120.350745;-120.347718;-120.347306;-120.326063;-120.33207;-120.33209;-120.332081;-120.333965;-120.344714;-120.343065;-120.341188;-120.340442;-120.344221;-120.349664;-120.35277;-120.356393;-120.361394;-120.36409;-120.365306;-120.368464;-120.370071;-120.372915;-120.371842;-120.372373;-120.378307;-120.380609;-120.379295;-120.374561;-120.37171;-120.366883;-120.369864;-120.370589;-120.367848;-120.363343;-120.361254;-120.364957;-120.358821;-120.359103;-120.36067;-120.362598;-120.365728;-120.367612;-120.37273;-120.376325;-120.379511;-120.376136;-120.372105;-120.369692;-120.371718;-120.370051;-120.369729;-120.368043;-120.365064;-120.363189;-120.356534;-120.352752;-120.349451;-120.344267;-120.341629;-120.338927;-120.33859;-120.341636;-120.343046;-120.344674;-120.334359;-120.334323;-120.334319;-120.368642;-120.379415;-120.383323;-120.387069;-120.389276;-120.393191;-120.39732;-120.400443;-120.400759;-120.401954;-120.356137;-120.357379;-120.357872;-120.359362;-120.360469;-120.359543;-120.369251;-120.373191;-120.376231;-120.380035;-120.38482;-120.389255;-120.393625;-120.398841;-120.401481;-120.404691;-120.408701;-120.411705;-120.416371;-120.42291;-120.42227;-120.421154;-120.416478;-120.415117;-120.409231;-120.404484;-120.404401;-120.403882;-120.398453;-120.388229;-120.383867;-120.380884;-120.378051;-120.371658;-120.36856;-120.363668;-120.360041;-120.35966;-120.359025;-120.358347;-120.356991;-120.355555;-120.352422;-120.351028;-120.345283;-120.338481;-120.335445;-120.331396;-120.327061;-120.326599;-120.359569;-120.362807;-120.365367;-120.36413;-120.365397;-120.369008;-120.371506;-120.372604;-120.372525;-120.372501;-120.372416;-120.375208;-120.380576;-120.365249;-120.36745;-120.371342;-120.36754;-120.366875;-120.373287;-120.374683;-120.372327;-120.368043;-120.368833;-120.363399;-120.359186;-120.356806;-120.352118;-120.348289;-120.349837;-120.352317;-120.353278;-120.335117;-120.339337;-120.342237;-120.348658;-120.352944;-120.355733;-120.356255;-120.354769;-120.350467;-120.351472;-120.355051;-120.356038;-120.355507;-120.351811;-120.348977;-120.341537;-120.338533;-120.326259;-120.368072;-120.345275;-120.343985;-120.392863;-120.227182;-120.227329;-120.238409;-120.232502;-120.381488;-120.29489;-120.368551;-120.368641;-120.368636;-120.366897;-120.368556;-120.365771;-120.367567;-120.322073;-120.322525;-120.325646;-120.333286;-120.336432;-120.338674;-120.341081;-120.34315;-120.333109;-120.326942;-120.327866;-120.324886;-120.295134;-120.29732;-120.363381;-120.173045;-120.368592;-120.37006;-120.366835;-120.338709;-120.333679;-120.239544;-120.243007;-120.246329;-120.252885;-120.257552;-120.306861;-120.310827;-120.315832;-120.317895;-120.316084;-120.318599;-120.320364;-120.323376;-120.329723;-120.333024;-120.353589;-120.34739;-120.343791;-120.340905;-120.336461;-120.368413;-120.35419;-120.235599;-120.35113;-120.363927;-120.326531;-120.321093;-120.338179;-120.375298;-120.330363;-120.372712;-120.360469;-120.327098;-120.327219;-120.364519
-syscode;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM;KAM
-system;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System;Kamloops Transit System
-muni;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops 1;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops 1;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops 1;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops 1;Kamloops 1;Kamloops 1;Kamloops 1;Kamloops 1;Kamloops 1;Kamloops 1;Kamloops 1;Kamloops 1;Kamloops 1;Kamloops 1;Kamloops 1;Kamloops 1;Kamloops 1;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops;Kamloops
+﻿stopname;latitude;longitude;syscode;system;muni
+Lansdowne Exchange;50.676807;-120.326991;KAM;Kamloops Transit System;Kamloops
+North Shore Exchange;50.697916;-120.359841;KAM;Kamloops Transit System;Kamloops
+TRU Exchange;50.671095;-120.368818;KAM;Kamloops Transit System;Kamloops
+1800 block Versatile (EB);50.65876;-120.396078;KAM;Kamloops Transit System;Kamloops
+1700 blcok Versatile (EB);50.656057;-120.3901;KAM;Kamloops Transit System;Kamloops
+1500 block Versatile (EB);50.654734;-120.385148;KAM;Kamloops Transit System;Kamloops
+Victoria at 8th (WB);50.675882;-120.321295;KAM;Kamloops Transit System;Kamloops
+Springhill 1470 block (WB);50.660981;-120.347472;KAM;Kamloops Transit System;Kamloops
+Springhill 1560 block (SB);50.661025;-120.351903;KAM;Kamloops Transit System;Kamloops
+Springhill at Springfield (SB);50.65932;-120.355717;KAM;Kamloops Transit System;Kamloops
+Springhill at Lasage (SB);50.655215;-120.357607;KAM;Kamloops Transit System;Kamloops
+Springhill at Gleneagles (WB);50.653699;-120.359607;KAM;Kamloops Transit System;Kamloops
+Springhill at Gleneagles (SB);50.653149;-120.361952;KAM;Kamloops Transit System;Kamloops
+Gleneagles at Glen Gary (SB);50.651025;-120.358435;KAM;Kamloops Transit System;Kamloops
+Gleneagles at Wentworth (EB);50.65027;-120.355951;KAM;Kamloops Transit System;Kamloops
+Gleneagles at Skagit (NB);50.652533;-120.353534;KAM;Kamloops Transit System;Kamloops
+Gleneagles at Monarch (NB);50.653803;-120.351132;KAM;Kamloops Transit System;Kamloops
+Gleneagles 400 block (SB);50.654032;-120.347474;KAM;Kamloops Transit System;Kamloops
+Whistler at Gleneagles (SB);50.651773;-120.344239;KAM;Kamloops Transit System;Kamloops
+Whistler Dr at Whistler Pl (EB);50.650816;-120.342449;KAM;Kamloops Transit System;Kamloops
+Robson at Hollyburn (WB);50.649811;-120.342111;KAM;Kamloops Transit System;Kamloops
+Robson 300 block (WB);50.650448;-120.344721;KAM;Kamloops Transit System;Kamloops
+Robson at Breakenridge (WB);50.649848;-120.347778;KAM;Kamloops Transit System;Kamloops
+Robson at Gladstone (WB);50.649443;-120.353955;KAM;Kamloops Transit System;Kamloops
+Robson at Gladstone (SB);50.647665;-120.353647;KAM;Kamloops Transit System;Kamloops
+Summit at Monteith (EB);50.646412;-120.351439;KAM;Kamloops Transit System;Kamloops
+Summit at Hollyburn (EB);50.646856;-120.34769;KAM;Kamloops Transit System;Kamloops
+Summit at Tremerton (EB);50.647745;-120.342416;KAM;Kamloops Transit System;Kamloops
+Summit at Robson (EB);50.648231;-120.339712;KAM;Kamloops Transit System;Kamloops
+Summit at Gleneagles (WB);50.652502;-120.341651;KAM;Kamloops Transit System;Kamloops
+Summit at Waddington (NB);50.654901;-120.344374;KAM;Kamloops Transit System;Kamloops
+Summit at Freshfield (NB);50.656243;-120.340899;KAM;Kamloops Transit System;Kamloops
+Summit at Gordonhorn (WB);50.659263;-120.339764;KAM;Kamloops Transit System;Kamloops
+Summit at Springhill (WB);50.660801;-120.345443;KAM;Kamloops Transit System;Kamloops
+McGill at Camosun (WB);50.667598;-120.367171;KAM;Kamloops Transit System;Kamloops
+TRU Exchange Bay C;50.67114;-120.368204;KAM;Kamloops Transit System;Kamloops
+McGill Rd at McGill Pl (NB);50.66945;-120.373034;KAM;Kamloops Transit System;Kamloops
+McGill at McMaster (NB);50.671754;-120.374008;KAM;Kamloops Transit System;Kamloops
+McGill at Concordia (NB);50.673827;-120.375888;KAM;Kamloops Transit System;Kamloops
+North Shore Exchange Bay F;50.697869;-120.360408;KAM;Kamloops Transit System;Kamloops
+McGill at Concordia (SB);50.673363;-120.375663;KAM;Kamloops Transit System;Kamloops
+McGill Rd at McGill Pl (SB);50.668948;-120.373112;KAM;Kamloops Transit System;Kamloops
+North Shore Exchange Bay A ;50.69778;-120.360159;KAM;Kamloops Transit System;Kamloops
+Halston 710 block (EB);50.710685;-120.359653;KAM;Kamloops Transit System;Kamloops
+Halston Connector at Salish (SB);50.711772;-120.335516;KAM;Kamloops Transit System;Kamloops 1
+Old Highway 5 6790 block (NB);50.851022;-120.266824;KAM;Kamloops Transit System;Kamloops
+Old Highway 5 at Creek (NB);50.860331;-120.265356;KAM;Kamloops Transit System;Kamloops
+Puett Ranch at Old Highway 5 (WB);50.797363;-120.312439;KAM;Kamloops Transit System;Kamloops
+Cammeray at Puett Ranch (NB);50.797771;-120.314852;KAM;Kamloops Transit System;Kamloops
+Cammeray at Strawberry (NB);50.799786;-120.31467;KAM;Kamloops Transit System;Kamloops
+Cammeray at Chilco (NB);50.803154;-120.312396;KAM;Kamloops Transit System;Kamloops
+Reighmount at Pinantan (WB);50.804129;-120.312676;KAM;Kamloops Transit System;Kamloops
+Reighmount at Kathleen (WB);50.804958;-120.317971;KAM;Kamloops Transit System;Kamloops
+Aspen Park at Spurraway (SB);50.803978;-120.321101;KAM;Kamloops Transit System;Kamloops
+Aspen Park at Helmcken (SB);50.801138;-120.323068;KAM;Kamloops Transit System;Kamloops
+Spurraway at Helmcken (SB);50.80058;-120.32043;KAM;Kamloops Transit System;Kamloops
+Spurraway at Puett Ranch (SB);50.797579;-120.320376;KAM;Kamloops Transit System;Kamloops
+Furiak at Puett Ranch (SB);50.796959;-120.322936;KAM;Kamloops Transit System;Kamloops
+Mattoch-McKeague at Furiak (EB);50.793184;-120.322111;KAM;Kamloops Transit System;Kamloops
+Old Highway 5 at Mattoch-McKeague (SB);50.791106;-120.315875;KAM;Kamloops Transit System;Kamloops
+block Old Highway 5 at Devick (SB);50.78822;-120.317615;KAM;Kamloops Transit System;Kamloops
+Halston Connector at Josep (NB);50.711763;-120.335045;KAM;Kamloops Transit System;Kamloops 1
+Southview at Hillcrest (WB);50.712165;-120.370782;KAM;Kamloops Transit System;Kamloops
+Linthorpe at Southview (EB);50.714053;-120.372098;KAM;Kamloops Transit System;Kamloops
+Linthorpe at Hillcrest (EB);50.714073;-120.370536;KAM;Kamloops Transit System;Kamloops
+Batchelor at Norview (NB);50.717346;-120.369432;KAM;Kamloops Transit System;Kamloops
+Grasslands at Quail (NB);50.721538;-120.370431;KAM;Kamloops Transit System;Kamloops
+Quail at Quails Roost (EB);50.719962;-120.36546;KAM;Kamloops Transit System;Kamloops
+Quail Dr at Quail Crt (NB);50.721348;-120.364295;KAM;Kamloops Transit System;Kamloops
+Raven at Grasslands (WB);50.722605;-120.367831;KAM;Kamloops Transit System;Kamloops
+Batchelor at Grasslands (SB);50.720344;-120.369904;KAM;Kamloops Transit System;Kamloops
+Norview Rd at Norview Pl (EB);50.718492;-120.363824;KAM;Kamloops Transit System;Kamloops
+North River at Norview (SB);50.718487;-120.361705;KAM;Kamloops Transit System;Kamloops
+North River at Leighton (SB);50.716211;-120.366599;KAM;Kamloops Transit System;Kamloops
+Batchelor at North River (SB);50.714218;-120.366443;KAM;Kamloops Transit System;Kamloops
+Lansdowne Exchange Bay E;50.676764;-120.325783;KAM;Kamloops Transit System;Kamloops
+Seymour at 6th Ave (EB);50.67482;-120.326669;KAM;Kamloops Transit System;Kamloops
+Seymour at 8th Ave (EB);50.674776;-120.321773;KAM;Kamloops Transit System;Kamloops
+Victoria at 10th Ave (EB);50.673931;-120.315647;KAM;Kamloops Transit System;Kamloops
+Battle at 12th Ave (EB);50.673071;-120.311349;KAM;Kamloops Transit System;Kamloops
+Battle at Columbia (EB);50.673083;-120.306918;KAM;Kamloops Transit System;Kamloops
+Valleyview at Rose Hill (EB);50.672295;-120.294609;KAM;Kamloops Transit System;Kamloops
+Valleyview at Comazzetto (NB);50.674465;-120.290614;KAM;Kamloops Transit System;Kamloops
+Valleyview at Knollwood (EB);50.675169;-120.288112;KAM;Kamloops Transit System;Kamloops
+Valleyview at Orchard (EB);50.67574;-120.283413;KAM;Kamloops Transit System;Kamloops
+Valleyview at Cardinal (EB);50.675892;-120.276755;KAM;Kamloops Transit System;Kamloops
+Oriole at Glenwood (NB);50.677399;-120.272252;KAM;Kamloops Transit System;Kamloops
+Falcon at Oriole (EB);50.678823;-120.271531;KAM;Kamloops Transit System;Kamloops
+E Trans-Canada Hwy Frtg at Industrial (EB);50.680079;-120.267011;KAM;Kamloops Transit System;Kamloops
+Flamingo at Highland (EB);50.678731;-120.261829;KAM;Kamloops Transit System;Kamloops
+Highland at Crescent (SB);50.677372;-120.261988;KAM;Kamloops Transit System;Kamloops
+Highland at Valleyview (SB);50.676246;-120.262425;KAM;Kamloops Transit System;Kamloops
+QuAppelle at Stikine (WB);50.66118;-120.262811;KAM;Kamloops Transit System;Kamloops
+Coldwater at Skeena (EB);50.660119;-120.265164;KAM;Kamloops Transit System;Kamloops
+Skeena 2100 block (EB);50.660157;-120.261569;KAM;Kamloops Transit System;Kamloops
+Skeena 2210 block (EB);50.659919;-120.257921;KAM;Kamloops Transit System;Kamloops
+Finlay at Omineca (NB);50.661011;-120.254424;KAM;Kamloops Transit System;Kamloops
+QuAppelle at Finlay (EB);50.661949;-120.253898;KAM;Kamloops Transit System;Kamloops
+QuAppelle at Abitibi (EB);50.661669;-120.249083;KAM;Kamloops Transit System;Kamloops
+QuAppelle at Nechako (SB);50.660581;-120.245932;KAM;Kamloops Transit System;Kamloops
+QuAppelle at Adams (EB);50.659373;-120.243221;KAM;Kamloops Transit System;Kamloops
+QuAppelle at Capilano (EB);50.658396;-120.237312;KAM;Kamloops Transit System;Kamloops
+Churchill at Squamish (NB);50.658864;-120.234632;KAM;Kamloops Transit System;Kamloops
+Capilano at QuAppelle (WB);50.659516;-120.237893;KAM;Kamloops Transit System;Kamloops
+QuAppelle at Capilano (WB);50.658799;-120.23905;KAM;Kamloops Transit System;Kamloops
+QuAppelle at Adams (WB);50.659485;-120.243146;KAM;Kamloops Transit System;Kamloops
+QuAppelle at Nechako (NB);50.660643;-120.245697;KAM;Kamloops Transit System;Kamloops
+QuAppelle at Bella Coola (WB);50.661798;-120.24845;KAM;Kamloops Transit System;Kamloops
+QuAppelle at Finlay (WB);50.662178;-120.254295;KAM;Kamloops Transit System;Kamloops
+QuAppelle 2200 block (SB);50.661436;-120.257636;KAM;Kamloops Transit System;Kamloops
+QuAppelle at Highland (WB);50.661095;-120.260901;KAM;Kamloops Transit System;Kamloops
+Highland at Valleyview (NB);50.67661;-120.26195;KAM;Kamloops Transit System;Kamloops
+Highland at Crescent (NB);50.677908;-120.261375;KAM;Kamloops Transit System;Kamloops
+Flamingo at Highland (WB);50.678903;-120.262105;KAM;Kamloops Transit System;Kamloops
+E Trans-Canada Hwy Frtg at Industrial (WB);50.680153;-120.266677;KAM;Kamloops Transit System;Kamloops
+Falcon at Oriole (WB);50.678931;-120.271394;KAM;Kamloops Transit System;Kamloops
+Oriole at Glenwood (SB);50.676792;-120.272407;KAM;Kamloops Transit System;Kamloops
+Valleyview 1970 block (WB);50.675854;-120.274752;KAM;Kamloops Transit System;Kamloops
+Valleyview at Knollwood (WB);50.675725;-120.284401;KAM;Kamloops Transit System;Kamloops
+Valleyview at Knollwood (WB);50.675187;-120.288888;KAM;Kamloops Transit System;Kamloops
+Valleyview at Strom (SB);50.674254;-120.29106;KAM;Kamloops Transit System;Kamloops
+Valleyview at E Trans-Canada Hwy Frtg (WB);50.672505;-120.29613;KAM;Kamloops Transit System;Kamloops
+Lansdowne Exchange Bay I;50.676765;-120.326895;KAM;Kamloops Transit System;Kamloops
+Lansdowne at 4th Ave (WB);50.676712;-120.332905;KAM;Kamloops Transit System;Kamloops
+Lansdowne at 2nd Ave (WB);50.67673;-120.337401;KAM;Kamloops Transit System;Kamloops
+Tranquille at Don (WB);50.684881;-120.35135;KAM;Kamloops Transit System;Kamloops
+Columbia at Nicola (WB);50.672186;-120.307741;KAM;Kamloops Transit System;Kamloops
+Columbia at 10th Ave (WB);50.67143;-120.316978;KAM;Kamloops Transit System;Kamloops
+Columbia at 8th Ave (WB);50.671512;-120.321779;KAM;Kamloops Transit System;Kamloops
+6th Ave at St Paul (NB);50.674272;-120.327071;KAM;Kamloops Transit System;Kamloops
+Valleyview at Highland (EB);50.676149;-120.26135;KAM;Kamloops Transit System;Kamloops
+Valleyview at Miller (EB);50.675205;-120.256512;KAM;Kamloops Transit System;Kamloops
+Valleyview at River (EB);50.674187;-120.251842;KAM;Kamloops Transit System;Kamloops
+Valleyview at MacAdam (EB);50.67324;-120.245433;KAM;Kamloops Transit System;Kamloops
+Valleyview at McKay (EB);50.672881;-120.241675;KAM;Kamloops Transit System;Kamloops
+Todd at Crawford (SB);50.667571;-120.187776;KAM;Kamloops Transit System;Kamloops
+Todd at Klahanie (SB);50.657119;-120.184361;KAM;Kamloops Transit System;Kamloops
+Todd at Lamar (SB);50.654688;-120.18178;KAM;Kamloops Transit System;Kamloops
+Todd at Sunrise (SB);50.651174;-120.179662;KAM;Kamloops Transit System;Kamloops
+Lamar at Todd (EB);50.649586;-120.176567;KAM;Kamloops Transit System;Kamloops
+Lamar at Norland (NB);50.64954;-120.174127;KAM;Kamloops Transit System;Kamloops
+Clearview at Wildwood (NB);50.652459;-120.174688;KAM;Kamloops Transit System;Kamloops
+Clearview at Belair (EB);50.653014;-120.169634;KAM;Kamloops Transit System;Kamloops
+Clearview at Foxwood (EB);50.651825;-120.164775;KAM;Kamloops Transit System;Kamloops
+Clearview at Todd (EB);50.650745;-120.162724;KAM;Kamloops Transit System;Kamloops
+Todd at Belair (WB);50.649177;-120.164027;KAM;Kamloops Transit System;Kamloops
+Todd at Pringle (SB);50.648282;-120.166425;KAM;Kamloops Transit System;Kamloops
+Todd at Pratt (WB);50.645616;-120.169845;KAM;Kamloops Transit System;Kamloops
+Todd 1450 block (WB);50.647884;-120.17463;KAM;Kamloops Transit System;Kamloops
+Todd at Lamar (NB);50.649459;-120.176808;KAM;Kamloops Transit System;Kamloops
+Todd at Sunrise (WB);50.650795;-120.179094;KAM;Kamloops Transit System;Kamloops
+Todd at Lamar (NB);50.655113;-120.181937;KAM;Kamloops Transit System;Kamloops
+Todd at Klahanie (NB);50.657362;-120.184386;KAM;Kamloops Transit System;Kamloops
+Todd at Dallas (NB);50.66774;-120.187394;KAM;Kamloops Transit System;Kamloops
+Dallas at Bogetti (EB);50.668007;-120.181825;KAM;Kamloops Transit System;Kamloops
+Dallas at Ridge (EB);50.667976;-120.177257;KAM;Kamloops Transit System;Kamloops
+Dallas at Todd Hill (EB);50.665666;-120.169765;KAM;Kamloops Transit System;Kamloops
+Dallas at Todd Hill (EB);50.664706;-120.163965;KAM;Kamloops Transit System;Kamloops
+Dallas at Mountview (EB);50.66479;-120.157392;KAM;Kamloops Transit System;Kamloops
+Dallas at Yarrow (EB);50.665662;-120.150927;KAM;Kamloops Transit System;Kamloops
+Dallas 6750 block (EB);50.66566;-120.145341;KAM;Kamloops Transit System;Kamloops
+Dallas 7120 block (EB);50.663741;-120.136514;KAM;Kamloops Transit System;Kamloops
+Dallas 7320 block (EB);50.662852;-120.132047;KAM;Kamloops Transit System;Kamloops
+Dallas at OConnor (EB);50.662204;-120.12915;KAM;Kamloops Transit System;Kamloops
+Dallas 7590 block (EB);50.658787;-120.123028;KAM;Kamloops Transit System;Kamloops
+Dallas at Peerless (EB);50.65622;-120.105434;KAM;Kamloops Transit System;Kamloops
+Dallas at Andover (EB);50.655545;-120.097288;KAM;Kamloops Transit System;Kamloops
+Dallas at Cougar (EB);50.655476;-120.08394;KAM;Kamloops Transit System;Kamloops
+Dallas 9150 block (EB);50.654606;-120.078743;KAM;Kamloops Transit System;Kamloops
+Kokanee at E Trans-Canada (SB);50.65955;-120.119051;KAM;Kamloops Transit System;Kamloops
+Dallas 7540 block (WB);50.659045;-120.123517;KAM;Kamloops Transit System;Kamloops
+Dallas at OConnor (WB);50.661851;-120.128272;KAM;Kamloops Transit System;Kamloops
+Dallas 7300 block (WB);50.663099;-120.132706;KAM;Kamloops Transit System;Kamloops
+Dallas 7110 block (WB);50.663856;-120.13652;KAM;Kamloops Transit System;Kamloops
+Dallas 6750 block (WB);50.665754;-120.145214;KAM;Kamloops Transit System;Kamloops
+Dallas at Yarrow (WB);50.665752;-120.150943;KAM;Kamloops Transit System;Kamloops
+Dallas at Mountview (WB);50.664866;-120.157619;KAM;Kamloops Transit System;Kamloops
+Dallas at Todd Hill (WB);50.664949;-120.164781;KAM;Kamloops Transit System;Kamloops
+Dallas at Harper (WB);50.666926;-120.173596;KAM;Kamloops Transit System;Kamloops
+Dallas at Ridge (WB);50.668033;-120.176422;KAM;Kamloops Transit System;Kamloops
+Dallas at Bogetti (WB);50.668086;-120.18211;KAM;Kamloops Transit System;Kamloops
+E Trans-Canada at Nina (WB);50.669674;-120.182971;KAM;Kamloops Transit System;Kamloops
+Lodgepole at Englemann (SB);50.652162;-120.403459;KAM;Kamloops Transit System;Kamloops
+Lodgepole at Arnica (EB);50.650703;-120.399758;KAM;Kamloops Transit System;Kamloops
+Lodgepole at Snowberry (NB);50.651367;-120.397367;KAM;Kamloops Transit System;Kamloops
+Copperhead at Lodgepole (NB);50.652463;-120.39695;KAM;Kamloops Transit System;Kamloops
+Copperhead at Hugh Allan (NB);50.653705;-120.398343;KAM;Kamloops Transit System;Kamloops
+Copperhead at Kryczka (NB);50.657145;-120.401186;KAM;Kamloops Transit System;Kamloops
+Copperhead at Versatile (NB);50.659175;-120.39986;KAM;Kamloops Transit System;Kamloops
+Hillside at Copperhead (EB);50.66175;-120.397747;KAM;Kamloops Transit System;Kamloops
+Hillside 1860 block (EB);50.660804;-120.393299;KAM;Kamloops Transit System;Kamloops
+Hillside at Davies (EB);50.658366;-120.388264;KAM;Kamloops Transit System;Kamloops
+Hillside at Mount Dufferin Cres (EB);50.657378;-120.386247;KAM;Kamloops Transit System;Kamloops
+Hillside at Mount Dufferin Ave (EB);50.656082;-120.382645;KAM;Kamloops Transit System;Kamloops
+Hillside at Cannel (EB);50.655373;-120.379949;KAM;Kamloops Transit System;Kamloops
+Lansdowne Exchange Bay D;50.676878;-120.325634;KAM;Kamloops Transit System;Kamloops
+Columbia at 5th Ave (EB);50.671245;-120.329321;KAM;Kamloops Transit System;Kamloops
+7th Ave at Columbia (SB);50.67105;-120.324382;KAM;Kamloops Transit System;Kamloops
+7th Ave at Pine (SB);50.669422;-120.3244;KAM;Kamloops Transit System;Kamloops
+7th Ave at Munro (SB);50.666941;-120.324378;KAM;Kamloops Transit System;Kamloops
+6th Ave at Cowan (SB);50.665729;-120.327416;KAM;Kamloops Transit System;Kamloops
+Fraser at Tunstall (EB);50.664212;-120.326567;KAM;Kamloops Transit System;Kamloops
+Fraser St at Fraser Cres (EB);50.664359;-120.323592;KAM;Kamloops Transit System;Kamloops
+Fraser at 9th Ave (EB);50.664236;-120.31869;KAM;Kamloops Transit System;Kamloops
+Fraser at McMurdo (NB);50.66562;-120.316296;KAM;Kamloops Transit System;Kamloops
+11th Ave at Douglas (NB);50.667941;-120.314156;KAM;Kamloops Transit System;Kamloops
+Pine at 11th Ave (EB);50.669543;-120.313685;KAM;Kamloops Transit System;Kamloops
+13th Ave at Pine (NB);50.669899;-120.309295;KAM;Kamloops Transit System;Kamloops
+Columbia at 13th Ave (WB);50.671384;-120.310365;KAM;Kamloops Transit System;Kamloops
+Columbia at 12th Ave (WB);50.67139;-120.312225;KAM;Kamloops Transit System;Kamloops
+11th Ave at Columbia (NB);50.671759;-120.314131;KAM;Kamloops Transit System;Kamloops
+Battle at 11th Ave (WB);50.673166;-120.314661;KAM;Kamloops Transit System;Kamloops
+Battle at 9th Ave (WB);50.673188;-120.319361;KAM;Kamloops Transit System;Kamloops
+Parkcrest at Singh (WB);50.709475;-120.384547;KAM;Kamloops Transit System;Kamloops
+Parkcrest at Holt (WB);50.70955;-120.387988;KAM;Kamloops Transit System;Kamloops
+Fleetwood at Holt (WB);50.707857;-120.38917;KAM;Kamloops Transit System;Kamloops
+Fleetwood at Desmond (WB);50.706374;-120.392667;KAM;Kamloops Transit System;Kamloops
+Fleetwood at Southill (WB);50.705782;-120.397326;KAM;Kamloops Transit System;Kamloops
+Parkcrest at Bentley (WB);50.707838;-120.399205;KAM;Kamloops Transit System;Kamloops
+Parkcrest at Ponlen (WB);50.707875;-120.401903;KAM;Kamloops Transit System;Kamloops
+Parkcrest at Windbreak (WB);50.707868;-120.404441;KAM;Kamloops Transit System;Kamloops
+Parkcrest at McLean (WB);50.707901;-120.410143;KAM;Kamloops Transit System;Kamloops
+Parkcrest at Schreiner (WB);50.707945;-120.415515;KAM;Kamloops Transit System;Kamloops
+Schreiner at Fleetwood (SB);50.706434;-120.415998;KAM;Kamloops Transit System;Kamloops
+Crestline at Fleetwood (NB);50.70625;-120.420958;KAM;Kamloops Transit System;Kamloops
+Crestline at Parkcrest (NB);50.7079;-120.420664;KAM;Kamloops Transit System;Kamloops
+Crestline at Rosewood (NB);50.709318;-120.420678;KAM;Kamloops Transit System;Kamloops
+Briarwood at Crestline (EB);50.710074;-120.418951;KAM;Kamloops Transit System;Kamloops
+Schreiner at Paulsen (SB);50.709429;-120.415899;KAM;Kamloops Transit System;Kamloops
+Parkcrest at Schreiner (EB);50.707824;-120.415024;KAM;Kamloops Transit System;Kamloops
+Parkcrest at McLean (EB);50.707811;-120.410355;KAM;Kamloops Transit System;Kamloops
+Parkcrest at Windbreak (EB);50.707767;-120.404792;KAM;Kamloops Transit System;Kamloops
+Parkcrest at Ponlen (EB);50.707748;-120.401525;KAM;Kamloops Transit System;Kamloops
+Southill at Parkcrest (SB);50.707403;-120.397634;KAM;Kamloops Transit System;Kamloops
+Fleetwood at Southill (EB);50.705657;-120.396941;KAM;Kamloops Transit System;Kamloops
+Fleetwood at Desmond (EB);50.70623;-120.392614;KAM;Kamloops Transit System;Kamloops
+7th Ave at Battle (SB);50.672914;-120.324362;KAM;Kamloops Transit System;Kamloops
+Columbia at 7th Ave (WB);50.671423;-120.324663;KAM;Kamloops Transit System;Kamloops
+Ponderosa Lodge Entrance;50.669674;-120.331414;KAM;Kamloops Transit System;Kamloops
+Hospital Access at Glenfair (WB);50.66812;-120.330834;KAM;Kamloops Transit System;Kamloops
+Royal Inland Hospital Entrance;50.669887;-120.333562;KAM;Kamloops Transit System;Kamloops
+Lansdowne Exchange Bay C;50.676851;-120.32592;KAM;Kamloops Transit System;Kamloops
+6th Ave at St Paul (SB);50.673708;-120.327256;KAM;Kamloops Transit System;Kamloops
+Columbia at 5th Ave (WB);50.671494;-120.330044;KAM;Kamloops Transit System;Kamloops
+Columbia St W at Bluff (WB);50.673015;-120.345794;KAM;Kamloops Transit System;Kamloops
+Columbia St W at Grandview (WB);50.67377;-120.35052;KAM;Kamloops Transit System;Kamloops
+Columbia St W at Frontage (SB);50.672459;-120.353683;KAM;Kamloops Transit System;Kamloops
+TRU Exchange Bay F;50.670956;-120.368263;KAM;Kamloops Transit System;Kamloops
+Summit at 1050 Blk (SB);50.667829;-120.357253;KAM;Kamloops Transit System;Kamloops
+Summit at Arrowstone (EB);50.666395;-120.351369;KAM;Kamloops Transit System;Kamloops
+Summit at Notre Dame (SB);50.663154;-120.348464;KAM;Kamloops Transit System;Kamloops
+Notre Dame at Columbia St W (WB);50.663535;-120.351752;KAM;Kamloops Transit System;Kamloops
+Notre Dame at Laval (WB);50.663638;-120.356781;KAM;Kamloops Transit System;Kamloops
+Notre Dame at Cemetery (WB);50.663586;-120.359555;KAM;Kamloops Transit System;Kamloops
+Notre Dame at Dalhousie (WB);50.663567;-120.361739;KAM;Kamloops Transit System;Kamloops
+Notre Dame at Dalhousie (WB);50.6635;-120.364901;KAM;Kamloops Transit System;Kamloops
+Notre Dame at Hillside (WB);50.663262;-120.369332;KAM;Kamloops Transit System;Kamloops
+Hillside Way at Hillside Crt (SB);50.655988;-120.36923;KAM;Kamloops Transit System;Kamloops
+Rogers at Braeview (WB);50.651395;-120.368605;KAM;Kamloops Transit System;Kamloops
+Rogers 1250 block (WB);50.65148;-120.37242;KAM;Kamloops Transit System;Kamloops
+Rogers at Hugh Allan (WB);50.651737;-120.374899;KAM;Kamloops Transit System;Kamloops
+Hugh Allan at Rogers (SB);50.650947;-120.375255;KAM;Kamloops Transit System;Kamloops
+Hugh Allan at Harrison (EB);50.649689;-120.372902;KAM;Kamloops Transit System;Kamloops
+Hugh Allan at Howe (EB);50.648713;-120.367351;KAM;Kamloops Transit System;Kamloops
+Fleetwood at Holt (EB);50.707811;-120.388903;KAM;Kamloops Transit System;Kamloops
+Parkcrest at Holt (EB);50.709451;-120.388;KAM;Kamloops Transit System;Kamloops
+Parkcrest at Singh (EB);50.709334;-120.383141;KAM;Kamloops Transit System;Kamloops
+Parkcrest at Ollek (EB);50.70927;-120.379456;KAM;Kamloops Transit System;Kamloops
+Halston at 13th St (EB);50.708723;-120.373956;KAM;Kamloops Transit System;Kamloops
+12th St at Pembroke (SB);50.706512;-120.372637;KAM;Kamloops Transit System;Kamloops
+12th St at Selkirk (SB);50.703639;-120.372701;KAM;Kamloops Transit System;Kamloops
+Kenora at 12th St (EB);50.698002;-120.371603;KAM;Kamloops Transit System;Kamloops
+Cottonwood at Kenora (EB);50.696518;-120.368775;KAM;Kamloops Transit System;Kamloops
+Cottonwood at Willow (EB);50.696479;-120.365004;KAM;Kamloops Transit System;Kamloops
+Willow at MacKenzie (SB);50.693741;-120.365267;KAM;Kamloops Transit System;Kamloops
+MacKenzie at Thrupp (EB);50.692158;-120.3635;KAM;Kamloops Transit System;Kamloops
+MacKenzie at Williams (EB);50.690556;-120.359889;KAM;Kamloops Transit System;Kamloops
+Lansdowne Exchange Bay G;50.676764;-120.326328;KAM;Kamloops Transit System;Kamloops
+Fortune at Baker (NB);50.686214;-120.347164;KAM;Kamloops Transit System;Kamloops
+Fortune at Fort (NB);50.688301;-120.348113;KAM;Kamloops Transit System;Kamloops
+Fortune at Spruce (NB);50.690307;-120.350694;KAM;Kamloops Transit System;Kamloops
+Fortune at Wood (NB);50.691789;-120.352794;KAM;Kamloops Transit System;Kamloops
+Fortune at Aspen (NB);50.69297;-120.354404;KAM;Kamloops Transit System;Kamloops
+Fortune at Chestnut (NB);50.69505;-120.355917;KAM;Kamloops Transit System;Kamloops
+Fortune at Holly (NB);50.696585;-120.356664;KAM;Kamloops Transit System;Kamloops
+North Shore Exchange Bay D;50.697945;-120.359674;KAM;Kamloops Transit System;Kamloops
+8th St at Fortune (NB);50.700139;-120.362927;KAM;Kamloops Transit System;Kamloops
+8th St at Richmond (NB);50.702579;-120.363373;KAM;Kamloops Transit System;Kamloops
+8th St at Sherbrooke (NB);50.704095;-120.363655;KAM;Kamloops Transit System;Kamloops
+8th St at 7th St (NB);50.706679;-120.3641;KAM;Kamloops Transit System;Kamloops
+Westsyde at Collingwood (NB);50.713859;-120.363806;KAM;Kamloops Transit System;Kamloops
+Westsyde at Westmount (NB);50.715333;-120.361834;KAM;Kamloops Transit System;Kamloops
+Westsyde at Collingwood (NB);50.717106;-120.359704;KAM;Kamloops Transit System;Kamloops
+Hugh Allan at Gloaming (EB);50.648599;-120.363365;KAM;Kamloops Transit System;Kamloops
+Hugh Allan 880 block (EB);50.64835;-120.361411;KAM;Kamloops Transit System;Kamloops
+Sifton Ave at Sifton Lane (SB);50.646271;-120.360265;KAM;Kamloops Transit System;Kamloops
+Sifton Ave at Sifton Lane (SB);50.643814;-120.355668;KAM;Kamloops Transit System;Kamloops
+Sifton at 2240 Blk (EB);50.639958;-120.35123;KAM;Kamloops Transit System;Kamloops
+Laurier at Sifton (EB);50.637844;-120.349646;KAM;Kamloops Transit System;Kamloops
+Laurier at Aberdeen (SB);50.637071;-120.348715;KAM;Kamloops Transit System;Kamloops
+Aberdeen at Drummond (WB);50.637491;-120.353155;KAM;Kamloops Transit System;Kamloops
+Aberdeen 650 Block (WB);50.637879;-120.356312;KAM;Kamloops Transit System;Kamloops
+Van Horne at Greystone (WB);50.64328;-120.363891;KAM;Kamloops Transit System;Kamloops
+Westsyde at Walkem (NB);50.719056;-120.359548;KAM;Kamloops Transit System;Kamloops
+Westsyde at Yates (NB);50.721319;-120.359714;KAM;Kamloops Transit System;Kamloops
+Westsyde at Anderson (NB);50.724549;-120.358633;KAM;Kamloops Transit System;Kamloops
+Westsyde at McQueen (NB);50.729221;-120.359039;KAM;Kamloops Transit System;Kamloops
+Westsyde at Woodhaven (NB);50.73163;-120.358659;KAM;Kamloops Transit System;Kamloops
+Westsyde at Rue Chez Nous (NB);50.736772;-120.358216;KAM;Kamloops Transit System;Kamloops
+Westsyde at Parkview (NB);50.741455;-120.357242;KAM;Kamloops Transit System;Kamloops
+Westsyde at Oak Hills (NB);50.745253;-120.357331;KAM;Kamloops Transit System;Kamloops
+Westsyde at Franklin (NB);50.750903;-120.354938;KAM;Kamloops Transit System;Kamloops
+Westsyde at Morven (NB);50.753564;-120.35233;KAM;Kamloops Transit System;Kamloops
+Westsyde at Soldier (NB);50.756062;-120.349986;KAM;Kamloops Transit System;Kamloops
+Westsyde at Garnet (NB);50.759257;-120.348773;KAM;Kamloops Transit System;Kamloops
+Westsyde at Bissette (NB);50.761655;-120.348721;KAM;Kamloops Transit System;Kamloops
+Westsyde at Porterfield (NB);50.765787;-120.346185;KAM;Kamloops Transit System;Kamloops
+Westsyde at Puhallo (NB);50.769476;-120.343707;KAM;Kamloops Transit System;Kamloops
+Westsyde at Overlander (NB);50.771728;-120.342223;KAM;Kamloops Transit System;Kamloops
+Westsyde at Sun Valley (NB);50.774073;-120.34072;KAM;Kamloops Transit System;Kamloops
+Harrington at Mountainview (EB);50.775442;-120.339187;KAM;Kamloops Transit System;Kamloops
+Harrington at Overlander (EB);50.775441;-120.332802;KAM;Kamloops Transit System;Kamloops
+Overlander at Reemon (SB);50.774399;-120.331999;KAM;Kamloops Transit System;Kamloops
+Sicamore at Overlander (WB);50.772722;-120.334122;KAM;Kamloops Transit System;Kamloops
+Bank at Overlander (SB);50.771236;-120.339825;KAM;Kamloops Transit System;Kamloops
+Westsyde at Dever (SB);50.770962;-120.343082;KAM;Kamloops Transit System;Kamloops
+Westsyde at Jensen (SB);50.769246;-120.34422;KAM;Kamloops Transit System;Kamloops
+Westsyde at Lyne (SB);50.766759;-120.345887;KAM;Kamloops Transit System;Kamloops
+Westsyde at Serle (SB);50.763266;-120.348187;KAM;Kamloops Transit System;Kamloops
+Westsyde at Bissette (SB);50.761024;-120.34906;KAM;Kamloops Transit System;Kamloops
+Westsyde at Garnet (SB);50.759392;-120.3491;KAM;Kamloops Transit System;Kamloops
+Westsyde at Georgeann (SB);50.756426;-120.349976;KAM;Kamloops Transit System;Kamloops
+Westsyde at Morven (SB);50.753401;-120.352869;KAM;Kamloops Transit System;Kamloops
+Westsyde at Agassiz (SB);50.751093;-120.355089;KAM;Kamloops Transit System;Kamloops
+Westsyde at Oak Hills (SB);50.744384;-120.357377;KAM;Kamloops Transit System;Kamloops
+Westsyde at Parkview (SB);50.741157;-120.357729;KAM;Kamloops Transit System;Kamloops
+Westsyde at Rue Chez Nous (SB);50.736371;-120.358506;KAM;Kamloops Transit System;Kamloops
+Westsyde at Woodhaven (SB);50.73114;-120.359088;KAM;Kamloops Transit System;Kamloops
+Westsyde at McQueen (SB);50.728664;-120.359172;KAM;Kamloops Transit System;Kamloops
+Westsyde at Anderson (SB);50.724047;-120.359073;KAM;Kamloops Transit System;Kamloops
+Westsyde at Yates (SB);50.720904;-120.360077;KAM;Kamloops Transit System;Kamloops
+Westsyde at Walkem (SB);50.718417;-120.359626;KAM;Kamloops Transit System;Kamloops
+Westsyde at Westmount (SB);50.714984;-120.362695;KAM;Kamloops Transit System;Kamloops
+Westsyde at Collingwood (SB);50.713531;-120.364552;KAM;Kamloops Transit System;Kamloops
+8th St at Sudbury (SB);50.706971;-120.364487;KAM;Kamloops Transit System;Kamloops
+8th St at Lethbridge (SB);50.705131;-120.364165;KAM;Kamloops Transit System;Kamloops
+8th St at Selkirk (SB);50.703674;-120.363901;KAM;Kamloops Transit System;Kamloops
+8th St at Moncton (SB);50.702166;-120.363653;KAM;Kamloops Transit System;Kamloops
+8th St at Fortune (SB);50.699928;-120.363219;KAM;Kamloops Transit System;Kamloops
+North Shore Exchange Bay B;50.697831;-120.359797;KAM;Kamloops Transit System;Kamloops
+Fortune at Nelson (SB);50.696432;-120.356979;KAM;Kamloops Transit System;Kamloops
+Fortune at Oak (SB);50.694333;-120.35592;KAM;Kamloops Transit System;Kamloops
+Fortune at Evans (SB);50.692532;-120.354258;KAM;Kamloops Transit System;Kamloops
+Fortune at Wood (SB);50.691369;-120.352431;KAM;Kamloops Transit System;Kamloops
+Fortune at Spruce (SB);50.690016;-120.350745;KAM;Kamloops Transit System;Kamloops
+Fortune at Leigh (SB);50.687537;-120.347718;KAM;Kamloops Transit System;Kamloops
+Fortune at Larch (SB);50.685787;-120.347306;KAM;Kamloops Transit System;Kamloops
+Lansdowne Exchange Bay F;50.676764;-120.326063;KAM;Kamloops Transit System;Kamloops
+4th Ave at Seymour (SB);50.674597;-120.33207;KAM;Kamloops Transit System;Kamloops
+4th Ave at Battle (SB);50.672902;-120.33209;KAM;Kamloops Transit System;Kamloops
+4th Ave at Nicola (SB);50.671936;-120.332081;KAM;Kamloops Transit System;Kamloops
+Columbia at 3rd Ave (WB);50.671574;-120.333965;KAM;Kamloops Transit System;Kamloops
+Sahali 750 block (EB);50.671546;-120.344714;KAM;Kamloops Transit System;Kamloops
+Sahali at Pemberton (EB);50.670607;-120.343065;KAM;Kamloops Transit System;Kamloops
+Bestwick at Anvil (EB);50.669106;-120.341188;KAM;Kamloops Transit System;Kamloops
+McGill at Monashee (WB);50.667464;-120.340442;KAM;Kamloops Transit System;Kamloops
+McGill 250 block (NB);50.667342;-120.344221;KAM;Kamloops Transit System;Kamloops
+McGill at Chapperon (WB);50.669081;-120.349664;KAM;Kamloops Transit System;Kamloops
+McGill at Frontage (WB);50.669945;-120.35277;KAM;Kamloops Transit System;Kamloops
+McGill at Summit (WB);50.66948;-120.356393;KAM;Kamloops Transit System;Kamloops
+McGill at University (WB);50.668192;-120.361394;KAM;Kamloops Transit System;Kamloops
+Dalhousie at McGill (NB);50.668075;-120.36409;KAM;Kamloops Transit System;Kamloops
+Dalhousie (WB);50.670258;-120.365306;KAM;Kamloops Transit System;Kamloops
+TRU Exchange Bay G;50.670837;-120.368464;KAM;Kamloops Transit System;Kamloops
+Hillside at McGill (SB);50.668814;-120.370071;KAM;Kamloops Transit System;Kamloops
+Hillside 1040 block (SB);50.665231;-120.372915;KAM;Kamloops Transit System;Kamloops
+Hillside at Notre Dame (SB);50.663947;-120.371842;KAM;Kamloops Transit System;Kamloops
+Aberdeen Mall (SB);50.655336;-120.372373;KAM;Kamloops Transit System;Kamloops
+Pacific at Hillside (SB);50.654377;-120.378307;KAM;Kamloops Transit System;Kamloops
+Pacific at Hugh Allan (SB);50.651424;-120.380609;KAM;Kamloops Transit System;Kamloops
+Pacific at Pearson (SB);50.649588;-120.379295;KAM;Kamloops Transit System;Kamloops
+Pacific at Howe (EB);50.646775;-120.374561;KAM;Kamloops Transit System;Kamloops
+Pacific at Ravenwood (EB);50.645619;-120.37171;KAM;Kamloops Transit System;Kamloops
+Pacific at Greystone (SB);50.643073;-120.366883;KAM;Kamloops Transit System;Kamloops
+Pacific at Links (SB);50.639939;-120.369864;KAM;Kamloops Transit System;Kamloops
+Pacific at Aberdeen (SB);50.63755;-120.370589;KAM;Kamloops Transit System;Kamloops
+Pacific 2510 block (EB);50.634799;-120.367848;KAM;Kamloops Transit System;Kamloops
+Abbeyglen at Bramble (EB);50.634159;-120.363343;KAM;Kamloops Transit System;Kamloops
+Abbeyglen at Regent (WB);50.636564;-120.361254;KAM;Kamloops Transit System;Kamloops
+Aberdeen at Abbeyglen (EB);50.63801;-120.364957;KAM;Kamloops Transit System;Kamloops
+Van Horne at Aberdeen (NB);50.638619;-120.358821;KAM;Kamloops Transit System;Kamloops
+Van Horne at Laurier (NB);50.640198;-120.359103;KAM;Kamloops Transit System;Kamloops
+Laurier at Galloway (WB);50.639257;-120.36067;KAM;Kamloops Transit System;Kamloops
+Garymede at Laurier (NB);50.639603;-120.362598;KAM;Kamloops Transit System;Kamloops
+Garymede at Greystone (NB);50.642349;-120.365728;KAM;Kamloops Transit System;Kamloops
+Pacific at Greystone (NB);50.643985;-120.367612;KAM;Kamloops Transit System;Kamloops
+Pacific at Ravenwood (WB);50.646104;-120.37273;KAM;Kamloops Transit System;Kamloops
+Pacific at Howe (NB);50.647567;-120.376325;KAM;Kamloops Transit System;Kamloops
+Pacific at Pearson (WB);50.649863;-120.379511;KAM;Kamloops Transit System;Kamloops
+Hillside at Pacific (EB);50.65449;-120.376136;KAM;Kamloops Transit System;Kamloops
+Aberdeen Mall (NB);50.655692;-120.372105;KAM;Kamloops Transit System;Kamloops
+Hillside at Cariboo (NB);50.661143;-120.369692;KAM;Kamloops Transit System;Kamloops
+Hillside at Notre Dame (NB);50.664216;-120.371718;KAM;Kamloops Transit System;Kamloops
+Hillside at McGill (NB);50.666967;-120.370051;KAM;Kamloops Transit System;Kamloops
+Hillside at McGill (NB);50.668826;-120.369729;KAM;Kamloops Transit System;Kamloops
+TRU Exchange Bay D;50.671237;-120.368043;KAM;Kamloops Transit System;Kamloops
+Dalhousie (EB);50.670119;-120.365064;KAM;Kamloops Transit System;Kamloops
+McGill at Dalhousie (EB);50.667708;-120.363189;KAM;Kamloops Transit System;Kamloops
+McGill at Summit (EB);50.669191;-120.356534;KAM;Kamloops Transit System;Kamloops
+McGill at Frontage (EB);50.669827;-120.352752;KAM;Kamloops Transit System;Kamloops
+McGill at Chapperon (EB);50.668836;-120.349451;KAM;Kamloops Transit System;Kamloops
+McGill 240 block (SB);50.667202;-120.344267;KAM;Kamloops Transit System;Kamloops
+McGill at Monashee (EB);50.667324;-120.341629;KAM;Kamloops Transit System;Kamloops
+McGill at Bestwick (EB);50.667176;-120.338927;KAM;Kamloops Transit System;Kamloops
+Bestwick at Greenstone (NB);50.668635;-120.33859;KAM;Kamloops Transit System;Kamloops
+Bestwick at Sahali (WB);50.669418;-120.341636;KAM;Kamloops Transit System;Kamloops
+Sahali at Pemberton (NB);50.67095;-120.343046;KAM;Kamloops Transit System;Kamloops
+Sahali at Columbia St W (NB);50.672174;-120.344674;KAM;Kamloops Transit System;Kamloops
+3rd Ave at Columbia (NB);50.671816;-120.334359;KAM;Kamloops Transit System;Kamloops
+3rd Ave at Battle (NB);50.673563;-120.334323;KAM;Kamloops Transit System;Kamloops
+3rd Ave at Seymour (NB);50.674657;-120.334319;KAM;Kamloops Transit System;Kamloops
+TRU Exchange Bay H;50.670743;-120.368642;KAM;Kamloops Transit System;Kamloops
+Hillside at Pacific (WB);50.655396;-120.379415;KAM;Kamloops Transit System;Kamloops
+Hillside at Mount Dufferin Ave (WB);50.656214;-120.383323;KAM;Kamloops Transit System;Kamloops
+Hillside at Monterey (WB);50.657915;-120.387069;KAM;Kamloops Transit System;Kamloops
+Hillside at Mount Dufferin Dr (WB);50.659004;-120.389276;KAM;Kamloops Transit System;Kamloops
+Hillside 1860 block (WB);50.660872;-120.393191;KAM;Kamloops Transit System;Kamloops
+Hillside at Copperhead (WB);50.661747;-120.39732;KAM;Kamloops Transit System;Kamloops
+Copperhead at Iron Mask (SB);50.659022;-120.400443;KAM;Kamloops Transit System;Kamloops
+Copperhead at Kryczka (SB);50.656355;-120.400759;KAM;Kamloops Transit System;Kamloops
+Hugh Allan at Lodgepole (WB);50.653723;-120.401954;KAM;Kamloops Transit System;Kamloops
+Tranquille at Palm (NB);50.686332;-120.356137;KAM;Kamloops Transit System;Kamloops
+Tranquille at Clapperton (NB);50.68775;-120.357379;KAM;Kamloops Transit System;Kamloops
+Tranquille at Wood (NB);50.68883;-120.357872;KAM;Kamloops Transit System;Kamloops
+Tranquille at Oak (NB);50.692696;-120.359362;KAM;Kamloops Transit System;Kamloops
+Tranquille at Vernon (NB);50.6958;-120.360469;KAM;Kamloops Transit System;Kamloops
+North Shore Exchange Bay C;50.697877;-120.359543;KAM;Kamloops Transit System;Kamloops
+Tranquille at 11th St (WB);50.700475;-120.369251;KAM;Kamloops Transit System;Kamloops
+Tranquille at 12th St (WB);50.70104;-120.373191;KAM;Kamloops Transit System;Kamloops
+Tranquille at Kelly (WB);50.701502;-120.376231;KAM;Kamloops Transit System;Kamloops
+Tranquille at Nicolani (WB);50.702092;-120.380035;KAM;Kamloops Transit System;Kamloops
+Tranquille at Singh (WB);50.702762;-120.38482;KAM;Kamloops Transit System;Kamloops
+Tranquille at Holt (WB);50.701909;-120.389255;KAM;Kamloops Transit System;Kamloops
+Tranquille at Desmond (WB);50.699944;-120.393625;KAM;Kamloops Transit System;Kamloops
+Tranquille at Southill (WB);50.699879;-120.398841;KAM;Kamloops Transit System;Kamloops
+Tranquille at Caroline (WB);50.700062;-120.401481;KAM;Kamloops Transit System;Kamloops
+Tranquille at Windbreak (WB);50.700344;-120.404691;KAM;Kamloops Transit System;Kamloops
+Tranquille at Invermere (WB);50.701095;-120.408701;KAM;Kamloops Transit System;Kamloops
+Tranquille at Shelan (WB);50.701594;-120.411705;KAM;Kamloops Transit System;Kamloops
+Tranquille at Schreiner (WB);50.701799;-120.416371;KAM;Kamloops Transit System;Kamloops
+Crestline at Glenview (NB);50.702489;-120.42291;KAM;Kamloops Transit System;Kamloops
+Crestline at Young (NB);50.704398;-120.42227;KAM;Kamloops Transit System;Kamloops
+Crestline at Fleetwood (NB);50.705846;-120.421154;KAM;Kamloops Transit System;Kamloops
+Fleetwood at Schreiner (EB);50.705899;-120.416478;KAM;Kamloops Transit System;Kamloops
+Greenfield at Schreiner (EB);50.704799;-120.415117;KAM;Kamloops Transit System;Kamloops
+Greenfield at Westgate (EB);50.704732;-120.409231;KAM;Kamloops Transit System;Kamloops
+Greenfield at Windbreak (EB);50.704682;-120.404484;KAM;Kamloops Transit System;Kamloops
+Windbreak at Sunnycrest (SB);50.702504;-120.404401;KAM;Kamloops Transit System;Kamloops
+Tranquille at Windbreak (EB);50.700101;-120.403882;KAM;Kamloops Transit System;Kamloops
+Tranquille at Southill (EB);50.699766;-120.398453;KAM;Kamloops Transit System;Kamloops
+Tranquille at Holt (EB);50.702191;-120.388229;KAM;Kamloops Transit System;Kamloops
+Tranquille at Singh (EB);50.702455;-120.383867;KAM;Kamloops Transit System;Kamloops
+Tranquille at Nicolani (EB);50.702013;-120.380884;KAM;Kamloops Transit System;Kamloops
+Tranquille at Lepine (EB);50.701554;-120.378051;KAM;Kamloops Transit System;Kamloops
+Tranquille at 12th St (EB);50.700616;-120.371658;KAM;Kamloops Transit System;Kamloops
+Tranquille at 10th St (EB);50.70015;-120.36856;KAM;Kamloops Transit System;Kamloops
+Fortune at Tranquille (EB);50.699383;-120.363668;KAM;Kamloops Transit System;Kamloops
+North Shore Exchange Bay E;50.697883;-120.360041;KAM;Kamloops Transit System;Kamloops
+Tranquille at Yew (SB);50.693039;-120.35966;KAM;Kamloops Transit System;Kamloops
+Tranquille at Aspen (SB);50.691342;-120.359025;KAM;Kamloops Transit System;Kamloops
+Tranquille at MacKenzie (SB);50.689621;-120.358347;KAM;Kamloops Transit System;Kamloops
+Tranquille at Knox (SB);50.687172;-120.356991;KAM;Kamloops Transit System;Kamloops
+Tranquille at Palm (SB);50.6854;-120.355555;KAM;Kamloops Transit System;Kamloops
+Tranquille at Wilson (EB);50.684574;-120.352422;KAM;Kamloops Transit System;Kamloops
+Tranquille at Venus (EB);50.684821;-120.351028;KAM;Kamloops Transit System;Kamloops
+Victoria St W 240 block (EB);50.677647;-120.345283;KAM;Kamloops Transit System;Kamloops
+Seymour at 1st Ave (EB);50.675254;-120.338481;KAM;Kamloops Transit System;Kamloops
+Seymour at 3rd Ave (EB);50.674908;-120.335445;KAM;Kamloops Transit System;Kamloops
+Seymour at 4th Ave (EB);50.674896;-120.331396;KAM;Kamloops Transit System;Kamloops
+6th Ave at Victoria (NB);50.675602;-120.327061;KAM;Kamloops Transit System;Kamloops
+Lansdowne Exchange Bay H;50.676765;-120.326599;KAM;Kamloops Transit System;Kamloops
+Yew at Tranquille (WB);50.691553;-120.359569;KAM;Kamloops Transit System;Kamloops
+MacKenzie at Park (WB);50.691993;-120.362807;KAM;Kamloops Transit System;Kamloops
+MacKenzie at Marcel (WB);50.693123;-120.365367;KAM;Kamloops Transit System;Kamloops
+Willow at Stewart (NB);50.694574;-120.36413;KAM;Kamloops Transit System;Kamloops
+Cottonwood at Willow (WB);50.6966;-120.365397;KAM;Kamloops Transit System;Kamloops
+Cottonwood at Kenora (WB);50.69662;-120.369008;KAM;Kamloops Transit System;Kamloops
+Kenora at 12th St (WB);50.698078;-120.371506;KAM;Kamloops Transit System;Kamloops
+12th St at Surrey (NB);50.701432;-120.372604;KAM;Kamloops Transit System;Kamloops
+12th St at Selkirk (NB);50.703608;-120.372525;KAM;Kamloops Transit System;Kamloops
+12th St at Pembroke (NB);50.705888;-120.372501;KAM;Kamloops Transit System;Kamloops
+12th St at Halston (NB);50.708335;-120.372416;KAM;Kamloops Transit System;Kamloops
+Halston at 13th St (WB);50.708873;-120.375208;KAM;Kamloops Transit System;Kamloops
+Parkcrest at Nicolani (WB);50.709394;-120.380576;KAM;Kamloops Transit System;Kamloops
+Van Horne at Hector (NB);50.644786;-120.365249;KAM;Kamloops Transit System;Kamloops
+Van Horne at Huntleigh (WB);50.646788;-120.36745;KAM;Kamloops Transit System;Kamloops
+Van Horne at Howe (NB);50.647815;-120.371342;KAM;Kamloops Transit System;Kamloops
+Howe 1130 block (EB);50.648019;-120.36754;KAM;Kamloops Transit System;Kamloops
+Hugh Allan at Howe (WB);50.64881;-120.366875;KAM;Kamloops Transit System;Kamloops
+Hugh Allan at Harrison (WB);50.649963;-120.373287;KAM;Kamloops Transit System;Kamloops
+Rogers at Hugh Allan (EB);50.651671;-120.374683;KAM;Kamloops Transit System;Kamloops
+Rogers 1250 block (EB);50.651374;-120.372327;KAM;Kamloops Transit System;Kamloops
+Rogers Way at Rogers Pl (EB);50.651466;-120.368043;KAM;Kamloops Transit System;Kamloops
+Hillside Way at Hillside Crt (NB);50.655681;-120.368833;KAM;Kamloops Transit System;Kamloops
+Notre Dame at Dalhousie (EB);50.663439;-120.363399;KAM;Kamloops Transit System;Kamloops
+Notre Dame at Cemetery (EB);50.663502;-120.359186;KAM;Kamloops Transit System;Kamloops
+Notre Dame at Laval (EB);50.663548;-120.356806;KAM;Kamloops Transit System;Kamloops
+Notre Dame at Columbia St W (EB);50.663397;-120.352118;KAM;Kamloops Transit System;Kamloops
+Summit at Notre Dame (NB);50.663429;-120.348289;KAM;Kamloops Transit System;Kamloops
+Summit 1300 block (NB);50.665352;-120.349837;KAM;Kamloops Transit System;Kamloops
+Summit at Arrowstone (WB);50.667017;-120.352317;KAM;Kamloops Transit System;Kamloops
+Columbia St W 640 block (NB);50.672431;-120.353278;KAM;Kamloops Transit System;Kamloops
+Battle at 3rd Ave (WB);50.67328;-120.335117;KAM;Kamloops Transit System;Kamloops
+Battle St W at 1st Ave (WB);50.673734;-120.339337;KAM;Kamloops Transit System;Kamloops
+Battle St W at Lee (WB);50.67425;-120.342237;KAM;Kamloops Transit System;Kamloops
+Strathcona at Battle St W (NB);50.67598;-120.348658;KAM;Kamloops Transit System;Kamloops
+Strathcona at Hemlock (WB);50.677358;-120.352944;KAM;Kamloops Transit System;Kamloops
+Lombard at Centre (WB);50.677542;-120.355733;KAM;Kamloops Transit System;Kamloops
+Centre at Battle St W (SB);50.675713;-120.356255;KAM;Kamloops Transit System;Kamloops
+Grandview at Dalgleish (EB);50.674975;-120.354769;KAM;Kamloops Transit System;Kamloops
+Grandview at Dufferin (EB);50.674285;-120.350467;KAM;Kamloops Transit System;Kamloops
+Grandview at Garden (WB);50.674757;-120.351472;KAM;Kamloops Transit System;Kamloops
+Grandview at Dalgleish (WB);50.675072;-120.355051;KAM;Kamloops Transit System;Kamloops
+Centre at Battle St W (NB);50.675716;-120.356038;KAM;Kamloops Transit System;Kamloops
+Lombard at Centre (EB);50.677413;-120.355507;KAM;Kamloops Transit System;Kamloops
+Strathcona at Hemlock (EB);50.676731;-120.351811;KAM;Kamloops Transit System;Kamloops
+Strathcona at Battle St W (SB);50.676112;-120.348977;KAM;Kamloops Transit System;Kamloops
+Battle St W at Lee (EB);50.674029;-120.341537;KAM;Kamloops Transit System;Kamloops
+Battle at 1st Ave (EB);50.673465;-120.338533;KAM;Kamloops Transit System;Kamloops
+Lansdowne Exchange Bay B;50.67685;-120.326259;KAM;Kamloops Transit System;Kamloops
+TRU Exchange Bay E;50.671074;-120.368072;KAM;Kamloops Transit System;Kamloops
+Summit at Springhill (EB);50.660553;-120.345275;KAM;Kamloops Transit System;Kamloops
+Victoria St W 200 Blk (WB);50.677435;-120.343985;KAM;Kamloops Transit System;Kamloops
+Tranquille at Desmond (EB);50.700111;-120.392863;KAM;Kamloops Transit System;Kamloops
+Grand Blvd at Valleyview Dr (SB);50.671107;-120.227182;KAM;Kamloops Transit System;Kamloops
+Grand Blvd at Valleyview Dr (NB);50.670367;-120.227329;KAM;Kamloops Transit System;Kamloops
+Valleyview Dr farside Tanager Dr (EB);50.672572;-120.238409;KAM;Kamloops Transit System;Kamloops
+Valleyview Dr at 2900 Blk (EB);50.671258;-120.232502;KAM;Kamloops Transit System;Kamloops
+Kamloops Transit Centre;50.711274;-120.381488;KAM;Kamloops Transit System;Kamloops
+Shuswap Rd at Chief Alex Thomas Way (WB);50.683013;-120.29489;KAM;Kamloops Transit System;Kamloops 1
+Saddleback Dr at 2038 Block (NB);50.725833;-120.368551;KAM;Kamloops Transit System;Kamloops
+Saddleback Dr at Stagecoach Dr (NB);50.729676;-120.368641;KAM;Kamloops Transit System;Kamloops
+Saddleback Dr at Latigo Dr (NB);50.732559;-120.368636;KAM;Kamloops Transit System;Kamloops
+Doubletree Cr at Latigo Dr (SB);50.732137;-120.366897;KAM;Kamloops Transit System;Kamloops
+Stagecoach Dr at Saddleback Dr (SB);50.729187;-120.368556;KAM;Kamloops Transit System;Kamloops
+Grasslands Blvd at Stagecoach Dr (SB);50.726463;-120.365771;KAM;Kamloops Transit System;Kamloops
+Grasslands Blvd at 2027 Block (SB);50.724407;-120.367567;KAM;Kamloops Transit System;Kamloops
+Mt. Paul Way at Chilcotin Rd (SB);50.690789;-120.322073;KAM;Kamloops Transit System;Kamloops 1
+Mt. Paul Way at Carrier St (SB);50.686346;-120.322525;KAM;Kamloops Transit System;Kamloops 1
+Athabasca St W at 680 Block (WB);50.682909;-120.325646;KAM;Kamloops Transit System;Kamloops 1
+Athabasca St W at Chilcotin (NB);50.690204;-120.333286;KAM;Kamloops Transit System;Kamloops 1
+Chilcotin Rd at 200 Block (WB);50.690639;-120.336432;KAM;Kamloops Transit System;Kamloops 1
+Kamloopa Way at 775 Block (NB);50.69283;-120.338674;KAM;Kamloops Transit System;Kamloops 1
+Kamloopa Way at Mohawk Cres (NB);50.697471;-120.341081;KAM;Kamloops Transit System;Kamloops 1
+George Campbell Way at Kamloopa Way (EB);50.699178;-120.34315;KAM;Kamloops Transit System;Kamloops 1
+Shuswap Rd W at Ricardo Rd (EB);50.704117;-120.333109;KAM;Kamloops Transit System;Kamloops 1
+Ricardo Rd at 1020 Block (SB);50.698658;-120.326942;KAM;Kamloops Transit System;Kamloops 1
+Okanagan Way at Dene Dr (SB);50.694198;-120.327866;KAM;Kamloops Transit System;Kamloops 1
+Chilcotin Rd at Tagish (EB);50.690495;-120.324886;KAM;Kamloops Transit System;Kamloops 1
+Shuswap Rd E at Chief Alex Thomas Way (EB);50.68287;-120.295134;KAM;Kamloops Transit System;Kamloops 1
+Sun Rivers Dr at Talasa Way (EB);50.687182;-120.29732;KAM;Kamloops Transit System;Kamloops 1
+Willow at Cottonwood (SB);50.695476;-120.363381;KAM;Kamloops Transit System;Kamloops
+Dallas at Harper (EB);50.666544;-120.173045;KAM;Kamloops Transit System;Kamloops
+TRU Exchange Bay A;50.67091;-120.368592;KAM;Kamloops Transit System;Kamloops
+Grasslands at Quayle (SB);50.721925;-120.37006;KAM;Kamloops Transit System;Kamloops
+Batchelor at North River (NB);50.714698;-120.366835;KAM;Kamloops Transit System;Kamloops
+McGill at Bestwick (WB);50.667271;-120.338709;KAM;Kamloops Transit System;Kamloops
+Columbia  at 3rd (EB);50.671307;-120.333679;KAM;Kamloops Transit System;Kamloops
+Valleyview at Tanager (WB);50.672778;-120.239544;KAM;Kamloops Transit System;Kamloops
+Valleyview at McKay (WB);50.673126;-120.243007;KAM;Kamloops Transit System;Kamloops
+Valleyview at MacAdam (WB);50.673443;-120.246329;KAM;Kamloops Transit System;Kamloops
+Valleyview at River (WB);50.674514;-120.252885;KAM;Kamloops Transit System;Kamloops
+Valleyview at Park (WB);50.675523;-120.257552;KAM;Kamloops Transit System;Kamloops
+Battle at 14th Ave (WB);50.673161;-120.306861;KAM;Kamloops Transit System;Kamloops
+Battle at 12th Ave (WB);50.673191;-120.310827;KAM;Kamloops Transit System;Kamloops
+Victoria at 10th Ave (WB);50.674251;-120.315832;KAM;Kamloops Transit System;Kamloops
+Mattoch-McKeague at Cameron (EB);50.791948;-120.317895;KAM;Kamloops Transit System;Kamloops
+Lorne at 10th Ave (WB);50.675554;-120.316084;KAM;Kamloops Transit System;Kamloops
+Lorne at 8th Ave (WB);50.676383;-120.318599;KAM;Kamloops Transit System;Kamloops
+Lorne at 8th Ave (WB);50.677124;-120.320364;KAM;Kamloops Transit System;Kamloops
+Lorne at 7th Ave (WB);50.678073;-120.323376;KAM;Kamloops Transit System;Kamloops
+Lorne 480 block (WB);50.678212;-120.329723;KAM;Kamloops Transit System;Kamloops
+Lorne at 3rd Ave (WB);50.678151;-120.333024;KAM;Kamloops Transit System;Kamloops
+Summit at Robson (WB);50.646419;-120.353589;KAM;Kamloops Transit System;Kamloops
+Summit at Hollyburn (WB);50.647143;-120.34739;KAM;Kamloops Transit System;Kamloops
+Summit at Tremerton (WB);50.647705;-120.343791;KAM;Kamloops Transit System;Kamloops
+Summit at Gleneagles (EB);50.65207;-120.340905;KAM;Kamloops Transit System;Kamloops
+Lorne at 2nd Ave (WB);50.677735;-120.336461;KAM;Kamloops Transit System;Kamloops
+TRU Exchange Bay B;50.671017;-120.368413;KAM;Kamloops Transit System;Kamloops
+Sifton at Sifton (WB);50.643029;-120.35419;KAM;Kamloops Transit System;Kamloops
+Valleyview at Sunset (WB);50.672329;-120.235599;KAM;Kamloops Transit System;Kamloops
+Sifton at 2240 Blk (WB);50.640039;-120.35113;KAM;Kamloops Transit System;Kamloops
+Tranquille (WB);50.699035;-120.363927;KAM;Kamloops Transit System;Kamloops
+Lansdowne Exchange Bay A;50.676874;-120.326531;KAM;Kamloops Transit System;Kamloops
+Munro at 8 Ave (EB);50.666801;-120.321093;KAM;Kamloops Transit System;Kamloops
+South Sa-Hali Elem (WB);50.656685;-120.338179;KAM;Kamloops Transit System;Kamloops
+Tranquille at Barrie (EB);50.701135;-120.375298;KAM;Kamloops Transit System;Kamloops
+Interior Health at 5th (EB);50.669144;-120.330363;KAM;Kamloops Transit System;Kamloops
+12th at Barrie Dr (SB);50.699719;-120.372712;KAM;Kamloops Transit System;Kamloops
+Tranquille at Poplar (SB);50.695201;-120.360469;KAM;Kamloops Transit System;Kamloops
+6 Ave at Nicola (NB);50.672516;-120.327098;KAM;Kamloops Transit System;Kamloops
+6 Ave at Columbia (SB);50.672016;-120.327219;KAM;Kamloops Transit System;Kamloops
+Tranquille at 8th (WB);50.699702;-120.364519;KAM;Kamloops Transit System;Kamloops
