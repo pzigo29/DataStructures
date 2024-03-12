@@ -208,8 +208,11 @@ namespace ds::mm {
         {
             throw std::runtime_error("Nová báza je NULL!");
         }
-        base_ = static_cast<BlockType*>(newBase);
-        end_ = base_ + getAllocatedBlockCount();
+        if (newBase != base_)
+        {
+            base_ = static_cast<BlockType*>(newBase);
+            end_ = base_ + getAllocatedBlockCount();
+        }
         limit_ = base_ + newCapacity;
     }
 
