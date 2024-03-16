@@ -30,9 +30,6 @@
     <ClCompile Include="bus_stop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="contains_str.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="data\cow_busstops.csv">
