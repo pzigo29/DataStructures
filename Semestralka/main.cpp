@@ -7,7 +7,7 @@
 int main(int argc, char* argv[])
 {
 	//ODSTRANENIE STOPSITE A STOPID Z CSV, NAPISAT DO DOKUMENTACIE
-	std::vector<std::vector<std::vector<std::string>>> zoznamDopravcov;
+	vector<vector<vector<string>>> zoznamDopravcov;
 	for (int i = 1; i < argc; i++)
 	{
 		std::stringstream ss;
@@ -18,19 +18,29 @@ int main(int argc, char* argv[])
 
 		
 	}
-	auto containsStr = [](vector<string>::iterator begin, vector<string>::iterator end)
-		{
-			for (auto i = begin; i != end; ++i)
-			{
-				cout << *i << endl;
-			}
-		};
-	//containsStr(zoznamDopravcov[0][0].begin(), zoznamDopravcov[0][0].end());
+	auto contains = [](const std::string& stringToFind, const std::string& stringToBeFound)
+		{return stringToBeFound.find(stringToFind) != std::string::npos; };
+	auto startsWith = [](const std::string& stringToFind, const std::string& stringToBeFound)
+		{return stringToBeFound.compare(0, stringToFind.length(), stringToFind) == 0; };
 
 	ContainsStr<std::string> str;
-	for (int i = 0; i < zoznamDopravcov[0].size(); i++)
+	vector<vector<string>> predikatVec(zoznamDopravcov.size());
+	for (int i = 0; i < zoznamDopravcov.size(); ++i)
 	{
-		str.callLambda(zoznamDopravcov[0][i].begin(), zoznamDopravcov[0][i].end(), "778704");
+		for (int j = 0; j < zoznamDopravcov[i].size(); ++j)
+		{
+			str.containsString(zoznamDopravcov[i][j].begin(), zoznamDopravcov[i][j].end(), "dan", predikatVec[i], contains);
+		}
+	}
+	
+	for (int i = 0; i < predikatVec.size(); ++i)
+	{
+		cout << endl << i << zoznamDopravcov[i][0][3] << endl;
+		for (int j = 0; j < predikatVec[i].size(); ++j)
+		{
+			cout << predikatVec[i][j] << endl;
+		}
+		
 	}
 	
 
