@@ -10,14 +10,12 @@ private:
 public:
 	ContainsStr() = default;
 
-	void containsString(typename std::vector<T>::iterator begin, typename std::vector<T>::iterator end, const std::string& string, typename std::vector<T>& writeToVec, 
-		std::function<bool(const std::string&, const std::string&)> predicate = 
-		[](const std::string& string, const std::string& iLower)
-		{return iLower.find(string) != std::string::npos; });
+	void containsString(typename std::vector<T>::iterator begin, typename std::vector<T>::iterator end, typename const T& string, typename std::vector<T>& writeToVec,
+		std::function<bool(typename const T&, typename const T&)> predicate);
 };
 
 template<typename T>
-inline void ContainsStr<T>::containsString(typename std::vector<T>::iterator begin, typename std::vector<T>::iterator end, const std::string& string, typename std::vector<T>& writeToVec, std::function<bool(const std::string&, const std::string&)> predicate)
+inline void ContainsStr<T>::containsString(typename std::vector<T>::iterator begin, typename std::vector<T>::iterator end, typename const T& string, typename std::vector<T>& writeToVec, std::function<bool(typename const T&, typename const T&)> predicate)
 {
 	auto stringLower = string;
 	std::transform(stringLower.begin(), stringLower.end(), stringLower.begin(), std::tolower);
