@@ -24,15 +24,6 @@
     <ClCompile Include="input_data.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="vector_data_structure.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="bus_stop.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="contains_str.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="data\cow_busstops.csv">
@@ -64,13 +55,10 @@
     <ClInclude Include="input_data.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="vector_data_structure.h">
+    <ClInclude Include="contains_str.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="bus_stop.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="contains_str.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

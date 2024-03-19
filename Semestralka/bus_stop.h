@@ -2,58 +2,75 @@
 #include <string>
 #include <iostream>
 
-class GeoPosition
-{
-private:
-	double latitude_;
-	double longtitude_;
-	friend class BusStop;
-public:
-	GeoPosition(double latitude, double longtitude)
-	{
-		setPosition(latitude, longtitude);
-	}
-	void setPosition(double latitude, double longtitude)
-	{
-		latitude_ = latitude;
-		longtitude_ = longtitude;
-	}
-};
-
-class Transit
-{
-private:
-	std::string code_;
-	std::string name_;
-	friend class BusStop;
-public:
-	Transit(std::string code, std::string name)
-	{
-		setTransit(code, name);
-	}
-	void setTransit(std::string code, std::string name)
-	{
-		code_ = code;
-		name_ = name;
-	}
-};
-
 class BusStop
 {
 private:
 	std::string name_;
-	GeoPosition geoPosition_;
-	Transit transit_;
+	std::string posX_;
+	std::string posY_;
+	std::string code_;
+	std::string nameTrans_;
 	std::string town_;
+	std::vector<std::string> columns;
 
 public:
-	BusStop(std::string name, GeoPosition pos, Transit transit, std::string town)
-		: name_(name), geoPosition_(pos), transit_(transit), town_(town) {}
-	void writeConsole()
+	BusStop(std::string name, std::string posX, std::string posY, std::string code, std::string nameTrans, std::string town)
+		: name_(name), posX_(posX), posY_(posY), code_(code), nameTrans_(nameTrans), town_(town), 
+			columns({name_, posX_, posY_, code_, nameTrans_, town_}) {}
+	std::string getBlockAt(int index)
 	{
-		std::cout << name_ << " " << geoPosition_.latitude_ << " " << geoPosition_.longtitude_ << " " << transit_.code_ << " " << transit_.name_ << " " << town_ << std::endl;
+		return columns[index];
+	}
+	void coutName() const
+	{
+		std::cout << name_ << " ";
+	}
+	void coutPosX() const
+	{
+		std::cout << posX_ << " ";
+	}
+	void coutPosY() const
+	{
+		std::cout << posY_ << " ";
+	}
+	void coutCode() const
+	{
+		std::cout << code_ << " ";
+	}
+	void coutNameTrans() const
+	{
+		std::cout << nameTrans_ << " ";
+	}
+	void coutTown() const
+	{
+		std::cout << town_ << " ";
+	}
+	void coutAll(bool podSebou) const
+	{
+		if (podSebou)
+		{
+			coutName();
+			std::cout << std::endl;
+			coutPosX();
+			std::cout << std::endl;
+			coutPosY();
+			std::cout << std::endl;
+			coutCode();
+			std::cout << std::endl;
+			coutNameTrans();
+			std::cout << std::endl;
+			coutTown();
+			std::cout << std::endl;
+		}
+		else
+		{
+			coutName();
+			coutPosX();
+			coutPosY();
+			coutCode();
+			coutNameTrans();
+			coutTown();
+			std::cout << std::endl;
+		}
 	}
 };
-
-
-
