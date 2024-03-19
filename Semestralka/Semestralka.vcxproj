@@ -129,6 +129,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="input_data.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +143,7 @@
     <None Include="data\wkt_busstops.csv" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="bus_stop.h" />
     <ClInclude Include="contains_str.h" />
     <ClInclude Include="input_data.h" />
   </ItemGroup>

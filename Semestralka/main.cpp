@@ -7,13 +7,13 @@
 int main(int argc, char* argv[])
 {
 	//ODSTRANENIE STOPSITE A STOPID Z CSV, NAPISAT DO DOKUMENTACIE
-	vector<vector<vector<string>>> zoznamDopravcov;
+	std::vector<std::vector<BusStop>> zoznamDopravcov;
 	for (int i = 1; i < argc; i++)
 	{
 		std::stringstream ss;
 		ss << "data/" << argv[i] << "_busstops.csv";
-		InputData<std::string> input(ss.str());
-		std::vector<std::vector<std::string>> zastavky = input.readFromFile();
+		InputData input(ss.str());
+		std::vector<BusStop> zastavky = input.readFromFile();
 		zoznamDopravcov.push_back(zastavky);
 
 		
@@ -23,39 +23,52 @@ int main(int argc, char* argv[])
 	auto startsWith = [](const std::string& stringToFind, const std::string& stringToBeFound)
 		{return stringToBeFound.compare(0, stringToFind.length(), stringToFind) == 0; };
 
-	ContainsStr<std::string> str;
-	vector<vector<string>> predikatVec(zoznamDopravcov.size());
-	for (int i = 0; i < zoznamDopravcov.size(); ++i)
-	{
-		for (int j = 0; j < zoznamDopravcov[i].size(); ++j)
-		{
-			str.containsString(zoznamDopravcov[i][j].begin(), zoznamDopravcov[i][j].end(), "dan", predikatVec[i], contains);
-		}
-	}
-	
-	for (int i = 0; i < predikatVec.size(); ++i)
-	{
-		cout << endl << i << zoznamDopravcov[i][0][3] << endl;
-		for (int j = 0; j < predikatVec[i].size(); ++j)
-		{
-			cout << predikatVec[i][j] << endl;
-		}
-		
-	}
+	ContainsStr<BusStop, std::vector, std::string> str;
 	
 
-	
-	/*for (int i = 0; i < zoznamDopravcov.size(); i++)
+	while (true)
 	{
-		for (int j = 0; j < zoznamDopravcov[i].size(); j++)
+		std::vector<BusStop> predikatVec;
+		std::string predikat;
+		std::string hladanyString;
+		int indexStlpca;
+		std::cout << "Zadaj: contains alebo startsWith (exit pre ukoncenie aplikacie)" << std::endl;
+		std::cin >> predikat;
+		if (predikat == "exit")
 		{
-			for (int k = 0; k < zoznamDopravcov[i][j].size(); k++)
-			{
-				cout << zoznamDopravcov[i][j][k] << "\t";
-			}
-			cout << endl;
+			return 0;
 		}
-		std::cout << "\n\n\n";
-	}*/
+		std::cout << "Parametre (oddelené medzerou) : hladanyString indexStlpca" << std::endl;
+		std::cin >> hladanyString >> indexStlpca;
+
+		if (predikat == "contains")
+		{
+			for (int i = 0; i < zoznamDopravcov.size(); ++i)
+			{
+				str.containsString(zoznamDopravcov[i].begin(), zoznamDopravcov[i].end(), 
+					hladanyString, predikatVec, contains, indexStlpca);
+			}
+		}
+		else if (predikat == "startsWith")
+		{
+			for (int i = 0; i < zoznamDopravcov.size(); ++i)
+			{
+				str.containsString(zoznamDopravcov[i].begin(), zoznamDopravcov[i].end(),
+					hladanyString, predikatVec, startsWith, indexStlpca);
+			}
+		}
+		else
+		{
+			std::cout << "Neplatný vstup" << std::endl;
+			continue;
+		}
+
+
+		for (int i = 0; i < predikatVec.size(); ++i)
+		{
+			predikatVec[i].coutAll(false);
+
+		}
+	}
 	return 0;
 }
