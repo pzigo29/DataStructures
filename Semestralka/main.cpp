@@ -30,8 +30,8 @@ int main(int argc, char* argv[])
 	{
 		std::vector<BusStop> predikatVec;
 		std::string predikat;
-		std::string hladanyString;
-		std::string skratkaDopravcu;
+		std::string hladanyString, skratkaDopravcu;
+		//std::string skratkaDopravcu;
 		std::vector<int> indexDopravcu;
 		int indexStlpca;
 		std::cout << "Zadaj: contains alebo startsWith (exit pre ukoncenie aplikacie)" << std::endl;
@@ -40,8 +40,11 @@ int main(int argc, char* argv[])
 		{
 			return 0;
 		}
-		std::cout << "Parametre (oddelené medzerou) : hladanyString indexStlpca skratkaDopravcu||indexDopravcu" << std::endl;
-		std::cin >> hladanyString >> indexStlpca >> skratkaDopravcu;
+        std::cout << "hladanyString" << std::endl;
+        std::getline(std::cin >> std::ws, hladanyString);
+        std::cout << "dopravca" << std::endl;
+        std::getline(std::cin >> std::ws, skratkaDopravcu);
+
 
 		if (skratkaDopravcu == "COW" || skratkaDopravcu == "cow" || skratkaDopravcu == "0")
 		{
@@ -89,7 +92,7 @@ int main(int argc, char* argv[])
 			for (int i = 0; i < indexDopravcu.size(); ++i)
 			{
 				str.containsString(zoznamDopravcov[indexDopravcu[i]].begin(), zoznamDopravcov[indexDopravcu[i]].end(),
-					hladanyString, predikatVec, contains, indexStlpca);
+					hladanyString, predikatVec, contains, 0);
 			}
 		}
 		else if (predikat == "startsWith")
@@ -97,7 +100,7 @@ int main(int argc, char* argv[])
 			for (int i = 0; i < indexDopravcu.size(); ++i)
 			{
 				str.containsString(zoznamDopravcov[indexDopravcu[i]].begin(), zoznamDopravcov[indexDopravcu[i]].end(),
-					hladanyString, predikatVec, startsWith, indexStlpca);
+					hladanyString, predikatVec, startsWith, 0);
 			}
 		}
 		else
