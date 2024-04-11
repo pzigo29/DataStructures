@@ -82,8 +82,7 @@ namespace ds::amt {
     size_t ImplicitHierarchy<DataType, K>::level(size_t index) const
 	{
 		// TODO 05
-		// po implementacii vymazte vyhodenie vynimky!
-		throw std::runtime_error("Not implemented yet");
+		return static_cast<size_t>(std::floor(std::log((K - 1) * (index + 1)) / std::log(K)));
 	}
 
 	template<typename DataType, size_t K>
@@ -97,8 +96,34 @@ namespace ds::amt {
     size_t ImplicitHierarchy<DataType, K>::degree(size_t index) const
 	{
 		// TODO 05
-		// po implementacii vymazte vyhodenie vynimky!
-		throw std::runtime_error("Not implemented yet");
+		size_t curLevel = this->level(index);
+		size_t indexOfLast = this->size() - 1;
+		size_t depth = this->level(indexOfLast);
+		if (curLevel == depth)
+		{
+			return 0;
+		}
+		else if (curLevel == depth - 1)
+		{
+			const size_t indexOfParentOfLast = this->indexOfParent(indexOfLast);
+			if (index < indexOfParentOfLast)
+			{
+				return K;
+			}
+			else if (index > indexOfParentOfLast)
+			{
+				return 0;
+			}
+			else
+			{
+				const size_t mod = (this->size() - 1) % K;
+				return mod == 0 ? K : mod;
+			}
+		}
+		else
+		{
+			return K;
+		}
 	}
 
 	template<typename DataType, size_t K>
@@ -120,7 +145,7 @@ namespace ds::amt {
     MemoryBlock<DataType>* ImplicitHierarchy<DataType, K>::accessParent(const MemoryBlock<DataType>& node) const
 	{
 		// TODO 05
-		size_t index = this->indexOfParent(node);
+		const size_t index = this->indexOfParent(node);
 		return index != INVALID_INDEX ? &this->getMemoryManager()->getBlockAt(index) : nullptr;
 	}
 
@@ -128,16 +153,16 @@ namespace ds::amt {
     MemoryBlock<DataType>* ImplicitHierarchy<DataType, K>::accessSon(const MemoryBlock<DataType>& node, size_t sonOrder) const
 	{
 		// TODO 05
-		size_t index = this->indexOfSon(node, sonOrder);
-		return index != INVALID_INDEX ? &this->getMemoryManager()->getBlockAt(index) : nullptr;
+		const size_t index = this->indexOfSon(node, sonOrder);
+		return index < this->size() ? &this->getMemoryManager()->getBlockAt(index) : nullptr;
 	}
 
 	template<typename DataType, size_t K>
     MemoryBlock<DataType>* ImplicitHierarchy<DataType, K>::accessLastLeaf() const
 	{
 		// TODO 05
-		size_t size = this->size();
-		return size > 0 ? &this->getMemoryManager()->getBlockAt(this->size() - 1) : nullptr;
+		const size_t size = this->size();
+		return size != 0 ? &this->getMemoryManager()->getBlockAt(size - 1) : nullptr;
 	}
 
 	template<typename DataType, size_t K>
