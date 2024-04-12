@@ -1,6 +1,7 @@
 #include "input_data.h"
 
-std::vector<BusStop> InputData::readFromFile()
+
+Transporter<std::vector> InputData::readFromFile()
 {
 	std::vector<BusStop> busStops;
 	std::ifstream inputStream(file_);
@@ -25,5 +26,5 @@ std::vector<BusStop> InputData::readFromFile()
 	}
 
 
-	return busStops;
+	return Transporter<std::vector>(busStops);
 }

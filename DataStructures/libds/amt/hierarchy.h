@@ -368,10 +368,10 @@ namespace ds::amt {
 			 otherPosition != nullptr;
 			 otherPosition = otherPosition->previousPosition_)
 		{
-			if (currentPosition_ == nullptr)
+			if (this->currentPosition_ == nullptr)
 			{
-				currentPosition_ = new DepthFirstIteratorPosition(*otherPosition);
-				myPosition = currentPosition_;
+				this->currentPosition_ = new DepthFirstIteratorPosition(*otherPosition);
+				myPosition = this->currentPosition_;
 			}
 			else
 			{
@@ -391,13 +391,13 @@ namespace ds::amt {
 	template<typename BlockType>
     Hierarchy<BlockType>::DepthFirstIterator::~DepthFirstIterator()
 	{
-		while (currentPosition_ != nullptr)
+		while (this->currentPosition_ != nullptr)
 		{
 			this->removePosition();
 		}
 
 		hierarchy_ = nullptr;
-		currentPosition_ = nullptr;
+		this->currentPosition_ = nullptr;
 	}
 
 	template<typename BlockType>
@@ -408,7 +408,7 @@ namespace ds::amt {
 			return false;
 		}
 
-		DepthFirstIteratorPosition* myPosition = currentPosition_;
+		DepthFirstIteratorPosition* myPosition = this->currentPosition_;
 		DepthFirstIteratorPosition* otherPosition = other.currentPosition_;
 
 		if (myPosition != nullptr && otherPosition != nullptr)
@@ -431,43 +431,43 @@ namespace ds::amt {
 	template<typename BlockType>
     auto Hierarchy<BlockType>::DepthFirstIterator::operator*() -> DataType&
 	{
-		currentPosition_->currentNodeProcessed_ = true;
-		return currentPosition_->currentNode_->data_;
+		this->currentPosition_->currentNodeProcessed_ = true;
+		return this->currentPosition_->currentNode_->data_;
 	}
 
 	template<typename BlockType>
     void Hierarchy<BlockType>::DepthFirstIterator::savePosition(BlockType* currentNode)
 	{
-		currentPosition_ = new DepthFirstIteratorPosition(currentNode, currentPosition_);
+		this->currentPosition_ = new DepthFirstIteratorPosition(currentNode, this->currentPosition_);
 	}
 
 	template<typename BlockType>
     void Hierarchy<BlockType>::DepthFirstIterator::removePosition()
 	{
-		DepthFirstIteratorPosition* positionToRemove = currentPosition_;
-		currentPosition_ = currentPosition_->previousPosition_;
+		DepthFirstIteratorPosition* positionToRemove = this->currentPosition_;
+		this->currentPosition_ = this->currentPosition_->previousPosition_;
 		delete positionToRemove;
 	}
 
 	template<typename BlockType>
     bool Hierarchy<BlockType>::DepthFirstIterator::tryFindNextSonInCurrentPosition()
 	{
-		++currentPosition_->visitedSonCount_;
+		++this->currentPosition_->visitedSonCount_;
 
-		size_t currentDegree = hierarchy_->degree(*currentPosition_->currentNode_);
-		if (currentPosition_->visitedSonCount_ <= currentDegree)
+		size_t currentDegree = hierarchy_->degree(*this->currentPosition_->currentNode_);
+		if (this->currentPosition_->visitedSonCount_ <= currentDegree)
 		{
 			do
 			{
-				++currentPosition_->currentSonOrder_;
-				currentPosition_->currentSon_ = hierarchy_->accessSon(*currentPosition_->currentNode_, currentPosition_->currentSonOrder_);
-			} while (currentPosition_->currentSon_ == nullptr);
+				++this->currentPosition_->currentSonOrder_;
+				this->currentPosition_->currentSon_ = hierarchy_->accessSon(*this->currentPosition_->currentNode_, this->currentPosition_->currentSonOrder_);
+			} while (this->currentPosition_->currentSon_ == nullptr);
 			return true;
 		}
 		else
 		{
-			currentPosition_->currentSonOrder_ = INVALID_INDEX;
-			currentPosition_->currentSon_ = nullptr;
+			this->currentPosition_->currentSonOrder_ = INVALID_INDEX;
+			this->currentPosition_->currentSon_ = nullptr;
 			return false;
 		}
 	}
@@ -688,7 +688,7 @@ namespace ds::amt {
 		}
 		else
 		{
-			if (currentPosition_->currentSonOrder_ != RIGHT_SON_INDEX && this->tryToGoToRightSonInCurrentPosition())
+			if (this->currentPosition_->currentSonOrder_ != RIGHT_SON_INDEX && this->tryToGoToRightSonInCurrentPosition())
 			{
 				this->savePosition(this->currentPosition_->currentSon_);
 				++(*this);

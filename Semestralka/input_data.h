@@ -5,6 +5,7 @@
 #include <sstream>
 #include <iostream>
 #include "bus_stop.h"
+#include "transporter.h"
 
 
 class InputData
@@ -14,7 +15,7 @@ class InputData
 public:
 	InputData(std::string file)
 		: file_(file) {};
-	std::vector<BusStop> readFromFile();
+	Transporter<std::vector> readFromFile();
 
 };
 		

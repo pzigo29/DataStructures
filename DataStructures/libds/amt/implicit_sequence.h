@@ -104,7 +104,7 @@ namespace ds::amt {
     size_t ImplicitSequence<DataType>::calculateIndex(BlockType& block)
 	{
 		// TODO 03
-		return getMemoryManager()->calculateIndex(block);
+		return this->getMemoryManager()->calculateIndex(block);
 	}
 
 	template<typename DataType>
@@ -112,74 +112,74 @@ namespace ds::amt {
     {
 		// TODO 03
 		
-		return size() > 0 ? &getMemoryManager()->getBlockAt(0) : nullptr;
+		return this->size() > 0 ? &this->getMemoryManager()->getBlockAt(0) : nullptr;
 	}
 
 	template<typename DataType>
 	typename ImplicitSequence<DataType>::BlockType* ImplicitSequence<DataType>::accessLast() const
     {
 		// TODO 03
-		return size() > 0 ? &getMemoryManager()->getBlockAt(size() - 1) : nullptr;
+		return this->size() > 0 ? &this->getMemoryManager()->getBlockAt(this->size() - 1) : nullptr;
 	}
 
 	template<typename DataType>
 	typename ImplicitSequence<DataType>::BlockType* ImplicitSequence<DataType>::access(size_t index) const
     {
 		// TODO 03
-		return index < size() ? &getMemoryManager()->getBlockAt(index) : nullptr;
+		return index < this->size() ? &this->getMemoryManager()->getBlockAt(index) : nullptr;
 	}
 
 	template<typename DataType>
 	typename ImplicitSequence<DataType>::BlockType* ImplicitSequence<DataType>::accessNext(const BlockType& block) const
     {
 		// TODO 03
-		size_t index = indexOfNext(getMemoryManager()->calculateIndex(block));
-		return index != INVALID_INDEX ? &getMemoryManager()->getBlockAt(index) : nullptr;
+		size_t index = indexOfNext(this->getMemoryManager()->calculateIndex(block));
+		return index != INVALID_INDEX ? &this->getMemoryManager()->getBlockAt(index) : nullptr;
 	}
 
 	template<typename DataType>
 	typename ImplicitSequence<DataType>::BlockType* ImplicitSequence<DataType>::accessPrevious(const BlockType& block) const
     {
 		// TODO 03
-		size_t index = indexOfPrevious(getMemoryManager()->calculateIndex(block));
-		return index != INVALID_INDEX ? &getMemoryManager()->getBlockAt(index) : nullptr;
+		size_t index = indexOfPrevious(this->getMemoryManager()->calculateIndex(block));
+		return index != INVALID_INDEX ? &this->getMemoryManager()->getBlockAt(index) : nullptr;
 	}
 
 	template<typename DataType>
 	typename ImplicitSequence<DataType>::BlockType& ImplicitSequence<DataType>::insertFirst()
     {
 		// TODO 03
-		return *getMemoryManager()->allocateMemoryAt(0);
+		return *this->getMemoryManager()->allocateMemoryAt(0);
 	}
 
 	template<typename DataType>
 	typename ImplicitSequence<DataType>::BlockType& ImplicitSequence<DataType>::insertLast()
     {
 		// TODO 03
-		return *getMemoryManager()->allocateMemory();
+		return *this->getMemoryManager()->allocateMemory();
 	}
 
 	template<typename DataType>
 	typename ImplicitSequence<DataType>::BlockType& ImplicitSequence<DataType>::insert(size_t index)
     {
 		// TODO 03		
-		return *getMemoryManager()->allocateMemoryAt(index);
+		return *this->getMemoryManager()->allocateMemoryAt(index);
 	}
 
 	template<typename DataType>
 	typename ImplicitSequence<DataType>::BlockType& ImplicitSequence<DataType>::insertAfter(BlockType& block)
     {
 		// TODO 03
-		size_t index = getMemoryManager()->calculateIndex(block) + 1;
-		return *getMemoryManager()->allocateMemoryAt(index);
+		size_t index = this->getMemoryManager()->calculateIndex(block) + 1;
+		return *this->getMemoryManager()->allocateMemoryAt(index);
 	}
 
 	template<typename DataType>
 	typename ImplicitSequence<DataType>::BlockType& ImplicitSequence<DataType>::insertBefore(BlockType& block)
     {
 		// TODO 03
-		size_t index = getMemoryManager()->calculateIndex(block);
-		return *getMemoryManager()->allocateMemoryAt(index);
+		size_t index = this->getMemoryManager()->calculateIndex(block);
+		return *this->getMemoryManager()->allocateMemoryAt(index);
 
 	}
 
@@ -187,51 +187,51 @@ namespace ds::amt {
     void ImplicitSequence<DataType>::removeFirst()
 	{
 		// TODO 03
-		getMemoryManager()->releaseMemoryAt(0);
+		this->getMemoryManager()->releaseMemoryAt(0);
 	}
 
 	template<typename DataType>
     void ImplicitSequence<DataType>::removeLast()
 	{
 		// TODO 03
-		getMemoryManager()->releaseMemory();
+		this->getMemoryManager()->releaseMemory();
 	}
 
 	template<typename DataType>
     void ImplicitSequence<DataType>::remove(size_t index)
 	{
 		// TODO 03
-		getMemoryManager()->releaseMemoryAt(index);
+		this->getMemoryManager()->releaseMemoryAt(index);
 	}
 
 	template<typename DataType>
     void ImplicitSequence<DataType>::removeNext(const BlockType& block)
 	{
 		// TODO 03
-		size_t index = indexOfNext(getMemoryManager()->calculateIndex(block));
-		getMemoryManager()->releaseMemoryAt(index);
+		size_t index = indexOfNext(this->getMemoryManager()->calculateIndex(block));
+		this->getMemoryManager()->releaseMemoryAt(index);
 	}
 
 	template<typename DataType>
     void ImplicitSequence<DataType>::removePrevious(const BlockType& block)
 	{
 		// TODO 03
-		size_t index = indexOfPrevious(getMemoryManager()->calculateIndex(block));
-		getMemoryManager()->releaseMemoryAt(index);
+		size_t index = indexOfPrevious(this->getMemoryManager()->calculateIndex(block));
+		this->getMemoryManager()->releaseMemoryAt(index);
 	}
 
 	template<typename DataType>
     void ImplicitSequence<DataType>::reserveCapacity(size_t capacity)
 	{
 		// TODO 03
-		getMemoryManager()->changeCapacity(capacity);
+		this->getMemoryManager()->changeCapacity(capacity);
 	}
 
 	template<typename DataType>
     size_t ImplicitSequence<DataType>::indexOfNext(size_t currentIndex) const
 	{
 		// TODO 03
-		return currentIndex + 1 < size() ? currentIndex + 1 : INVALID_INDEX;
+		return currentIndex + 1 < this->size() ? currentIndex + 1 : INVALID_INDEX;
 	}
 
 	template<typename DataType>
@@ -322,7 +322,7 @@ namespace ds::amt {
     size_t CyclicImplicitSequence<DataType>::indexOfNext(size_t currentIndex) const
 	{
 		// TODO 03
-		return currentIndex == size() - 1 ? 0 : currentIndex + 1;
+		return currentIndex == this->size() - 1 ? 0 : currentIndex + 1;
 	}
 
 	//NA DOMA
@@ -330,7 +330,7 @@ namespace ds::amt {
     size_t CyclicImplicitSequence<DataType>::indexOfPrevious(size_t currentIndex) const
 	{
 		// TODO 03
-		return currentIndex == 0 ? size() - 1 : currentIndex - 1;
+		return currentIndex == 0 ? this->size() - 1 : currentIndex - 1;
 	}
 
 }

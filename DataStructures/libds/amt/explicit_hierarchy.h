@@ -246,7 +246,7 @@ namespace ds::amt {
     size_t ExplicitHierarchy<BlockType>::size() const
 	{
 		// TODO 07
-		return root_ != nullptr ? nodeCount(*root_) : 0;
+		return root_ != nullptr ? this->nodeCount(*root_) : 0;
 	}
 
 	template<typename BlockType>
@@ -362,7 +362,7 @@ namespace ds::amt {
     MultiWayExplicitHierarchy<DataType>::~MultiWayExplicitHierarchy()
     {
 		// TODO 07
-		clear();
+		this->clear();
     }
 
     template<typename DataType>
@@ -384,7 +384,7 @@ namespace ds::amt {
     auto MultiWayExplicitHierarchy<DataType>::emplaceSon(BlockType& parent, size_t sonOrder) -> BlockType&
 	{
 		// TODO 07
-		BlockType* newSon = memoryManager_->allocateMemory();
+		BlockType* newSon = this->memoryManager_->allocateMemory();
 		parent.sons_->insert(sonOrder).data_ = newSon;
 		newSon->parent_ = &parent;
 		return *newSon;
@@ -409,8 +409,8 @@ namespace ds::amt {
 		// TODO 07
 		MemoryBlock<BlockType*>* sonsBlock = parent.sons_->access(sonOrder);
 		BlockType* removedSon = sonsBlock->data_;
-		processPostOrder(removedSon, [&](BlockType* b) {
-			memoryManager_->releaseMemory(b); });
+		this->processPostOrder(removedSon, [&](BlockType* b) {
+			this->memoryManager_->releaseMemory(b); });
 		parent.sons_->remove(sonOrder);
 	}
 
@@ -459,10 +459,10 @@ namespace ds::amt {
     auto KWayExplicitHierarchy<DataType, K>::emplaceSon(BlockType& parent, size_t sonOrder) -> BlockType&
 	{
 		// TODO 07
-		BlockType* newSon = memoryManager_->allocateMemory();
-		parent.sons_->insert(sonOrder).data_ = newSon;
-		newSon->parent_ = &parent;
-		return *newSon;
+        BlockType* newSon = this->memoryManager_->allocateMemory();
+        parent.sons_->access(sonOrder)->data_ = newSon;
+        newSon->parent_ = &parent;
+        return *newSon;
 	}
 
 	template<typename DataType, size_t K>
@@ -485,7 +485,7 @@ namespace ds::amt {
 		MemoryBlock<BlockType*>* sonsBlock = parent.sons_->access(sonOrder);
 		BlockType* removedSon = sonsBlock->data_;
 		processPostOrder(removedSon, [&](BlockType* b) {
-			memoryManager_->releaseMemory(b); });
+			this->memoryManager_->releaseMemory(b); });
 		sonsBlock->data_ = nullptr;
 	}
 
@@ -506,7 +506,7 @@ namespace ds::amt {
     BinaryExplicitHierarchy<DataType>::~BinaryExplicitHierarchy()
     {
 		// TODO 07
-		clear();
+		this->clear();
     }
 
     template<typename DataType>

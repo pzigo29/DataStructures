@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include <vector>
 
 class BusStop
 {
@@ -20,6 +21,18 @@ public:
 	std::string getBlockAt(int index)
 	{
 		return columns[index];
+	}
+	std::string getTown()
+	{
+		return town_;
+	}
+	std::string getNameTrans()
+	{
+		return nameTrans_;
+	}
+	std::string getName()
+	{
+		return name_;
 	}
 	void coutName() const
 	{

@@ -293,7 +293,7 @@ namespace ds::amt {
     BlockType& ExplicitSequence<BlockType>::insertFirst()
     {
         // TODO 04
-        BlockType* newBlock = memoryManager_->allocateMemory();
+        BlockType* newBlock = this->memoryManager_->allocateMemory();
         connectBlocks(newBlock, first_);
         first_ = newBlock;
         if (this->last_ == nullptr)
@@ -306,7 +306,7 @@ namespace ds::amt {
     BlockType& ExplicitSequence<BlockType>::insertLast()
     {
         // TODO 04
-        BlockType* newBlock = memoryManager_->allocateMemory();
+        BlockType* newBlock = this->memoryManager_->allocateMemory();
         connectBlocks(last_, newBlock);
         last_ = newBlock;
         if (this->first_ == nullptr)
@@ -329,7 +329,7 @@ namespace ds::amt {
     BlockType& ExplicitSequence<BlockType>::insertAfter(BlockType& block)
     {
         // TODO 04
-        BlockType* newBlock = memoryManager_->allocateMemory();
+        BlockType* newBlock = this->memoryManager_->allocateMemory();
         connectBlocks(newBlock, accessNext(block));
         connectBlocks(&block, newBlock);
         if (last_ == &block)
@@ -341,7 +341,7 @@ namespace ds::amt {
     BlockType& ExplicitSequence<BlockType>::insertBefore(BlockType& block)
     {
         // TODO 04
-        BlockType* newBlock = memoryManager_->allocateMemory();
+        BlockType* newBlock = this->memoryManager_->allocateMemory();
         connectBlocks(accessPrevious(block), newBlock);
         connectBlocks(newBlock, &block);
         if (first_ == &block)
@@ -356,13 +356,13 @@ namespace ds::amt {
         // TODO 04
         if (first_ == last_)
         {
-			memoryManager_->releaseMemory(first_);
+			this->memoryManager_->releaseMemory(first_);
 			first_ = last_ = nullptr;
 		}
         else
         {
 			BlockType* newFirst = accessNext(*first_);
-			memoryManager_->releaseMemory(first_);
+			this->memoryManager_->releaseMemory(first_);
 			first_ = newFirst;
 		}
     }
@@ -374,13 +374,13 @@ namespace ds::amt {
         // TODO 04
         if (first_ == last_)
         {
-            memoryManager_->releaseMemory(last_);
+            this->memoryManager_->releaseMemory(last_);
             first_ = last_ = nullptr;
         }
         else
         {
             BlockType* newLast = accessPrevious(*last_);
-			memoryManager_->releaseMemory(last_);
+			this->memoryManager_->releaseMemory(last_);
 			last_ = newLast;
             last_->next_ = nullptr;
         }
@@ -411,7 +411,7 @@ namespace ds::amt {
         else
         {
             disconnectBlock(removedBlock);
-            memoryManager_->releaseMemory(removedBlock);
+            this->memoryManager_->releaseMemory(removedBlock);
         }
     }
 
@@ -427,7 +427,7 @@ namespace ds::amt {
         else
         {
 			disconnectBlock(removedBlock);
-			memoryManager_->releaseMemory(removedBlock);
+			this->memoryManager_->releaseMemory(removedBlock);
 		}
     }
 

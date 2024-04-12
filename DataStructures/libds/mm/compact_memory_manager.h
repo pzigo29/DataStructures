@@ -101,14 +101,14 @@ namespace ds::mm {
 
         if (end_ == limit_)
         {
-            changeCapacity(2 * getAllocatedBlockCount());
+            changeCapacity(2 * this->getAllocatedBlockCount());
         }
         BlockType* adr = base_ + index;
         if ((end_ - base_) > index)
         {
             std::memmove(adr + 1, adr, (end_ - adr) * sizeof(BlockType));
         }
-        ++allocatedBlockCount_;
+        ++this->allocatedBlockCount_;
         ++end_;
         return placement_new(adr);
     }
@@ -126,7 +126,7 @@ namespace ds::mm {
             ++cur;
         }
         end_ = pointer;
-        allocatedBlockCount_ = end_ - base_;
+        this->allocatedBlockCount_ = end_ - base_;
     }
 
     template<typename BlockType>
@@ -138,7 +138,7 @@ namespace ds::mm {
         destroy(adr);
         std::memmove(adr, adr + 1, (end_ - adr - 1) * sizeof(BlockType));
         --end_;
-        --allocatedBlockCount_;
+        --this->allocatedBlockCount_;
     }
 
     template<typename BlockType>
@@ -167,12 +167,12 @@ namespace ds::mm {
         {
             clear();
             changeCapacity(other.getCapacity());
-            allocatedBlockCount_ = other.getAllocatedBlockCount();
-            for (size_t i = 0; i < getAllocatedBlockCount(); ++i)
+            this->allocatedBlockCount_ = other.getAllocatedBlockCount();
+            for (size_t i = 0; i < this->getAllocatedBlockCount(); ++i)
             {
                 placement_copy((base_ + i), *(other.base_ + i));
             }
-            end_ = base_ + getAllocatedBlockCount();
+            end_ = base_ + this->getAllocatedBlockCount();
         }
         return *this;
     }
@@ -199,7 +199,7 @@ namespace ds::mm {
         {
             return;
         }
-        if (newCapacity < getAllocatedBlockCount())
+        if (newCapacity < this->getAllocatedBlockCount())
         {
             releaseMemory(base_ + newCapacity);
         }
@@ -211,7 +211,7 @@ namespace ds::mm {
         if (newBase != base_)
         {
             base_ = static_cast<BlockType*>(newBase);
-            end_ = base_ + getAllocatedBlockCount();
+            end_ = base_ + this->getAllocatedBlockCount();
         }
         limit_ = base_ + newCapacity;
     }
@@ -233,7 +233,7 @@ namespace ds::mm {
         {
             return true;
         }
-        else if (getAllocatedBlockCount() == other.getAllocatedBlockCount()
+        else if (this->getAllocatedBlockCount() == other.getAllocatedBlockCount()
             && std::memcmp(base_, other.base_, getAllocatedBlocksSize()) == 0)
         {
             return true;
