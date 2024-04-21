@@ -30,9 +30,6 @@
     <ClCompile Include="bus_stop_hierarchy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="fill_bus_stop_hierarchy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="data\cow_busstops.csv">
@@ -80,6 +77,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="fill_bus_stop_hierarchy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="predicate_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bus_stop_struct.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

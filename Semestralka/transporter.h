@@ -1,6 +1,7 @@
 #pragma once
 #include "bus_stop.h"
 #include <vector>
+#include <libds/heap_monitor.h>
 
 template <template <typename T1> class T>
 class Transporter
@@ -13,5 +14,5 @@ public:
     typename T<BusStop>::iterator begin() { return zoznamObci_.begin(); }
     typename T<BusStop>::iterator end() { return zoznamObci_.end(); }
     std::string getNameTrans() { return zoznamObci_[0].getNameTrans(); }
-    int size() { return zoznamObci_.size(); }
+    size_t size() { return zoznamObci_.size(); }
 };

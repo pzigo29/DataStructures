@@ -132,7 +132,6 @@
   <ItemGroup>
     <ClCompile Include="bus_stop_hierarchy.cpp" />
     <ClCompile Include="CLI.cpp" />
-    <ClCompile Include="fill_bus_stop_hierarchy.cpp" />
     <ClCompile Include="input_data.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -147,12 +146,14 @@
     <None Include="data\wkt_busstops.csv" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="bus_stop_struct.h" />
     <ClInclude Include="bus_stop.h" />
     <ClInclude Include="bus_stop_hierarchy.h" />
     <ClInclude Include="CLI.h" />
     <ClInclude Include="contains_str.h" />
     <ClInclude Include="fill_bus_stop_hierarchy.h" />
     <ClInclude Include="input_data.h" />
+    <ClInclude Include="predicate_list.h" />
     <ClInclude Include="transporter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -678,7 +678,7 @@ namespace ds::amt {
     typename BinaryHierarchy<BlockType>::InOrderHierarchyIterator& BinaryHierarchy<BlockType>::InOrderHierarchyIterator::operator++()
 	{
 		// TODO 05
-		if (this->currentPosition_->currentNodeProcessed_)
+		if (!this->currentPosition_->currentNodeProcessed_)
 		{
 			if (this->currentPosition_->currentSonOrder_ != LEFT_SON_INDEX && this->tryToGoToLeftSonInCurrentPosition())
 			{

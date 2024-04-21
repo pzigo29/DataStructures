@@ -1,15 +1,14 @@
 #include "input_data.h"
-#include <iostream>
 #include <sstream>
-#include "contains_str.h"
 #include "CLI.h"
 #include "transporter.h"
 #include "bus_stop_hierarchy.h"
 #include "fill_bus_stop_hierarchy.h"
-
+#include <libds/heap_monitor.h>
 
 int main(int argc, char* argv[])
 {
+	initHeapMonitor();
 	//ODSTRANENIE STOPSITE A STOPID Z CSV, NAPISAT DO DOKUMENTACIE
 	std::vector<Transporter<std::vector>> zoznamDopravcov;
 	for (int i = 1; i < argc; i++)
@@ -20,16 +19,10 @@ int main(int argc, char* argv[])
 		Transporter<std::vector> zastavky = input.readFromFile();
 		zoznamDopravcov.push_back(zastavky);
 	}
-	//CLI().vectorStartApp(zoznamDopravcov);
 
 	BusStopHierarchy bsh;
-	FillBusStopHierarchy fbsh(zoznamDopravcov);
-	fbsh.fill(bsh);
+	FillBusStopHierarchy(zoznamDopravcov).fill(bsh);
+	CLI().chooseApp(zoznamDopravcov, bsh);
 
-	auto son = bsh.getSon(*bsh.getRoot(), 0);
-	auto sonSon = bsh.getSon(*son, 1);
-	std::cout << son->data_ << std::endl;
-	std::cout << sonSon->data_ << std::endl;
-	std::cout << bsh.getSon(*sonSon, 0)->data_;
 	return 0;
 }

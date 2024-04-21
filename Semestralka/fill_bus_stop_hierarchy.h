@@ -1,7 +1,7 @@
 #pragma once
 #include "bus_stop_hierarchy.h"
+#include <libds/heap_monitor.h>
 
-using Data = ds::amt::MultiWayExplicitHierarchyBlock<std::string>;
 template <typename T>
 class FillBusStopHierarchy
 {
@@ -19,22 +19,21 @@ inline void FillBusStopHierarchy<T>::fill(BusStopHierarchy& busStopHierarchy)
 	{
 		if (zoznamDopravcov_[i].size() != 0)
 		{
-			Data* curTransporter = busStopHierarchy.addTransporter(zoznamDopravcov_[i].getNameTrans(), i);
-			Data* curTown = busStopHierarchy.addMunicipality(zoznamDopravcov_[i].begin()->getTown(), curTransporter, 0);
+			BlockType* curTransporter = busStopHierarchy.addTransporter(zoznamDopravcov_[i].getNameTrans(), i);
+			BlockType* curTown = busStopHierarchy.addMunicipality(zoznamDopravcov_[i].begin()->getTown(), curTransporter, 0);
 			
 			for (auto ii = zoznamDopravcov_[i].begin(); ii != zoznamDopravcov_[i].end(); ++ii)
 			{
 			BusStopLoop:
-				if (curTown->data_ == ii->getTown())
+				if (curTown->data_.getName() == ii->getTown())
 				{
-					busStopHierarchy.addBusStop(ii->getName(), curTown, curTown->sons_->size());
+					busStopHierarchy.addBusStop(BusStopStruct(*ii), curTown, curTown->sons_->size());
 				}
 				else
 				{
-					// neviem ci kvoli tomuto to nebude O(n), ale neviem ako to inak spravit
 					for (auto iii = 0; iii < curTransporter->sons_->size(); ++iii)
 					{
-						if (ii->getTown() == curTransporter->sons_->access(iii)->data_->data_)
+						if (ii->getTown() == curTransporter->sons_->access(iii)->data_->data_.getName())
 						{
 							curTown = curTransporter->sons_->access(iii)->data_;
 							goto BusStopLoop;

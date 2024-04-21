@@ -2,43 +2,57 @@
 
 BusStopHierarchy::BusStopHierarchy()
 {
-    root_ = &this->busStopHierarchy_.emplaceRoot();
+    root_ = &ds::amt::MultiWayEH<BusStopStruct>::emplaceRoot();
+    root_->data_ = BusStopStruct("root");
 }
 
-Data* BusStopHierarchy::addTransporter(std::string transporter, int index)
+BlockType* BusStopHierarchy::addTransporter(std::string transporter, int index)
 {
-    Data& son = this->busStopHierarchy_.emplaceSon(*root_, index);
+    BlockType& son = this->emplaceSon(*root_, index);
     son.data_ = transporter;
-    //this->busStopHierarchy_.changeSon(*root_, index, &son);
     return &son;
 }
 
-Data* BusStopHierarchy::addMunicipality(std::string municipality, Data* transporter, int index)
+BlockType* BusStopHierarchy::addMunicipality(std::string municipality, BlockType* transporter, int index)
 {
-    Data& son = this->busStopHierarchy_.emplaceSon(*transporter, index);
+    BlockType& son = this->emplaceSon(*transporter, index);
     son.data_ = municipality;
-    //this->busStopHierarchy_.changeSon(transporter, index, &son);
     return &son;
 }
 
-void BusStopHierarchy::addBusStop(std::string busStop, Data* municipality, int index)
+BlockType* BusStopHierarchy::addBusStop(BusStopStruct busStop, BlockType* municipality, int index)
 {
-    Data& son = this->busStopHierarchy_.emplaceSon(*municipality, index);
+    BlockType& son = this->emplaceSon(*municipality, index);
     son.data_ = busStop;
-	//this->busStopHierarchy_.changeSon(municipality, index, &busStop);
+    return &son;
 }
 
-Data* BusStopHierarchy::getSon(Data& parent, int index)
+BlockType* BusStopHierarchy::getSon(BlockType& parent, int index) const
 {
-    return this->busStopHierarchy_.accessSon(parent, index);
+    return this->accessSon(parent, index);
 }
 
-Data* BusStopHierarchy::getParent(Data& son)
+BlockType* BusStopHierarchy::getParent(BlockType& son) const
 {
-    return this->busStopHierarchy_.accessParent(son);
+    return this->accessParent(son);
 }
 
-Data* BusStopHierarchy::getRoot()
+BlockType* BusStopHierarchy::getRoot() const
 {
     return root_;
+}
+
+BlockType* BusStopHierarchy::getTransporter(int indexTrans) const
+{
+	return this->accessSon(*root_, indexTrans);
+}
+
+BlockType* BusStopHierarchy::getMunicipality(int indexTrans, int indexMuni) const
+{
+	return this->accessSon(*this->accessSon(*root_, indexTrans), indexMuni);
+}
+
+BlockType* BusStopHierarchy::getBusStop(int indexTrans, int indexMuni, int indexStop) const
+{
+	return this->accessSon(*this->accessSon(*this->accessSon(*root_, indexTrans), indexMuni), indexStop);
 }

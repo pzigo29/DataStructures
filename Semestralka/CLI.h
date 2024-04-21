@@ -2,6 +2,10 @@
 #include <string>
 #include "bus_stop.h"
 #include "transporter.h"
+#include "bus_stop_hierarchy.h"
+#include "contains_str.h"
+#include <libds/heap_monitor.h>
+#include "predicate_list.h"
 
 class CLI
 {
@@ -13,7 +17,14 @@ class CLI
     {
         return stringToBeFound.compare(0, stringToFind.length(), stringToFind) == 0;
     };
+    
 public:
     CLI() = default;
-    void vectorStartApp(std::vector<Transporter<std::vector>> zoznamDopravcov);
+    void vectorStartApp(std::vector<Transporter<std::vector>>& zoznamDopravcov);
+    void hierarchyStartApp(BusStopHierarchy& zoznamDopravcov, BlockType* startNode = nullptr);
+    void chooseApp(std::vector<Transporter<std::vector>>& zoznamDopravcovVector, BusStopHierarchy& zoznamDopravcovHierarchy);
+    void predikuj(std::string predikat,
+        ContainsStr<BusStopStruct, std::string, ds::amt::Hierarchy<BlockType>::PreOrderHierarchyIterator, PredicateList> str,
+        BusStopHierarchy& zoznamDopravcov, BlockType* curNode);
+    BlockType* prehliadaj(BlockType* curNode);
 };

@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
-#include <vector>
+#include <libds/heap_monitor.h>
 
 class BusStop
 {
@@ -12,16 +12,11 @@ private:
 	std::string code_;
 	std::string nameTrans_;
 	std::string town_;
-	std::vector<std::string> columns;
 
 public:
 	BusStop(std::string name, std::string posX, std::string posY, std::string code, std::string nameTrans, std::string town)
-		: name_(name), posX_(posX), posY_(posY), code_(code), nameTrans_(nameTrans), town_(town), 
-			columns({name_, posX_, posY_, code_, nameTrans_, town_}) {}
-	std::string getBlockAt(int index)
-	{
-		return columns[index];
-	}
+		: name_(name), posX_(posX), posY_(posY), code_(code), nameTrans_(nameTrans), town_(town) {}
+
 	std::string getTown()
 	{
 		return town_;

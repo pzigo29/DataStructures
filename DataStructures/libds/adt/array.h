@@ -155,8 +155,19 @@ namespace ds::adt {
     ADT& Array<T>::assign(const ADT& other)
     {
         // TODO 08
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        if (this != &other)
+        {
+            const Array<T>& otherArray = dynamic_cast<const Array<T>&>(other);
+            if (otherArray.base_ == this->base_ && otherArray.size() == this->size())
+            {
+                ADS<T>::assign(otherArray);
+            }
+            else
+            {
+                throw std::invalid_argument("Array<T>::assign: Bases or sizes are different");
+            }
+        }
+        return *this;
     }
 
     template<typename T>
@@ -178,8 +189,7 @@ namespace ds::adt {
     bool Array<T>::isEmpty() const
     {
         // TODO 08
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        return false;
     }
 
     template<typename T>
@@ -198,32 +208,38 @@ namespace ds::adt {
     T Array<T>::access(long long index) const
     {
         // TODO 08
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        if (!this->validateIndex(index))
+        {
+            throw std::out_of_range("Array<T>::access: Index out of range");
+        }
+        size_t seqIndex = this->mapIndex(index);
+        return this->getSequence()->access(seqIndex)->data_;
     }
 
     template<typename T>
     void Array<T>::set(T element, long long index)
     {
         // TODO 08
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        if (!this->validateIndex(index))
+        {
+            throw std::out_of_range("Array<T>::set: Index out of range");
+        }
+        size_t seqIndex = this->mapIndex(index);
+        this->getSequence()->access(seqIndex)->data_ = element;
     }
 
     template <typename T>
     auto Array<T>::begin() -> IteratorType
     {
         // TODO 08
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        return this->getSequence()->begin();
     }
 
     template <typename T>
     auto Array<T>::end() -> IteratorType
     {
         // TODO 08
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        return this->getSequence()->end();
     }
 
     template<typename T>
@@ -236,16 +252,14 @@ namespace ds::adt {
     bool Array<T>::validateIndex(long long index) const
     {
         // TODO 08
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        return index >= this->base_ && index < this->base_ + static_cast<long long>(this->size());
     }
 
     template<typename T>
     size_t Array<T>::mapIndex(long long index) const
     {
         // TODO 08
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        return index - this->base_;
     }
 
     //----------

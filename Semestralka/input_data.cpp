@@ -1,6 +1,5 @@
 #include "input_data.h"
 
-
 Transporter<std::vector> InputData::readFromFile()
 {
 	std::vector<BusStop> busStops;
@@ -24,7 +23,6 @@ Transporter<std::vector> InputData::readFromFile()
 
 		busStops.push_back(BusStop(name, latitude, longtitude, code, system, town));
 	}
-
 
 	return Transporter<std::vector>(busStops);
 }
