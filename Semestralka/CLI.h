@@ -1,3 +1,4 @@
+#pragma once
 #include <functional>
 #include <string>
 #include "bus_stop.h"
@@ -17,14 +18,16 @@ class CLI
     {
         return stringToBeFound.compare(0, stringToFind.length(), stringToFind) == 0;
     };
-    
-public:
-    CLI() = default;
-    void vectorStartApp(std::vector<Transporter<std::vector>>& zoznamDopravcov);
-    void hierarchyStartApp(BusStopHierarchy& zoznamDopravcov, BlockType* startNode = nullptr);
-    void chooseApp(std::vector<Transporter<std::vector>>& zoznamDopravcovVector, BusStopHierarchy& zoznamDopravcovHierarchy);
     void predikuj(std::string predikat,
-        ContainsStr<BusStopStruct, std::string, ds::amt::Hierarchy<BlockType>::PreOrderHierarchyIterator, PredicateList> str,
+        ContainsStr<BusStopStruct*, std::string, ds::amt::Hierarchy<BlockType>::PreOrderHierarchyIterator, PredicateList> str,
         BusStopHierarchy& zoznamDopravcov, BlockType* curNode);
     BlockType* prehliadaj(BlockType* curNode);
+    void vectorStartApp(std::vector<Transporter<std::vector>>& zoznamDopravcov);
+    void hierarchyStartApp(BusStopHierarchy& zoznamDopravcov, BlockType* startNode = nullptr);
+public:
+    CLI() = default;
+    
+    void chooseApp(std::vector<Transporter<std::vector>>& zoznamDopravcovVector, BusStopHierarchy& zoznamDopravcovHierarchy);
+    
+
 };

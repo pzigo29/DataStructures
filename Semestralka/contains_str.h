@@ -26,7 +26,7 @@ inline void ContainsStr<T1, T2, iterator, T3>::containsString(iterator begin, it
 		std::transform(iLower.begin(), iLower.end(), iLower.begin(), std::tolower);
 		if (predicate(stringLower, iLower))
 		{
-			writeToVec.push_back(*i);
+			writeToVec.push_back(&(*i));
 		}
 	}
 }

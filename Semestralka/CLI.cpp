@@ -5,11 +5,11 @@
 void CLI::vectorStartApp(std::vector<Transporter<std::vector>>& zoznamDopravcov)
 {
 	
-	ContainsStr<BusStop, std::string, std::vector<BusStop>::iterator, std::vector> str;
+	ContainsStr<BusStop*, std::string, std::vector<BusStop>::iterator, std::vector> str;
 
 	while (true)
 	{
-		std::vector<BusStop> predikatVec;
+		std::vector<BusStop*> predikatVec;
 		std::string predikat, hladanyString, skratkaDopravcu;
 		std::vector<int> indexDopravcu;
 		int indexStlpca = 0;
@@ -93,8 +93,7 @@ void CLI::vectorStartApp(std::vector<Transporter<std::vector>>& zoznamDopravcov)
 
 		for (int i = 0; i < predikatVec.size(); ++i)
 		{
-			predikatVec[i].coutAll(false);
-
+			predikatVec[i]->coutAll(false);
 		}
 	}
 }
@@ -106,7 +105,7 @@ void CLI::hierarchyStartApp(BusStopHierarchy& zoznamDopravcov, BlockType* startN
 	std::cout << test[0] << std::endl;
 	free (test);*/
 
-	ContainsStr<BusStopStruct, std::string, ds::amt::Hierarchy<BlockType>::PreOrderHierarchyIterator, PredicateList> str;
+	ContainsStr<BusStopStruct*, std::string, ds::amt::Hierarchy<BlockType>::PreOrderHierarchyIterator, PredicateList> str;
 	if (startNode == nullptr)
 		startNode = zoznamDopravcov.getRoot();
 
@@ -157,10 +156,10 @@ void CLI::chooseApp(std::vector<Transporter<std::vector>>& zoznamDopravcovVector
 }
 
 void CLI::predikuj(std::string predikat, 
-	ContainsStr<BusStopStruct, std::string, ds::amt::Hierarchy<BlockType>::PreOrderHierarchyIterator, PredicateList> str,
+	ContainsStr<BusStopStruct*, std::string, ds::amt::Hierarchy<BlockType>::PreOrderHierarchyIterator, PredicateList> str,
 	BusStopHierarchy& zoznamDopravcov, BlockType* curNode)
 {
-	PredicateList<BusStopStruct> predikatVec;
+	PredicateList<BusStopStruct*> predikatVec;
 	std::string hladanyString;
 	std::cout << "hladanyString" << std::endl;
 	std::getline(std::cin >> std::ws, hladanyString);
@@ -183,14 +182,15 @@ void CLI::predikuj(std::string predikat,
 	}
 	for (int i = 0; i < predikatVec.size(); i++)
 	{
-		if (predikatVec[i]->data_.getStop() != nullptr)
-			predikatVec[i]->data_.getStop()->coutAll(false);
+		if (predikatVec[i]->data_->getStop() != nullptr)
+			predikatVec[i]->data_->getStop()->coutAll(false);
 	}
 	//predikatVec.clear();
 }
 
 BlockType* CLI::prehliadaj(BlockType* curNode)
 {
+	std::string indexVrcholaStr;
 	int indexVrchola = 0;
 	std::cout << "Aktualny vrchol: " << curNode->data_.getName() << "\n";
 	if (curNode->parent_ == nullptr)
@@ -201,10 +201,24 @@ BlockType* CLI::prehliadaj(BlockType* curNode)
 			std::cout << i << " " << curNode->sons_->access(i)->data_->data_.getName() << "\n";
 		}
 		std::cout << "Zadaj index syna (-1 pre otca)\n";
-		std::cin >> indexVrchola;
+		std::cin >> indexVrcholaStr;
+		try
+		{
+			indexVrchola = stoi(indexVrcholaStr);
+		}
+		catch (const std::exception&)
+		{
+			std::cout << "Neplatny vstup\n";
+			return curNode;
+		}
 		if (indexVrchola < 0)
 		{
 			std::cout << "Rodic je nullptr\n";
+			return curNode;
+		}
+		if (indexVrchola >= curNode->sons_->size())
+		{
+			std::cout << "Neplatny index\n";
 			return curNode;
 		}
 		return curNode->sons_->access(indexVrchola)->data_;
@@ -214,13 +228,22 @@ BlockType* CLI::prehliadaj(BlockType* curNode)
 	{
 		std::cout << "Otec: " << curNode->parent_->data_.getName() << "\n";
 		std::cout << "Zadaj index syna (-1 pre otca)\n";
-		std::cin >> indexVrchola;
-		if (indexVrchola >= 0)
+		std::cin >> indexVrcholaStr;
+		try
 		{
-			std::cout << "Vrchol nema synov\n";
+			indexVrchola = stoi(indexVrcholaStr);
+		}
+		catch (const std::exception&)
+		{
+			std::cout << "Neplatny vstup\n";
 			return curNode;
 		}
-		return reinterpret_cast<BlockType*>(curNode->parent_);
+		if (indexVrchola < 0)
+		{
+			return reinterpret_cast<BlockType*>(curNode->parent_);
+		}
+		std::cout << "Vrchol nema synov\n";
+		return curNode;
 	}
 
 	std::cout << "Otec: " << curNode->parent_->data_.getName() << "\n";
@@ -230,10 +253,24 @@ BlockType* CLI::prehliadaj(BlockType* curNode)
 		std::cout << i << " " << curNode->sons_->access(i)->data_->data_.getName() << "\n";
 	}
 	std::cout << "Zadaj index syna (-1 pre otca)\n";
-	std::cin >> indexVrchola;
+	std::cin >> indexVrcholaStr;
+	try
+	{
+		indexVrchola = stoi(indexVrcholaStr);
+	}
+	catch (const std::exception&)
+	{
+		std::cout << "Neplatny vstup\n";
+		return curNode;
+	}
 	if (indexVrchola < 0)
 	{
 		return reinterpret_cast<BlockType*>(curNode->parent_);
+	}
+	if (indexVrchola >= curNode->sons_->size())
+	{
+		std::cout << "Neplatny index\n";
+		return curNode;
 	}
 	return curNode->sons_->access(indexVrchola)->data_;
 }

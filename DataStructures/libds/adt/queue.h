@@ -104,8 +104,28 @@ namespace ds::adt {
     ADT& ImplicitQueue<T>::assign(const ADT& other)
     {
         // TODO 09
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        if (typeid(other) != typeid(*this))
+        {
+	        throw std::runtime_error("ImplicitQueue<T>::assign: Other AUT is not ImplicitQueue");
+        }
+        if (this != &other)
+        {
+	        if (this->getSequence()->size() < other.size())
+	        {
+		        throw std::runtime_error("ImplicitQueue<T>::assign: Capacity is too small");
+	        }
+            this->clear();
+            this->insertionIndex_ = this->getSequence()->indexOfNext(other.size() - 1);
+            this->removalIndex_ = 0;
+            this->size_ = other.size();
+            size_t removalOfOther = dynamic_cast<const ImplicitQueue&>(other).removalIndex_;
+            for (int i = 0; i < this->size(); ++i)
+            {
+	            this->getSequence()->access(i)->data_ = dynamic_cast<const ImplicitQueue&>(other).getSequence()->access(removalOfOther)->data_;
+                removalOfOther = dynamic_cast<const ImplicitQueue&>(other).getSequence()->indexOfNext(removalOfOther);
+            }
+        }
+        return *this;
     }
 
     template<typename T>
@@ -125,16 +145,44 @@ namespace ds::adt {
     bool ImplicitQueue<T>::equals(const ADT& other)
     {
         // TODO 09
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        if (this == &other)
+        {
+            return true;
+        }
+        if (this->size_ != other.size())
+        {
+	        return false;
+        }
+        if (typeid(*this) != typeid(other))
+        {
+	        return false;
+        }
+        int myIndex = removalIndex_;
+        int otherIndex = dynamic_cast<const ImplicitQueue&>(other).removalIndex_;
+        for (int i = 0; i < this->size(); ++i)
+        {
+	        if (this->getSequence()->access(myIndex)->data_ != 
+                dynamic_cast<const ImplicitQueue&>(other).getSequence()->access(otherIndex)->data_)
+	        {
+		        return false;
+	        }
+			myIndex = this->getSequence()->indexOfNext(myIndex);
+			otherIndex = dynamic_cast<const ImplicitQueue&>(other).getSequence()->indexOfNext(otherIndex);
+        }
+        return true;
     }
 
     template<typename T>
     void ImplicitQueue<T>::push(T element)
     {
         // TODO 09
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        if (this->size() == this->getSequence()->size())
+        {
+	        throw std::runtime_error("ImplicitQueue<T>::push: Queue is full");
+        }
+        this->getSequence()->access(insertionIndex_)->data_ = element;
+        insertionIndex_ = this->getSequence()->indexOfNext(insertionIndex_);
+        ++size_;
     }
 
     template<typename T>
