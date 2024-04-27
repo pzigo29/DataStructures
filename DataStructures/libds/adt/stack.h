@@ -92,7 +92,7 @@ namespace ds::adt {
         // TODO 09
         if (this->isEmpty())
         {
-            throw std::out_of_range("ImplicitStack<T>::peek: Stack is empty");
+            throw std::out_of_range("ImplicitStack<T>::pop: Stack is empty");
         }
         T data = this->getSequence()->accessLast()->data_;
         this->getSequence()->removeLast();
@@ -121,24 +121,31 @@ namespace ds::adt {
     void ExplicitStack<T>::push(T element)
     {
         // TODO 09
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        this->getSequence()->insertFirst().data_ = element;
     }
 
     template<typename T>
     T& ExplicitStack<T>::peek()
     {
         // TODO 09
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        if (this->isEmpty())
+		{
+			throw std::out_of_range("ExplicitStack<T>::peek: Stack is empty");
+		}
+        return this->getSequence()->accessFirst()->data_;
     }
 
     template<typename T>
     T ExplicitStack<T>::pop()
     {
         // TODO 09
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        if (this->isEmpty())
+        {
+            throw std::out_of_range("ExplicitStack<T>::pop: Stack is empty");
+        }
+        T element = this->getSequence()->accessFirst()->data_;
+        this->getSequence()->removeFirst();
+        return element;
     }
 
     template<typename T>

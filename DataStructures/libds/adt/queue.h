@@ -189,16 +189,25 @@ namespace ds::adt {
     T& ImplicitQueue<T>::peek()
     {
         // TODO 09
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        if (this->isEmpty())
+        {
+	        throw std::runtime_error("ImplicitQueue<T>::peek: Queue is empty");
+        }
+        return this->getSequence()->access(removalIndex_)->data_;
     }
 
     template<typename T>
     T ImplicitQueue<T>::pop()
     {
         // TODO 09
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        if (this->isEmpty())
+        {
+            throw std::runtime_error("ImplicitQueue<T>::pop: Queue is empty");
+        }
+        T element = this->getSequence()->access(removalIndex_)->data_;
+        removalIndex_ = this->getSequence()->indexOfNext(removalIndex_);
+        --this->size_;
+        return element;
     }
 
     template<typename T>
@@ -223,24 +232,31 @@ namespace ds::adt {
     void ExplicitQueue<T>::push(T element)
     {
         // TODO 09
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        this->getSequence()->insertLast().data_ = element;
     }
 
     template<typename T>
     T& ExplicitQueue<T>::peek()
     {
         // TODO 09
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        if (this->isEmpty())
+        {
+            throw std::runtime_error("ImplicitQueue<T>::peek: Queue is empty");
+        }
+        return this->getSequence()->accessFirst()->data_;
     }
 
     template<typename T>
     T ExplicitQueue<T>::pop()
     {
         // TODO 09
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        if (this->isEmpty())
+        {
+            throw std::runtime_error("ImplicitQueue<T>::pop: Queue is empty");
+        }
+        T element = this->getSequence()->accessFirst()->data_;
+        this->getSequence()->removeFirst();
+        return element;
     }
 
     template<typename T>
