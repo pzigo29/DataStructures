@@ -596,24 +596,63 @@ namespace ds::adt {
 	void BinaryHeap<P, T>::push(P priority, T data)
 	{
 		// TODO 09
-		// po implementacii vymazte vyhodenie vynimky!
-		throw std::runtime_error("Not implemented yet");
+		PriorityQueueItem<P, T>& queueItem = this->getHierarchy()->insertLastLeaf().data_;
+		queueItem.priority_ = priority;
+		queueItem.data_ = data;
+		HierarchyBlockType* curBlock = this->getHierarchy()->accessLastLeaf();
+		HierarchyBlockType* parentBlock = this->getHierarchy()->accessParent(*curBlock);
+		while (parentBlock != nullptr && curBlock->data_.priority_ < parentBlock->data_.priority_)
+		{
+			std::swap(curBlock->data_, parentBlock->data_);
+			curBlock = parentBlock;
+			parentBlock = this->getHierarchy()->accessParent(*curBlock);
+		}
 	}
 
 	template<typename P, typename T>
 	T& BinaryHeap<P, T>::peek()
 	{
 		// TODO 09
-		// po implementacii vymazte vyhodenie vynimky!
-		throw std::runtime_error("Not implemented yet");
+		if (this->isEmpty())
+		{
+			throw std::out_of_range("BinaryHeap<>::peek: Queue is empty!");
+		}
+		return this->getHierarchy()->accessRoot()->data_.data_;
 	}
 
 	template<typename P, typename T>
 	T BinaryHeap<P, T>::pop()
 	{
 		// TODO 09
-		// po implementacii vymazte vyhodenie vynimky!
-		throw std::runtime_error("Not implemented yet");
+		if (this->isEmpty())
+		{
+			throw std::out_of_range("BinaryHeap<>::pop: Queue is empty!");
+		}
+		HierarchyBlockType* curBlock = this->getHierarchy()->accessRoot();
+		T element = curBlock->data_.data_;
+		std::swap(curBlock->data_, this->getHierarchy()->accessLastLeaf()->data_);
+		this->getHierarchy()->removeLastLeaf();
+		if (!this->isEmpty())
+		{
+			auto findSonWithHigherPriority = [&](HierarchyBlockType* parentBlock) -> HierarchyBlockType*
+			{
+				HierarchyBlockType* leftSon = this->getHierarchy()->accessLeftSon(*parentBlock);
+				HierarchyBlockType* rightSon = this->getHierarchy()->accessRightSon(*parentBlock);
+				if (rightSon == nullptr || leftSon->data_.priority_ < rightSon->data_.priority_)
+				{
+					return leftSon;
+				}
+				return rightSon;
+			};
+			HierarchyBlockType* sonBlock = findSonWithHigherPriority(curBlock);
+			while (sonBlock != nullptr && curBlock->data_.priority_ > sonBlock->data_.priority_)
+			{
+				std::swap(curBlock->data_, sonBlock->data_);
+				curBlock = sonBlock;
+				sonBlock = findSonWithHigherPriority(curBlock);
+			}
+		}
+		return element;
 	}
 
 	template<typename P, typename T>
