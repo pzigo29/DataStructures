@@ -6,7 +6,9 @@
 class BusStop
 {
 private:
+	std::string id_;
 	std::string name_;
+	std::string stopSite_;
 	std::string posX_;
 	std::string posY_;
 	std::string code_;
@@ -14,8 +16,8 @@ private:
 	std::string town_;
 
 public:
-	BusStop(std::string name, std::string posX, std::string posY, std::string code, std::string nameTrans, std::string town)
-		: name_(name), posX_(posX), posY_(posY), code_(code), nameTrans_(nameTrans), town_(town) {}
+	BusStop(std::string id, std::string name, std::string stopSite, std::string posX, std::string posY, std::string code, std::string nameTrans, std::string town)
+		: id_(id), name_(name), stopSite_(stopSite), posX_(posX), posY_(posY), code_(code), nameTrans_(nameTrans), town_(town) {}
 
 	std::string getTown()
 	{
@@ -29,9 +31,17 @@ public:
 	{
 		return name_;
 	}
+	void coutId() const
+	{
+		std::cout << id_ << " ";
+	}
 	void coutName() const
 	{
 		std::cout << name_ << " ";
+	}
+	void coutStopSite() const
+	{
+		std::cout << stopSite_ << " ";
 	}
 	void coutPosX() const
 	{
@@ -57,7 +67,11 @@ public:
 	{
 		if (podSebou)
 		{
+			coutId();
+			std::cout << std::endl;
 			coutName();
+			std::cout << std::endl;
+			coutStopSite();
 			std::cout << std::endl;
 			coutPosX();
 			std::cout << std::endl;
@@ -72,7 +86,9 @@ public:
 		}
 		else
 		{
+			coutId();
 			coutName();
+			coutStopSite();
 			coutPosX();
 			coutPosY();
 			coutCode();

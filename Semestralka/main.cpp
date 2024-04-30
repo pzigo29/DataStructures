@@ -9,7 +9,6 @@
 int main(int argc, char* argv[])
 {
 	initHeapMonitor();
-	//ODSTRANENIE STOPSITE A STOPID Z CSV, NAPISAT DO DOKUMENTACIE
 	std::vector<Transporter<std::vector>> zoznamDopravcov;
 	for (int i = 1; i < argc; i++)
 	{

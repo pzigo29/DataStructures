@@ -596,9 +596,9 @@ namespace ds::adt {
 	void BinaryHeap<P, T>::push(P priority, T data)
 	{
 		// TODO 09
-		PriorityQueueItem<P, T>& queueItem = this->getHierarchy()->insertLastLeaf().data_;
-		queueItem.priority_ = priority;
-		queueItem.data_ = data;
+		PriorityQueueItem<P, T>* queueItem = &this->getHierarchy()->insertLastLeaf().data_;
+		queueItem->priority_ = priority;
+		queueItem->data_ = data;
 		HierarchyBlockType* curBlock = this->getHierarchy()->accessLastLeaf();
 		HierarchyBlockType* parentBlock = this->getHierarchy()->accessParent(*curBlock);
 		while (parentBlock != nullptr && curBlock->data_.priority_ < parentBlock->data_.priority_)
