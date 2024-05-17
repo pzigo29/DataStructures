@@ -12,7 +12,6 @@ void CLI::vectorStartApp(std::vector<Transporter<std::vector>>& zoznamDopravcov)
 		std::vector<BusStop*> predikatVec;
 		std::string predikat, hladanyString, skratkaDopravcu;
 		std::vector<int> indexDopravcu;
-		int indexStlpca = 0;
 		std::cout << "Algoritmus Contains:\n 'contains' || '-c'\n"
 			   "Algoritmus StartsWith:\n 'startsWith' || '-s'\n"
 		       "Ukoncenie aplikacie:\n 'exit' || '-e'\n";
@@ -126,13 +125,103 @@ void CLI::hierarchyStartApp(BusStopHierarchy& zoznamDopravcov, BlockType* startN
 	}
 }
 
-void CLI::chooseApp(std::vector<Transporter<std::vector>>& zoznamDopravcovVector, BusStopHierarchy& zoznamDopravcovHierarchy)
+void CLI::tableStartApp(PredicateList<BusTable<std::string, BusStop*>>& array)
+{
+	ContainsStr<BusStop*, std::string, BusTable<std::string, BusStop*>::IteratorType, PredicateList> str;
+	
+	std::string predikat, hladanyString, skratkaDopravcu;
+		
+	while (true)
+	{
+		PredicateList<BusStop*> predikatVec;
+		int indexDopravcu; 
+		std::cout << "Hladanie podla kluca:\n 'key' || '-k'\n"
+		       "Ukoncenie aplikacie:\n 'exit' || '-e'\n";
+		std::cin >> predikat;
+		if (predikat == "exit" || predikat == "-e")
+		{
+			return;
+		}
+		std::cout << "hladanyString" << std::endl;
+		std::getline(std::cin >> std::ws, hladanyString);
+		std::cout << "dopravca" << std::endl;
+		std::getline(std::cin >> std::ws, skratkaDopravcu);
+
+
+		if (skratkaDopravcu == "COW" || skratkaDopravcu == "cow" || skratkaDopravcu == "0")
+		{
+			indexDopravcu = 0;
+		}
+		else if (skratkaDopravcu == "KAM" || skratkaDopravcu == "kam" || skratkaDopravcu == "1")
+		{
+			indexDopravcu = 1;
+		}
+		else if (skratkaDopravcu == "NAN" || skratkaDopravcu == "nan" || skratkaDopravcu == "2")
+		{
+			indexDopravcu = 2;
+		}
+		else if (skratkaDopravcu == "VIC" || skratkaDopravcu == "vic" || skratkaDopravcu == "3")
+		{
+			indexDopravcu = 3;
+		}
+		else if (skratkaDopravcu == "VLY" || skratkaDopravcu == "vly" || skratkaDopravcu == "4")
+		{
+			indexDopravcu = 4;
+		}
+		else if (skratkaDopravcu == "WHI" || skratkaDopravcu == "whi" || skratkaDopravcu == "5")
+		{
+			indexDopravcu = 5;
+		}
+		else if (skratkaDopravcu == "WIL" || skratkaDopravcu == "wil" || skratkaDopravcu == "6")
+		{
+			indexDopravcu = 6;
+		}
+		else if (skratkaDopravcu == "WKT" || skratkaDopravcu == "wkt" || skratkaDopravcu == "7")
+		{
+			indexDopravcu = 7;
+		}
+		else
+		{
+			std::cout << "Neplatny vstup!" << std::endl;
+			continue;
+		}
+		if (predikat == "key" || predikat == "-k")
+		{
+			BusStop* stop = array.access(indexDopravcu)->data_.find(hladanyString);
+			stop->coutAll(false);
+			/*str.containsStringTable(array.access(indexDopravcu)->data_.begin(), array.access(indexDopravcu)->data_.end(),
+			hladanyString, predikatVec, [](const std::string& stringToFind, const std::string& stringToBeFound)
+			{
+				std::string stringToFindLower = stringToFind;
+				std::transform(stringToFindLower.begin(), stringToFindLower.end(), stringToFindLower.begin(), std::tolower);
+				std::string stringToBeFoundLower = stringToBeFound;
+				std::transform(stringToBeFoundLower.begin(), stringToBeFoundLower.end(), stringToBeFoundLower.begin(), std::tolower);
+				return stringToBeFoundLower == stringToFindLower;
+			});*/
+		}
+		else
+		{
+			std::cout << "Neplatny vstup" << std::endl;
+			continue;
+		}
+
+
+		for (int i = 0; i < predikatVec.size(); ++i)
+		{
+			predikatVec[i]->data_->coutAll(false);
+		}
+		
+	}
+}
+
+void CLI::chooseApp(std::vector<Transporter<std::vector>>& zoznamDopravcovVector, BusStopHierarchy& zoznamDopravcovHierarchy, PredicateList<BusTable<std::string, BusStop*>>& busStopTable)
 {
 	std::string volba;
 	while (true)
 	{
 	std::cout << "Zadajte 'vector' || '-v' pre spustenie aplikacie s vektormi\n"
 		"Zadajte 'hierarchy' || '-h' pre spustenie aplikacie s hierarchiou\n"
+		"Zadajte 'table' || '-t' pre spustenie aplikacie s tabulkou\n"
 		"Zadajte 'exit' || '-e' pre ukoncenie aplikacie\n";
 	std::cin >> volba;
 	
@@ -143,6 +232,10 @@ void CLI::chooseApp(std::vector<Transporter<std::vector>>& zoznamDopravcovVector
 		else if (volba == "hierarchy" || volba == "-h")
 		{
 			hierarchyStartApp(zoznamDopravcovHierarchy);
+		}
+		else if (volba == "table" || volba == "-t")
+		{
+			tableStartApp(busStopTable);
 		}
 		else if (volba == "exit" || volba == "-e")
 		{
@@ -191,7 +284,7 @@ void CLI::predikuj(std::string predikat,
 BlockType* CLI::prehliadaj(BlockType* curNode)
 {
 	std::string indexVrcholaStr;
-	int indexVrchola = 0;
+	int indexVrchola;
 	std::cout << "Aktualny vrchol: " << curNode->data_.getName() << "\n";
 	if (curNode->parent_ == nullptr)
 	{

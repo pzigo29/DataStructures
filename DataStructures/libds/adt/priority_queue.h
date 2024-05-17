@@ -496,7 +496,7 @@ namespace ds::adt {
 	{
 		// TODO 09
 		PriorityQueueItem<P, T>* queueItem = nullptr;
-		if (longSequence_->size() == 0 || !shortSequence_->isEmpty() && shortSequence_->accessFirst()->data_.priority_ > priority)
+		if (shortSequence_->isEmpty() || priority < shortSequence_->accessFirst()->data_.priority_ || longSequence_->isEmpty() && shortSequence_->size() == shortSequence_->getCapacity())
 		{
 			if (shortSequence_->size() == shortSequence_->getCapacity())
 			{

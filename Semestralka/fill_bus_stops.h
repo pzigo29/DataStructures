@@ -2,18 +2,22 @@
 #include "bus_stop_hierarchy.h"
 #include <libds/heap_monitor.h>
 
+#include "bus_table.h"
+#include "libds/adt/array.h"
+
 template <typename T>
-class FillBusStopHierarchy
+class FillBusStops
 {
 	T& zoznamDopravcov_; //std::vector<Transporter>
 public:
-	FillBusStopHierarchy(T& zoznamDopravcov) :
+	FillBusStops(T& zoznamDopravcov) :
 		zoznamDopravcov_(zoznamDopravcov) {}
-	void fill(BusStopHierarchy& busStopHierarchy);
+	void fillHierarchy(BusStopHierarchy& busStopHierarchy);
+	void fillTable(PredicateList<BusTable<std::string, BusStop*>>& busStopTable);
 };
 
 template<typename T>
-inline void FillBusStopHierarchy<T>::fill(BusStopHierarchy& busStopHierarchy)
+void FillBusStops<T>::fillHierarchy(BusStopHierarchy& busStopHierarchy)
 {
 	for (auto i = 0; i < zoznamDopravcov_.size(); ++i)
 	{
@@ -43,6 +47,20 @@ inline void FillBusStopHierarchy<T>::fill(BusStopHierarchy& busStopHierarchy)
 					goto BusStopLoop;
 				}
 			}
+		}
+	}
+}
+
+template <typename T>
+void FillBusStops<T>::fillTable(PredicateList<BusTable<std::string, BusStop*>>& busStopTable)
+{
+	
+	for (int i = 0; i < busStopTable.size(); ++i)
+	{
+		for (auto ii = zoznamDopravcov_[i].begin(); ii != zoznamDopravcov_[i].end(); ++ii)
+		{
+			busStopTable.access(i)->data_.insert((*ii).getName(), &*ii, nullptr);
+			//busStopTable.access(i)->data_.find((*ii).getName())->coutAll(false);
 		}
 	}
 }

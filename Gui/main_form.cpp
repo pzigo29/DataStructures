@@ -4,6 +4,8 @@
 #include <complexities/list_analyzer.h>
 #include <msclr\marshal_cppstd.h>
 
+#include "complexities/tableAnalyzer.h"
+
 namespace WF = System::Windows::Forms;
 namespace Col = System::Collections::Generic;
 namespace Sys = System;
@@ -46,10 +48,10 @@ std::vector<std::unique_ptr<ds::tests::Test>> createTests()
 	adt->add_test(std::make_unique<ds::tests::SequenceTableTest>());
 
     // TODO 11
-	//adt->add_test(std::make_unique<ds::tests::NonSequenceTableTest>());
+	adt->add_test(std::make_unique<ds::tests::NonSequenceTableTest>());
 
 	// TODO 12
-	//adt->add_test(std::make_unique<ds::tests::SortTest>());
+	adt->add_test(std::make_unique<ds::tests::SortTest>());
 
 	root->add_test(std::move(mm));
 	root->add_test(std::move(amt));
@@ -65,7 +67,7 @@ std::vector<std::unique_ptr<ds::utils::Analyzer>> createAnalyzers()
 	
 	// TODO 01
 	analyzers.emplace_back(std::make_unique<ds::utils::ListsAnalyzer>());
-
+	analyzers.emplace_back(std::make_unique<ds::utils::TablesAnalyzer>());
 	return analyzers;
 }
 

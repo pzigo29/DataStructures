@@ -67,12 +67,12 @@ public:
 	{
 		if (podSebou)
 		{
-			coutId();
-			std::cout << std::endl;
+			/*coutId();
+			std::cout << std::endl;*/
 			coutName();
 			std::cout << std::endl;
-			coutStopSite();
-			std::cout << std::endl;
+			/*coutStopSite();
+			std::cout << std::endl;*/
 			coutPosX();
 			std::cout << std::endl;
 			coutPosY();
@@ -86,9 +86,9 @@ public:
 		}
 		else
 		{
-			coutId();
+			/*coutId();*/
 			coutName();
-			coutStopSite();
+			//coutStopSite();
 			coutPosX();
 			coutPosY();
 			coutCode();

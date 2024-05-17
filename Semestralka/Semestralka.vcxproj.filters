@@ -76,13 +76,16 @@
     <ClInclude Include="transporter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="fill_bus_stop_hierarchy.h">
+    <ClInclude Include="fill_bus_stops.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="predicate_list.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="bus_stop_struct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bus_table.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

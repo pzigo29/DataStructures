@@ -15,4 +15,5 @@ public:
     typename T<BusStop>::iterator end() { return zoznamObci_.end(); }
     std::string getNameTrans() { return zoznamObci_[0].getNameTrans(); }
     size_t size() { return zoznamObci_.size(); }
+    BusStop& operator[](size_t index) { return zoznamObci_[index]; }
 };

@@ -8,6 +8,13 @@ class PredicateList : public ds::amt::ImplicitSequence<T>
 {
 public:
 	PredicateList() = default;
+	PredicateList(size_t size)
+	{
+		for (size_t i = 0; i < size; i++)
+		{
+			this->insertLast();
+		}
+	}
 	void push_back(T str)
 	{
 		auto& data = ds::amt::ImplicitSequence<T>::insertLast();
