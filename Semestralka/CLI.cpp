@@ -187,8 +187,16 @@ void CLI::tableStartApp(PredicateList<BusTable<std::string, BusStop*>>& array)
 		}
 		if (predikat == "key" || predikat == "-k")
 		{
-			BusStop* stop = array.access(indexDopravcu)->data_.find(hladanyString);
-			stop->coutAll(false);
+			/*BusStop* stop = array.access(indexDopravcu)->data_.find(hladanyString);
+			stop->coutAll(false);*/
+			auto* item = array.access(indexDopravcu)->data_.findItem(hladanyString);
+			item->data_->coutAll(false);
+			auto* synonym = item->synonym_;
+			while (synonym != nullptr)
+			{
+				synonym->data_->coutAll(false);
+				synonym = synonym->synonym_;
+			}
 			/*str.containsStringTable(array.access(indexDopravcu)->data_.begin(), array.access(indexDopravcu)->data_.end(),
 			hladanyString, predikatVec, [](const std::string& stringToFind, const std::string& stringToBeFound)
 			{
@@ -206,7 +214,7 @@ void CLI::tableStartApp(PredicateList<BusTable<std::string, BusStop*>>& array)
 		}
 
 
-		for (int i = 0; i < predikatVec.size(); ++i)
+		for (size_t i = 0; i < predikatVec.size(); ++i)
 		{
 			predikatVec[i]->data_->coutAll(false);
 		}

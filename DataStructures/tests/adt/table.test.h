@@ -7,8 +7,6 @@
 #include <unordered_set>
 #include <tests/_details/test.hpp>
 
-#include "../../../Semestralka/bus_table.h"
-
 namespace ds::tests
 {
     namespace details
@@ -530,7 +528,6 @@ namespace ds::tests
             this->add_test(std::make_unique<GeneralTableTest<adt::HashTable<int, int>>>("HashTable"));
             this->add_test(std::make_unique<GeneralTableTest<adt::BinarySearchTree<int, int>>>("BinarySearchTree"));
             this->add_test(std::make_unique<GeneralTableTest<adt::Treap<int, int>>>("Treap"));
-            this->add_test(std::make_unique<GeneralTableTest<BusTable<int, int>>>("BusTable"));
         }
     };
 

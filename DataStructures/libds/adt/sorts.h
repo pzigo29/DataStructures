@@ -127,22 +127,18 @@ namespace ds::adt
     void SelectSort<T>::sort(amt::ImplicitSequence<T>& is, std::function<bool(const T&, const T&)> compare)
     {
         // TODO 12
-        for (size_t i = 0; i < is.size(); ++i)
+        for (size_t i = 0; i < is.size() - 1; ++i)
         {
-            T min = is.access(i)->data_;
             size_t minIndex = i;
 	        for (size_t j = i + 1; j < is.size(); ++j)
 	        {
-		        if (compare(is.access(i)->data_, min))
+		        if (compare(is.access(j)->data_, is.access(minIndex)->data_))
 		        {
-			        min = is.access(j)->data_;
 			        minIndex = j;
 		        }
 	        }
-            if (i != minIndex)
-            {
-                std::swap(is.access(i)->data_, is.access(minIndex)->data_);
-            }
+        	std::swap(is.access(i)->data_, is.access(minIndex)->data_);
+            
         }
     }
 
@@ -150,16 +146,37 @@ namespace ds::adt
     void InsertSort<T>::sort(amt::ImplicitSequence<T>& is, std::function<bool(const T&, const T&)> compare)
     {
         // TODO 12
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        for (size_t i = 1; i < is.size(); ++i)
+        {
+            T tmp = is.access(i)->data_;
+            size_t j = i;
+            while (j > 0 && compare(tmp, is.access(j - 1)->data_))
+            {
+	            is.access(j)->data_ = is.access(j - 1)->data_;
+                --j;
+            }
+            is.access(j)->data_ = tmp;
+        }
     }
 
     template<typename T>
     void BubbleSort<T>::sort(amt::ImplicitSequence<T>& is, std::function<bool(const T&, const T&)> compare)
     {
         // TODO 12
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        bool exchange;
+        do
+        {
+	        exchange = false;
+            for (size_t i = 0; i < is.size() - 1; ++i)
+            {
+	            if (compare(is.access(i + 1)->data_, is.access(i)->data_))
+	            {
+                    std::swap(is.access(i + 1)->data_, is.access(i)->data_);
+                    exchange = true;
+	            }
+            }
+        }
+        while (exchange);
     }
 
     template<typename T>
@@ -175,16 +192,88 @@ namespace ds::adt
     void QuickSort<T>::quick(amt::ImplicitSequence<T>& is, std::function<bool(const T&, const T&)> compare, size_t min, size_t max)
     {
         // TODO 12
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        T pivot = is.access(min + (max - min) / 2)->data_;
+        int left = min;
+        int right = max;
+        do
+        {
+	        while (compare(is.access(left)->data_, pivot))
+	        {
+		        ++left;
+	        }
+	        while (right > 0 && compare(pivot, is.access(right)->data_))
+	        {
+                --right;
+	        }
+	        if (left <= right)
+	        {
+                std::swap(is.access(left)->data_, is.access(right)->data_);
+                ++left;
+                if (right > 0)
+                {
+                    --right;
+                }
+	        }
+        }
+        while (left <= right);
+        if (min < right)
+        {
+            quick(is, compare, min, right);
+        }
+        if (left < max)
+        {
+            quick(is, compare, left, max);
+        }
     }
 
     template<typename T>
     void HeapSort<T>::sort(amt::ImplicitSequence<T>& is, std::function<bool(const T&, const T&)> compare)
     {
         // TODO 12
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        for (size_t i = 1; i < is.size(); ++i)
+        {
+            bool exchange;
+            int actual = i;
+            do
+            {
+                exchange = false;
+                int parent = (actual - 1) / 2;
+                if (actual > 0 && compare(is.access(parent)->data_, is.access(actual)->data_))
+                {
+                    std::swap(is.access(actual)->data_, is.access(parent)->data_);
+                    actual = parent;
+                    exchange = true;
+                }
+            } while (exchange);
+        }
+        for (size_t i = is.size() - 1; i > 0; --i)
+        {
+            std::swap(is.access(0)->data_, is.access(i)->data_);
+            bool exchange;
+            int actual = 0;
+	        do
+	        {
+                exchange = false;
+                int left = 2 * actual + 1;
+                int right = 2 * actual + 2;
+                int max;
+                if (left < i && right < i)
+                {
+                    max = compare(is.access(right)->data_, is.access(left)->data_) ? left : right;
+                }
+                else
+                {
+	                max = left < i ? left : right;
+                }
+                if (max < i && compare(is.access(actual)->data_, is.access(max)->data_))
+                {
+                    std::swap(is.access(actual)->data_, is.access(max)->data_);
+                	actual = max;
+					exchange = true;
+                }
+	        }
+	        while (exchange);
+        }
     }
 
     template<typename T>
@@ -197,8 +286,23 @@ namespace ds::adt
     void ShellSort<T>::shell(amt::ImplicitSequence<T>& is, std::function<bool(const T&, const T&)> compare, size_t k)
     {
         // TODO 12
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        for (size_t d = 0; d < k; ++d)
+        {
+	        for (size_t i = d; i < is.size(); ++i)
+	        {
+		        int j = i;
+		        while (j >= k && (j - k) >= d && 
+                    compare(is.access(j)->data_, is.access(j - k)->data_))
+		        {
+                    std::swap(is.access(j)->data_, is.access(j - k)->data_);
+                    j = j - k;
+		        }
+	        }
+        }
+        if (k > 1)
+        {
+            shell(is, compare, k - 1);
+        }
     }
 
     template<typename Key, typename T>
@@ -217,31 +321,146 @@ namespace ds::adt
     void RadixSort<Key, T>::sort(amt::ImplicitSequence<T>& is, std::function<bool(const T&, const T&)> compare)
     {
         // TODO 12
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        Array<ExplicitQueue<T>*> sections = 10;
+        for (int i = 0; i < 10; ++i)
+        {
+            sections.set(new ExplicitQueue<T>, i);
+        }
+        int component = 1;
+        bool existsNextComponent = true;
+        while (existsNextComponent)
+        {
+            existsNextComponent = false;
+            for (auto element : is)
+            {
+                auto key = getKey_(element);
+                sections.access((key / component) % 10)->push(element);
+                if (element / (component * 10) > 0)
+                {
+                    existsNextComponent = true;
+                }
+            }
+            component = component * 10;
+            int index = 0;
+            for (int i = 0; i < 10; ++i)
+            {
+                ExplicitQueue<T>* section = sections.access(i);
+                while (!section->isEmpty())
+                {
+                    is.access(index)->data_ = section->pop();
+                    ++index;
+                }
+            }
+        }
+        for (int i = 0; i < 10; ++i)
+        {
+            delete sections.access(i);
+        }
     }
 
     template<typename T>
     void MergeSort<T>::sort(amt::ImplicitSequence<T>& is, std::function<bool(const T&, const T&)> compare)
     {
         // TODO 12
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+    	queue1_ = new ImplicitQueue<T>(is.size());
+    	queue2_ = new ImplicitQueue<T>(is.size());
+        mergeQueue_ = new ImplicitQueue<T>(is.size());
+        for (auto element: is)
+        {
+            mergeQueue_->push(element);
+        }
+        int i = 1;
+        while (i < is.size())
+        {
+            split(i);
+            merge(compare, i);
+            i = i * 2;
+        }
+        split(i);
+        merge(compare, i);
+        for (int i = 0; i < is.size(); ++i)
+        {
+        	is.access(i)->data_ = mergeQueue_->pop();
+		}
+        delete queue1_;
+        delete queue2_;
+        delete mergeQueue_;
+        queue1_ = nullptr;
+        queue2_ = nullptr;
+        mergeQueue_ = nullptr;
+        
     }
 
     template<typename T>
     void MergeSort<T>::split(size_t n)
     {
         // TODO 12
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        int count = 0;
+        bool isFirst = true;
+        while (!mergeQueue_->isEmpty())
+        {
+	        if (count % n == 0)
+	        {
+		        count = 0;
+                isFirst = !isFirst;
+	        }
+	        if (isFirst)
+	        {
+		        queue1_->push(mergeQueue_->pop());
+	        }
+            else
+            {
+            	queue2_->push(mergeQueue_->pop());
+			}
+			++count;
+        }
     }
 
     template<typename T>
     void MergeSort<T>::merge(std::function<bool(const T&, const T&)> compare, size_t n)
     {
         // TODO 12
-        // po implementacii vymazte vyhodenie vynimky!
-        throw std::runtime_error("Not implemented yet");
+        int count1 = 0;
+        int count2 = 0;
+        do
+        {
+	        if (count1 == 0 && count2 == 0)
+	        {
+                count1 = std::min(n, queue1_->size());
+                count2 = std::min(n, queue2_->size());
+	        }
+            T* key1 = count1 > 0 ? &queue1_->peek() : nullptr;
+            T* key2 = count2 > 0 ? &queue2_->peek() : nullptr;
+	        if (key1 != nullptr && key2 != nullptr)
+	        {
+		        if (compare(*key1, *key2))
+		        {
+			        --count1;
+                    mergeQueue_->push(queue1_->pop());
+		        }
+                else
+                {
+                	--count2;
+					mergeQueue_->push(queue2_->pop());
+				}
+	        }
+	        else
+	        {
+		        if (key1 != nullptr)
+		        {
+			        --count1;
+					mergeQueue_->push(queue1_->pop());
+		        }
+                else
+                {
+	                if (key2 != nullptr)
+	                {
+		                --count2;
+                        mergeQueue_->push(queue2_->pop());
+	                }
+                }
+	        }
+        }
+        while (!queue1_->isEmpty() || !queue2_->isEmpty());
     }
 }

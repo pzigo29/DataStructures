@@ -4,7 +4,7 @@
 #include <complexities/list_analyzer.h>
 #include <msclr\marshal_cppstd.h>
 
-#include "complexities/tableAnalyzer.h"
+#include "complexities/table_analyzer.h"
 
 namespace WF = System::Windows::Forms;
 namespace Col = System::Collections::Generic;

@@ -278,6 +278,7 @@ namespace ds::adt {
 	public:
 		Treap();
 		bool equals(const ADT& other) override;
+		TreapItem<K, T>* findItem(const K& key) const;
 
 		void insert(const K& key, T data) override;
 		void insert(const K& key, T data, typename amt::BinaryEH<TreapItem<K, T>>::BlockType*& parent) override;
@@ -781,17 +782,23 @@ namespace ds::adt {
 	typename HashTable<K, T>::HashTableIterator& HashTable<K, T>::HashTableIterator::operator++()
 	{
 		// TODO 11
-		/*++synonymIterator_;
-		if (!synonymIterator_->position_->next_ != nullptr)
+		++(*synonymIterator_);
+		SynonymTableIterator oldIt = *synonymIterator_;
+		if (oldIt == (**tablesCurrent_)->end())
 		{
 			do
 			{
-				++tablesCurrent_;
-			} while (tablesCurrent)
-			
-		}*/
-		//po implementacii vymazte vyhodenie vynimky
-		throw std::runtime_error("HashTable<K, T>::HashTableIterator::operator++: Not implemented!");
+				++(*tablesCurrent_);
+			}
+			while (*tablesCurrent_ != *tablesLast_ && **tablesCurrent_ == nullptr);
+			delete synonymIterator_;
+			synonymIterator_ = nullptr;
+			if (*tablesCurrent_ != *tablesLast_)
+			{
+				synonymIterator_ = new SynonymTableIterator((**tablesCurrent_)->begin());
+			}
+		}
+		return *this;
 	}
 
 	template <typename K, typename T>
@@ -1198,6 +1205,17 @@ namespace ds::adt {
 	{
 		// TODO 11
 		return Table<K, T>::areEqual(*this, other);
+	}
+
+	template <typename K, typename T>
+	TreapItem<K, T>* Treap<K, T>::findItem(const K& key) const
+	{
+		BSTNodeType* node = nullptr;
+		if (!this->tryFindNodeWithKey(key, node))
+		{
+			return nullptr;
+		}
+		return &node->data_;
 	}
 
 	template <typename K, typename T>

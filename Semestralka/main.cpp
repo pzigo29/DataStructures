@@ -11,6 +11,7 @@
 int main(int argc, char* argv[])
 {
 	initHeapMonitor();
+	std::locale locale("sk_SK");
 	std::vector<Transporter<std::vector>> zoznamDopravcov;
 	for (int i = 1; i < argc; i++)
 	{
