@@ -24,5 +24,9 @@ public:
 	{
 		return ds::amt::ImplicitSequence<T>::access(index);
 	}
+	PredicateList& operator=(const ds::amt::ImplicitSequence<T>& other)
+	{
+		return ds::amt::ImplicitSequence<T>::operator=(other);
+	}
 };
 

@@ -155,6 +155,7 @@
     <ClInclude Include="fill_bus_stops.h" />
     <ClInclude Include="input_data.h" />
     <ClInclude Include="predicate_list.h" />
+    <ClInclude Include="sorting.h" />
     <ClInclude Include="transporter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -7,11 +7,12 @@
 #include <libds/heap_monitor.h>
 
 #include "bus_table.h"
+#include "sorting.h"
 
 int main(int argc, char* argv[])
 {
 	initHeapMonitor();
-	std::locale locale("sk_SK");
+	
 	std::vector<Transporter<std::vector>> zoznamDopravcov;
 	for (int i = 1; i < argc; i++)
 	{
@@ -21,6 +22,13 @@ int main(int argc, char* argv[])
 		Transporter<std::vector> zastavky = input.readFromFile();
 		zoznamDopravcov.push_back(zastavky);
 	}
+
+
+
+	/*BusStop* stop = new BusStop("1", "Daèo Slovenské", "null", "456", "654", "SK", "SKT", "RK");
+	std::vector<BusStop*> stops;
+	stops.push_back(stop);
+	Transporter<std::vector>* skZastavka = new Transporter<std::vector>(stops);*/
 	PredicateList<BusTable<std::string, BusStop*>> busTables(zoznamDopravcov.size());
 	
 	FillBusStops fillBusStops(zoznamDopravcov);

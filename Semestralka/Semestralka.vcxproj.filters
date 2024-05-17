@@ -88,5 +88,8 @@
     <ClInclude Include="bus_table.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="sorting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

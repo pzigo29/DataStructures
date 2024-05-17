@@ -1,6 +1,7 @@
 #include "CLI.h"
 #include "contains_str.h"
 #include "predicate_list.h"
+#include "sorting.h"
 
 void CLI::vectorStartApp(std::vector<Transporter<std::vector>>& zoznamDopravcov)
 {
@@ -281,11 +282,29 @@ void CLI::predikuj(std::string predikat,
 		str.containsString(begin, zoznamDopravcov.end(),
 			hladanyString, predikatVec, startsWith);
 	}
-	for (int i = 0; i < predikatVec.size(); i++)
+	std::cout << "Utriedenie vysledku:\n"
+		"Alphabetical: 'alpha' || '-a'\n"
+		"ConsonantCount: 'consonant' || '-c'\n"
+		"Netriedit: anything\n";
+	std::string utriedenie;
+	std::cin >> utriedenie;
+	Sorting<BusStopStruct*>* sorter = new Sorting(predikatVec);
+	if (utriedenie == "alpha" || utriedenie == "-a")
+	{
+		sorter->sortAlphabetical();
+	}
+	else if (utriedenie == "consonant" || utriedenie == "-c")
+	{
+		sorter->sortConsonantCount();
+	}
+	
+	for (size_t i = 0; i < predikatVec.size(); ++i)
 	{
 		if (predikatVec[i]->data_->getStop() != nullptr)
 			predikatVec[i]->data_->getStop()->coutAll(false);
 	}
+	delete sorter;
+	sorter = nullptr;
 	//predikatVec.clear();
 }
 

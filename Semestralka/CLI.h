@@ -10,19 +10,21 @@
 #include "bus_table.h"
 #include "predicate_list.h"
 #include "libds/adt/array.h"
-
+ 
 class CLI
 {
     std::function<bool(const std::string&, const std::string&)> contains = [](const std::string& stringToFind, const std::string& stringToBeFound)
     {
-    	std::string stringToFindLower = stringToFind;
-    	std::transform(stringToFindLower.begin(), stringToFindLower.end(), stringToFindLower.begin(), std::tolower);
+        std::locale locale("en_CA");
+        std::string stringToFindLower = stringToFind;
+        std::transform(stringToFindLower.begin(), stringToFindLower.end(), stringToFindLower.begin(), std::tolower);
         std::string stringToBeFoundLower = stringToBeFound;
         std::transform(stringToBeFoundLower.begin(), stringToBeFoundLower.end(), stringToBeFoundLower.begin(), std::tolower);
         return stringToBeFoundLower.find(stringToFindLower) != std::string::npos;
     };
     std::function<bool(const std::string&, const std::string&)> startsWith = [](const std::string& stringToFind, const std::string& stringToBeFound)
     {
+    	std::locale locale("en_CA");
         std::string stringToFindLower = stringToFind;
         std::transform(stringToFindLower.begin(), stringToFindLower.end(), stringToFindLower.begin(), std::tolower);
         std::string stringToBeFoundLower = stringToBeFound;
