@@ -1,11 +1,9 @@
 #pragma once
 #include <string>
 #include <iostream>
-#include <libds/heap_monitor.h>
 
 class BusStop
 {
-private:
 	std::string id_;
 	std::string name_;
 	std::string stopSite_;

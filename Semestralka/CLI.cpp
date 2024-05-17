@@ -21,9 +21,9 @@ void CLI::vectorStartApp(std::vector<Transporter<std::vector>>& zoznamDopravcov)
 		{
 			return;
 		}
-		std::cout << "hladanyString" << std::endl;
+		std::cout << "hladanyString" << '\n';
 		std::getline(std::cin >> std::ws, hladanyString);
-		std::cout << "dopravca" << std::endl;
+		std::cout << "dopravca" << '\n';
 		std::getline(std::cin >> std::ws, skratkaDopravcu);
 
 
@@ -62,7 +62,7 @@ void CLI::vectorStartApp(std::vector<Transporter<std::vector>>& zoznamDopravcov)
 		else
 		{
 			if (skratkaDopravcu != "ALL" && skratkaDopravcu != "all")
-				std::cout << "Neplatny vstup, prehladavam vsetky" << std::endl;
+				std::cout << "Neplatny vstup, prehladavam vsetky" << '\n';
 			for (int i = 0; i < zoznamDopravcov.size(); i++)
 			{
 				indexDopravcu.push_back(i);
@@ -70,7 +70,7 @@ void CLI::vectorStartApp(std::vector<Transporter<std::vector>>& zoznamDopravcov)
 		}
 		if (predikat == "contains" || predikat == "-c")
 		{
-			for (int i = 0; i < indexDopravcu.size(); ++i)
+			for (size_t i = 0; i < indexDopravcu.size(); ++i)
 			{
 				str.containsString(zoznamDopravcov[indexDopravcu[i]].begin(), zoznamDopravcov[indexDopravcu[i]].end(),
 					hladanyString, predikatVec, contains);
@@ -78,7 +78,7 @@ void CLI::vectorStartApp(std::vector<Transporter<std::vector>>& zoznamDopravcov)
 		}
 		else if (predikat == "startsWith" || predikat == "-s")
 		{
-			for (int i = 0; i < indexDopravcu.size(); ++i)
+			for (size_t i = 0; i < indexDopravcu.size(); ++i)
 			{
 				str.containsString(zoznamDopravcov[indexDopravcu[i]].begin(), zoznamDopravcov[indexDopravcu[i]].end(),
 					hladanyString, predikatVec, startsWith);
@@ -86,12 +86,12 @@ void CLI::vectorStartApp(std::vector<Transporter<std::vector>>& zoznamDopravcov)
 		}
 		else
 		{
-			std::cout << "Neplatny vstup" << std::endl;
+			std::cout << "Neplatny vstup" << '\n';
 			continue;
 		}
 
 
-		for (int i = 0; i < predikatVec.size(); ++i)
+		for (size_t i = 0; i < predikatVec.size(); ++i)
 		{
 			predikatVec[i]->coutAll(false);
 		}
@@ -128,7 +128,6 @@ void CLI::hierarchyStartApp(BusStopHierarchy& zoznamDopravcov, BlockType* startN
 
 void CLI::tableStartApp(PredicateList<BusTable<std::string, BusStop*>>& array)
 {
-	ContainsStr<BusStop*, std::string, BusTable<std::string, BusStop*>::IteratorType, PredicateList> str;
 	
 	std::string predikat, hladanyString, skratkaDopravcu;
 		
@@ -143,9 +142,9 @@ void CLI::tableStartApp(PredicateList<BusTable<std::string, BusStop*>>& array)
 		{
 			return;
 		}
-		std::cout << "hladanyString" << std::endl;
+		std::cout << "hladanyString" << '\n';
 		std::getline(std::cin >> std::ws, hladanyString);
-		std::cout << "dopravca" << std::endl;
+		std::cout << "dopravca" << '\n';
 		std::getline(std::cin >> std::ws, skratkaDopravcu);
 
 
@@ -183,13 +182,11 @@ void CLI::tableStartApp(PredicateList<BusTable<std::string, BusStop*>>& array)
 		}
 		else
 		{
-			std::cout << "Neplatny vstup!" << std::endl;
+			std::cout << "Neplatny vstup!" << '\n';
 			continue;
 		}
 		if (predikat == "key" || predikat == "-k")
 		{
-			/*BusStop* stop = array.access(indexDopravcu)->data_.find(hladanyString);
-			stop->coutAll(false);*/
 			auto* item = array.access(indexDopravcu)->data_.findItem(hladanyString);
 			item->data_->coutAll(false);
 			auto* synonym = item->synonym_;
@@ -198,19 +195,10 @@ void CLI::tableStartApp(PredicateList<BusTable<std::string, BusStop*>>& array)
 				synonym->data_->coutAll(false);
 				synonym = synonym->synonym_;
 			}
-			/*str.containsStringTable(array.access(indexDopravcu)->data_.begin(), array.access(indexDopravcu)->data_.end(),
-			hladanyString, predikatVec, [](const std::string& stringToFind, const std::string& stringToBeFound)
-			{
-				std::string stringToFindLower = stringToFind;
-				std::transform(stringToFindLower.begin(), stringToFindLower.end(), stringToFindLower.begin(), std::tolower);
-				std::string stringToBeFoundLower = stringToBeFound;
-				std::transform(stringToBeFoundLower.begin(), stringToBeFoundLower.end(), stringToBeFoundLower.begin(), std::tolower);
-				return stringToBeFoundLower == stringToFindLower;
-			});*/
 		}
 		else
 		{
-			std::cout << "Neplatny vstup" << std::endl;
+			std::cout << "Neplatny vstup" << '\n';
 			continue;
 		}
 
@@ -263,7 +251,7 @@ void CLI::predikuj(std::string predikat,
 {
 	PredicateList<BusStopStruct*> predikatVec;
 	std::string hladanyString;
-	std::cout << "hladanyString" << std::endl;
+	std::cout << "hladanyString" << '\n';
 	std::getline(std::cin >> std::ws, hladanyString);
 	std::cout << "Algoritmus Contains:\n 'contains' || '-c'\n"
 		"Algoritmus StartsWith:\n 'startsWith' || '-s'\n";
@@ -305,7 +293,6 @@ void CLI::predikuj(std::string predikat,
 	}
 	delete sorter;
 	sorter = nullptr;
-	//predikatVec.clear();
 }
 
 BlockType* CLI::prehliadaj(BlockType* curNode)
@@ -316,7 +303,7 @@ BlockType* CLI::prehliadaj(BlockType* curNode)
 	if (curNode->parent_ == nullptr)
 	{
 		std::cout << "Synovia" << "\n";
-		for (int i = 0; i < curNode->sons_->size(); ++i)
+		for (size_t i = 0; i < curNode->sons_->size(); ++i)
 		{
 			std::cout << i << " " << curNode->sons_->access(i)->data_->data_.getName() << "\n";
 		}
@@ -368,7 +355,7 @@ BlockType* CLI::prehliadaj(BlockType* curNode)
 
 	std::cout << "Otec: " << curNode->parent_->data_.getName() << "\n";
 	std::cout << "Synovia" << "\n";
-	for (int i = 0; i < curNode->sons_->size(); ++i)
+	for (size_t i = 0; i < curNode->sons_->size(); ++i)
 	{
 		std::cout << i << " " << curNode->sons_->access(i)->data_->data_.getName() << "\n";
 	}

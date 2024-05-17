@@ -3,12 +3,10 @@
 #include <string>
 #include <libds/amt/hierarchy.h>
 #include "bus_stop_struct.h"
-#include <libds/heap_monitor.h>
 
 using BlockType = ds::amt::MultiWayExplicitHierarchyBlock<BusStopStruct>;
 class BusStopHierarchy : public ds::amt::MultiWayEH<BusStopStruct>
 {
-	BlockType* root_;
 public:
 	BusStopHierarchy();
 	BlockType* addTransporter(std::string transporter, int index);

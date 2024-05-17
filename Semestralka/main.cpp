@@ -7,7 +7,6 @@
 #include <libds/heap_monitor.h>
 
 #include "bus_table.h"
-#include "sorting.h"
 
 int main(int argc, char* argv[])
 {
@@ -22,23 +21,16 @@ int main(int argc, char* argv[])
 		Transporter<std::vector> zastavky = input.readFromFile();
 		zoznamDopravcov.push_back(zastavky);
 	}
-
-
-
-	/*BusStop* stop = new BusStop("1", "Daèo Slovenské", "null", "456", "654", "SK", "SKT", "RK");
-	std::vector<BusStop*> stops;
-	stops.push_back(stop);
-	Transporter<std::vector>* skZastavka = new Transporter<std::vector>(stops);*/
 	PredicateList<BusTable<std::string, BusStop*>> busTables(zoznamDopravcov.size());
 	
 	FillBusStops fillBusStops(zoznamDopravcov);
 	fillBusStops.fillTable(busTables);
 
-	//duplicita Valleyview at Knollwood (WB) - KAM
-
 	BusStopHierarchy bsh;
 	fillBusStops.fillHierarchy(bsh);
+
 	CLI().chooseApp(zoznamDopravcov, bsh, busTables);
 
 	return 0;
 }
+//duplicita Valleyview at Knollwood (WB) - KAM

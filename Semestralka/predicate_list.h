@@ -1,7 +1,6 @@
 #pragma once
 #include "bus_stop_hierarchy.h"
 #include <libds/amt/implicit_sequence.h>
-#include <libds/heap_monitor.h>
 
 template <typename T>
 class PredicateList : public ds::amt::ImplicitSequence<T>

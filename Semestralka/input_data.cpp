@@ -23,7 +23,7 @@ Transporter<std::vector> InputData::readFromFile()
 		std::string system = atributtes.at(6);
 		std::string town = atributtes.at(7);
 
-		busStops.push_back(BusStop(id, name, stopSite, latitude, longtitude, code, system, town));
+		busStops.emplace_back(id, name, stopSite, latitude, longtitude, code, system, town);
 	}
 
 	return Transporter<std::vector>(busStops);

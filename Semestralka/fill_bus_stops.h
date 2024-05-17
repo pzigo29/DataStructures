@@ -1,6 +1,5 @@
 #pragma once
 #include "bus_stop_hierarchy.h"
-#include <libds/heap_monitor.h>
 
 #include "bus_table.h"
 #include "libds/adt/array.h"
@@ -60,7 +59,6 @@ void FillBusStops<T>::fillTable(PredicateList<BusTable<std::string, BusStop*>>& 
 		for (auto ii = zoznamDopravcov_[i].begin(); ii != zoznamDopravcov_[i].end(); ++ii)
 		{
 			busStopTable.access(i)->data_.insert((*ii).getName(), &*ii, nullptr);
-			//busStopTable.access(i)->data_.find((*ii).getName())->coutAll(false);
 		}
 	}
 }

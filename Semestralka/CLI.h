@@ -5,12 +5,9 @@
 #include "transporter.h"
 #include "bus_stop_hierarchy.h"
 #include "contains_str.h"
-#include <libds/heap_monitor.h>
-
 #include "bus_table.h"
 #include "predicate_list.h"
-#include "libds/adt/array.h"
- 
+
 class CLI
 {
     std::function<bool(const std::string&, const std::string&)> contains = [](const std::string& stringToFind, const std::string& stringToBeFound)

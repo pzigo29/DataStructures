@@ -1,6 +1,5 @@
 #pragma once
 #include "bus_stop.h"
-#include <libds/heap_monitor.h>
 
 struct BusStopStruct
 {
@@ -14,9 +13,9 @@ public:
 	BusStopStruct() = default;
 
 	std::string getName() { return name; }
-	BusStop* getStop() { return stop; }
+	BusStop* getStop() const { return stop; }
 
-	auto operator==(BusStopStruct& other) 
+	auto operator==(BusStopStruct& other) const
 	{ 
 		return name == other.getName() && stop == other.getStop();
 	}
