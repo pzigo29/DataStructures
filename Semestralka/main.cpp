@@ -11,7 +11,6 @@
 int main(int argc, char* argv[])
 {
 	initHeapMonitor();
-	
 	std::vector<Transporter<std::vector>> zoznamDopravcov;
 	for (int i = 1; i < argc; i++)
 	{

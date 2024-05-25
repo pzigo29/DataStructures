@@ -42,6 +42,16 @@ namespace ds::utils
         void executeOperation(Table& structure) override;
     };
 
+    template<class Table>
+    class TableFindAnalyzer : public TableAnalyzer<Table>
+    {
+    public:
+        explicit TableFindAnalyzer(const std::string& name);
+
+    protected:
+        void executeOperation(Table& structure) override;
+    };
+
     /**
      * @brief Container for all list analyzers.
      */
@@ -66,11 +76,12 @@ namespace ds::utils
             {
                 std::uniform_int_distribution<size_t> indexDist(0, 10000000);
                 this->key_ = indexDist(this->rngKey_);
+                this->data_ = this->rngData_();
                 while (table.contains(this->key_))
                 {
                     this->key_ = indexDist(this->rngKey_);
                 }
-				this->data_ = this->rngData_();
+				
             });
     }
 
@@ -107,11 +118,24 @@ namespace ds::utils
         structure.insert(this->key_, this->data_);
     }
 
+    template <class Table>
+    TableFindAnalyzer<Table>::TableFindAnalyzer(const std::string& name) :
+		TableAnalyzer<Table>(name)
+    {
+    }
+
+    template <class Table>
+    void TableFindAnalyzer<Table>::executeOperation(Table& structure)
+    {
+        structure.find(this->key_);
+    }
+
     //----------
 
     inline TablesAnalyzer::TablesAnalyzer() :
         CompositeAnalyzer("Tables")
     {
         this->addAnalyzer(std::make_unique<TableInsertAnalyzer<ds::adt::Treap<int, int>>>("treap-insert"));
+        this->addAnalyzer(std::make_unique<TableFindAnalyzer<ds::adt::Treap<int, int>>>("treap-find"));
     }
 }

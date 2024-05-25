@@ -4,20 +4,20 @@
 struct BusStopStruct
 {
 private:
-	std::string name;
-	BusStop* stop;
+	std::string name_;
+	BusStop* stop_;
 
 public:
-	BusStopStruct(BusStop& stop) : name(stop.getName()), stop(&stop) {}
-	BusStopStruct(std::string name) : name(name), stop(nullptr) {}
+	BusStopStruct(BusStop& stop) : name_(stop.getName()), stop_(&stop) {}
+	BusStopStruct(std::string name) : name_(name), stop_(nullptr) {}
 	BusStopStruct() = default;
 
-	std::string getName() { return name; }
-	BusStop* getStop() const { return stop; }
+	std::string getName() { return name_; }
+	BusStop* getStop() const { return stop_; }
 
 	auto operator==(BusStopStruct& other) const
 	{ 
-		return name == other.getName() && stop == other.getStop();
+		return name_ == other.getName() && stop_ == other.getStop();
 	}
 };
 

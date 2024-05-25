@@ -29,6 +29,7 @@ public:
 	{
 		return name_;
 	}
+private:
 	void coutId() const
 	{
 		std::cout << id_ << " ";
@@ -61,6 +62,7 @@ public:
 	{
 		std::cout << town_ << " ";
 	}
+public:
 	void coutAll(bool podSebou) const
 	{
 		if (podSebou)
@@ -92,7 +94,7 @@ public:
 			coutCode();
 			coutNameTrans();
 			coutTown();
-			std::cout << std::endl;
+			std::cout << '\n';
 		}
 	}
 };

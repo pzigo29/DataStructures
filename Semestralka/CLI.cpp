@@ -277,6 +277,7 @@ void CLI::predikuj(std::string predikat,
 	std::string utriedenie;
 	std::cin >> utriedenie;
 	Sorting<BusStopStruct*>* sorter = new Sorting(predikatVec);
+	bool consonant = false;
 	if (utriedenie == "alpha" || utriedenie == "-a")
 	{
 		sorter->sortAlphabetical();
@@ -284,12 +285,20 @@ void CLI::predikuj(std::string predikat,
 	else if (utriedenie == "consonant" || utriedenie == "-c")
 	{
 		sorter->sortConsonantCount();
+		consonant = true;
 	}
 	
 	for (size_t i = 0; i < predikatVec.size(); ++i)
 	{
 		if (predikatVec[i]->data_->getStop() != nullptr)
+		{
+			if (consonant)
+			{
+				std::cout << sorter->consonantCount(predikatVec[i]->data_) << " ";
+			}
 			predikatVec[i]->data_->getStop()->coutAll(false);
+		}
+			
 	}
 	delete sorter;
 	sorter = nullptr;

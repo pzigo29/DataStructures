@@ -25,6 +25,6 @@ Transporter<std::vector> InputData::readFromFile()
 
 		busStops.emplace_back(id, name, stopSite, latitude, longtitude, code, system, town);
 	}
-
+	//std::cout << "Data read from file: " << file_ << '\n';
 	return Transporter<std::vector>(busStops);
 }
